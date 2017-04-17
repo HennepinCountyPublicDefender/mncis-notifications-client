@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-01-18T07:06:49</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BondTypeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates bond types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Aitkin Pre-Case Fines" />
+      <xs:enumeration value="Anoka Pre-Case Fines" />
+      <xs:enumeration value="Appearance Bond" />
+      <xs:enumeration value="Attachment Bond" />
+      <xs:enumeration value="Becker Pre-Case Fines" />
+      <xs:enumeration value="Beltrami Pre-Case Fines" />
+      <xs:enumeration value="Benton Pre-Case Fines" />
+      <xs:enumeration value="Big Stone Pre-Case Fines" />
+      <xs:enumeration value="Blue Earth Pre-Case Fines" />
+      <xs:enumeration value="Brown Pre-Case Fines" />
+      <xs:enumeration value="Carlton Pre-Case Fines" />
+      <xs:enumeration value="Carver Pre-Case Fines" />
+      <xs:enumeration value="Cash Bail" />
+      <xs:enumeration value="Cass Pre-Case Fines" />
+      <xs:enumeration value="Chippewa Pre-Case Fines" />
+      <xs:enumeration value="Chisago Pre-Case Fines" />
+      <xs:enumeration value="Clay Pre-Case Fines" />
+      <xs:enumeration value="Clearwater Pre-Case Fines" />
+      <xs:enumeration value="Converted Bond" />
+      <xs:enumeration value="Cook Pre-Case Fines" />
+      <xs:enumeration value="Cottonwood Pre-Case Fines" />
+      <xs:enumeration value="Crow Wing Pre-Case Fines" />
+      <xs:enumeration value="Dakota Pre-Case Fines" />
+      <xs:enumeration value="Dodge Pre-Case Fines" />
+      <xs:enumeration value="Douglas Pre-Case Fines" />
+      <xs:enumeration value="Faribault Pre-Case Fines" />
+      <xs:enumeration value="Fillmore Pre-Case Fines" />
+      <xs:enumeration value="Freeborn Pre-Case Fines" />
+      <xs:enumeration value="Goodhue Pre-Case Fines" />
+      <xs:enumeration value="Grant Pre-Case Fines" />
+      <xs:enumeration value="Hennepin Criminal Pre-Case Fines" />
+      <xs:enumeration value="Hennepin Juvenile Pre-Case Fines" />
+      <xs:enumeration value="Houston Pre-Case Fines" />
+      <xs:enumeration value="Hubbard Pre-Case Fines" />
+      <xs:enumeration value="Isanti Pre-Case Fines" />
+      <xs:enumeration value="Itasca Pre-Case Fines" />
+      <xs:enumeration value="Jackson Pre-Case Fines" />
+      <xs:enumeration value="Kanabec Pre-Case Fines" />
+      <xs:enumeration value="Kandiyohi Pre-Case Fines" />
+      <xs:enumeration value="Kittson Pre-Case Fines" />
+      <xs:enumeration value="Koochiching Pre-Case Fines" />
+      <xs:enumeration value="Lac qui Parle Pre-Case Fines" />
+      <xs:enumeration value="Lake of the Woods Pre-Case Fines" />
+      <xs:enumeration value="Lake Pre-Case Fines" />
+      <xs:enumeration value="Le Sueur Pre-Case Fines" />
+      <xs:enumeration value="Lincoln Pre-Case Fines" />
+      <xs:enumeration value="Lyon Pre-Case Fines" />
+      <xs:enumeration value="Mahnomen Pre-Case Fines" />
+      <xs:enumeration value="Marshall Pre-Case Fines" />
+      <xs:enumeration value="Martin Pre-Case Fines" />
+      <xs:enumeration value="McLeod Pre-Case Fines" />
+      <xs:enumeration value="MCPC Pre-Case Fines" />
+      <xs:enumeration value="Meeker Pre-Case Fines" />
+      <xs:enumeration value="Mille Lacs Pre-Case Fines" />
+      <xs:enumeration value="Morrison Pre-Case Fines" />
+      <xs:enumeration value="Mower Pre-Case Fines" />
+      <xs:enumeration value="Murray Pre-Case Fines" />
+      <xs:enumeration value="Nicollet Pre-Case Fines" />
+      <xs:enumeration value="Nobles Pre-Case Fines" />
+      <xs:enumeration value="Norman Pre-Case Fines" />
+      <xs:enumeration value="Olmsted Pre-Case Fines" />
+      <xs:enumeration value="Otter Tail Pre-Case Fines" />
+      <xs:enumeration value="Pennington Pre-Case Fines" />
+      <xs:enumeration value="Personal Surety Bond" />
+      <xs:enumeration value="Pine Pre-Case Fines" />
+      <xs:enumeration value="Pipestone Pre-Case Fines" />
+      <xs:enumeration value="Polk Pre-Case Fines" />
+      <xs:enumeration value="Pope Pre-Case Fines" />
+      <xs:enumeration value="Pre-Closure Fine Payments" />
+      <xs:enumeration value="Ramsey Criminal Pre-Case Fines" />
+      <xs:enumeration value="Ramsey Juvenile Pre-Case Fines" />
+      <xs:enumeration value="Red Lake Pre-Case Fines" />
+      <xs:enumeration value="Redwood Pre-Case Fines" />
+      <xs:enumeration value="Renville Pre-Case Fines" />
+      <xs:enumeration value="Rice Pre-Case Fines" />
+      <xs:enumeration value="Rock Pre-Case Fines" />
+      <xs:enumeration value="Roseau Pre-Case Fines" />
+      <xs:enumeration value="Scott Pre-Case Fines" />
+      <xs:enumeration value="Sherburne Pre-Case Fines" />
+      <xs:enumeration value="Sibley Pre-Case Fines" />
+      <xs:enumeration value="St. Louis Duluth Pre-Case Fines" />
+      <xs:enumeration value="St. Louis Hibbing Pre-Case Fines" />
+      <xs:enumeration value="St. Louis Virginia Pre-Case Fines" />
+      <xs:enumeration value="Stearns Pre-Case Fines" />
+      <xs:enumeration value="Steele Pre-Case Fines" />
+      <xs:enumeration value="Stevens Pre-Case Fines" />
+      <xs:enumeration value="Swift Pre-Case Fines" />
+      <xs:enumeration value="Todd Pre-Case Fines" />
+      <xs:enumeration value="Traverse Pre-Case Fines" />
+      <xs:enumeration value="Wabasha Pre-Case Fines" />
+      <xs:enumeration value="Wadena Pre-Case Fines" />
+      <xs:enumeration value="Waseca Pre-Case Fines" />
+      <xs:enumeration value="Washington Pre-Case Fines" />
+      <xs:enumeration value="Watonwan Pre-Case Fines" />
+      <xs:enumeration value="Wilkin Pre-Case Fines" />
+      <xs:enumeration value="Winona Pre-Case Fines" />
+      <xs:enumeration value="Wright Pre-Case Fines" />
+      <xs:enumeration value="Yellow Medicine Pre-Case Fines" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BondTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates bond types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="01PCF" />
+      <xs:enumeration value="02PCF" />
+      <xs:enumeration value="BOND" />
+      <xs:enumeration value="ATTACHBOND" />
+      <xs:enumeration value="03PCF" />
+      <xs:enumeration value="04PCF" />
+      <xs:enumeration value="05PCF" />
+      <xs:enumeration value="06PCF" />
+      <xs:enumeration value="07PCF" />
+      <xs:enumeration value="08PCF" />
+      <xs:enumeration value="09PCF" />
+      <xs:enumeration value="10PCF" />
+      <xs:enumeration value="CASHBAIL" />
+      <xs:enumeration value="11PCF" />
+      <xs:enumeration value="12PCF" />
+      <xs:enumeration value="13PCF" />
+      <xs:enumeration value="14CF" />
+      <xs:enumeration value="15PCF" />
+      <xs:enumeration value="CNVBOND" />
+      <xs:enumeration value="16PCF" />
+      <xs:enumeration value="17PCF" />
+      <xs:enumeration value="18PCF" />
+      <xs:enumeration value="19PCF" />
+      <xs:enumeration value="20PCF" />
+      <xs:enumeration value="21PCF" />
+      <xs:enumeration value="22PCF" />
+      <xs:enumeration value="23PCF" />
+      <xs:enumeration value="24PCF" />
+      <xs:enumeration value="25PCF" />
+      <xs:enumeration value="26PCF" />
+      <xs:enumeration value="27CRPCF" />
+      <xs:enumeration value="27JVPCF" />
+      <xs:enumeration value="28PCF" />
+      <xs:enumeration value="29PCF" />
+      <xs:enumeration value="30PCF" />
+      <xs:enumeration value="31PCF" />
+      <xs:enumeration value="32PCF" />
+      <xs:enumeration value="33PCF" />
+      <xs:enumeration value="34PCF" />
+      <xs:enumeration value="35PCF" />
+      <xs:enumeration value="36PCF" />
+      <xs:enumeration value="37PCF" />
+      <xs:enumeration value="39PCF" />
+      <xs:enumeration value="38PCF" />
+      <xs:enumeration value="40PCF" />
+      <xs:enumeration value="41PCF" />
+      <xs:enumeration value="42PCF" />
+      <xs:enumeration value="44PCF" />
+      <xs:enumeration value="45PCF" />
+      <xs:enumeration value="46PCF" />
+      <xs:enumeration value="43PCF" />
+      <xs:enumeration value="MCPCPCF" />
+      <xs:enumeration value="47PCF" />
+      <xs:enumeration value="48PCF" />
+      <xs:enumeration value="49PCF" />
+      <xs:enumeration value="50PCF" />
+      <xs:enumeration value="51PCF" />
+      <xs:enumeration value="52PCF" />
+      <xs:enumeration value="53PCF" />
+      <xs:enumeration value="54PCF" />
+      <xs:enumeration value="55PCF" />
+      <xs:enumeration value="56PCF" />
+      <xs:enumeration value="57PCF" />
+      <xs:enumeration value="PSURETY" />
+      <xs:enumeration value="58PCF" />
+      <xs:enumeration value="59PCF" />
+      <xs:enumeration value="60PCF" />
+      <xs:enumeration value="61PCF" />
+      <xs:enumeration value="PCLOSE" />
+      <xs:enumeration value="62CRPCF" />
+      <xs:enumeration value="62JVPCF" />
+      <xs:enumeration value="63PCF" />
+      <xs:enumeration value="64PCF" />
+      <xs:enumeration value="65PCF" />
+      <xs:enumeration value="66PCF" />
+      <xs:enumeration value="67PCF" />
+      <xs:enumeration value="68PCF" />
+      <xs:enumeration value="70PCF" />
+      <xs:enumeration value="71PCF" />
+      <xs:enumeration value="72PCF" />
+      <xs:enumeration value="69DUPCF" />
+      <xs:enumeration value="69HIPCF" />
+      <xs:enumeration value="69VIPCF" />
+      <xs:enumeration value="73PCF" />
+      <xs:enumeration value="74PCF" />
+      <xs:enumeration value="75PCF" />
+      <xs:enumeration value="76PCF" />
+      <xs:enumeration value="77PCF" />
+      <xs:enumeration value="78PCF" />
+      <xs:enumeration value="79PCF" />
+      <xs:enumeration value="80PCF" />
+      <xs:enumeration value="81PCF" />
+      <xs:enumeration value="82PCF" />
+      <xs:enumeration value="83PCF" />
+      <xs:enumeration value="84PCF" />
+      <xs:enumeration value="85PCF" />
+      <xs:enumeration value="86PCF" />
+      <xs:enumeration value="87PCF" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="BondTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="BondTypeType">
+        <xs:attribute name="code" type="BondTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

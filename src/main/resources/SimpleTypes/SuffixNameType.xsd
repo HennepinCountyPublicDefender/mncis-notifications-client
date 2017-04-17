@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-05-14T11:05:20</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="SuffixNameType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are accepted for name suffix. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DC" />
+      <xs:enumeration value="DO" />
+      <xs:enumeration value="ESQ" />
+      <xs:enumeration value="II" />
+      <xs:enumeration value="III" />
+      <xs:enumeration value="IV" />
+      <xs:enumeration value="Jr." />
+      <xs:enumeration value="M.D." />
+      <xs:enumeration value="RN" />
+      <xs:enumeration value="Sr." />
+      <xs:enumeration value="V" />
+      <xs:enumeration value="VI" />
+      <xs:enumeration value="VII" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SuffixNameTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are accepted for name suffix. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DC" />
+      <xs:enumeration value="DO" />
+      <xs:enumeration value="ESQ" />
+      <xs:enumeration value="II" />
+      <xs:enumeration value="III" />
+      <xs:enumeration value="IV" />
+      <xs:enumeration value="Jr" />
+      <xs:enumeration value="MD" />
+      <xs:enumeration value="RN" />
+      <xs:enumeration value="Sr" />
+      <xs:enumeration value="V" />
+      <xs:enumeration value="VI" />
+      <xs:enumeration value="VII" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SuffixNameTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="SuffixNameType">
+        <xs:attribute name="code" type="SuffixNameTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:46:29</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="WeatherConditionsType">
+    <xs:annotation>
+      <xs:documentation>Enumerates valid weather conditions appearing on citations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Clear" />
+      <xs:enumeration value="Cloudy" />
+      <xs:enumeration value="Fog" />
+      <xs:enumeration value="Freezing rain" />
+      <xs:enumeration value="Heavy rain" />
+      <xs:enumeration value="Ice" />
+      <xs:enumeration value="Light rain" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Snow" />
+      <xs:enumeration value="Sundown" />
+      <xs:enumeration value="Sunny" />
+      <xs:enumeration value="Sunrise" />
+      <xs:enumeration value="Unsafe Conditions" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="WeatherConditionsCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates valid weather conditions appearing on citations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CLEAR" />
+      <xs:enumeration value="CLOUD" />
+      <xs:enumeration value="FOG" />
+      <xs:enumeration value="FREEZE" />
+      <xs:enumeration value="HRAIN" />
+      <xs:enumeration value="ICE" />
+      <xs:enumeration value="LRAIN" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="SNOW" />
+      <xs:enumeration value="SUND" />
+      <xs:enumeration value="SUN" />
+      <xs:enumeration value="SUNR" />
+      <xs:enumeration value="UNSAFE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="WeatherConditionsCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="WeatherConditionsType">
+        <xs:attribute name="code" type="WeatherConditionsCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

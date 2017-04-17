@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2009-07-22T12:04:24</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="AmendmentReasonCriminalDispositionType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Reasons for Amending a criminal disposition</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Additional order" />
+      <xs:enumeration value="Amend" />
+      <xs:enumeration value="Amended complaint" />
+      <xs:enumeration value="Appeals Court Reversal" />
+      <xs:enumeration value="Conditions met" />
+      <xs:enumeration value="Court Order" />
+      <xs:enumeration value="Defense Motion Granted" />
+      <xs:enumeration value="Pardoned" />
+      <xs:enumeration value="Probation Violation" />
+      <xs:enumeration value="Reduced" />
+      <xs:enumeration value="Revocation" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AmendmentReasonCriminalDispositionTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Reasons for Amending a criminal disposition</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ADD" />
+      <xs:enumeration value="AMEND" />
+      <xs:enumeration value="AMENDC" />
+      <xs:enumeration value="APREVERS" />
+      <xs:enumeration value="CONDMET" />
+      <xs:enumeration value="CTORDER" />
+      <xs:enumeration value="MOTGRANT" />
+      <xs:enumeration value="PARD" />
+      <xs:enumeration value="PROBVIOL" />
+      <xs:enumeration value="RED" />
+      <xs:enumeration value="REV" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="AmendmentReasonCriminalDispositionTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="AmendmentReasonCriminalDispositionType">
+        <xs:attribute name="code" type="AmendmentReasonCriminalDispositionTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

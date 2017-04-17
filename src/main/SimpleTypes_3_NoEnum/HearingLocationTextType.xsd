@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-04-06T02:58:49</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="HearingLocationTextType">
+    <xs:annotation>
+      <xs:documentation>
+                                                        Enumerated List of courtroom names.
+                                                        Uses courtORIs attribute to identify associated courts.
+                                                </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="HearingLocationCodeType">
+    <xs:annotation>
+      <xs:documentation>
+                                                        Enumerated List of courtroom names.
+                                                        Uses courtORIs attribute to identify associated courts.
+                                                </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="HearingLocationCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="HearingLocationTextType">
+        <xs:attribute name="code" type="HearingLocationCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

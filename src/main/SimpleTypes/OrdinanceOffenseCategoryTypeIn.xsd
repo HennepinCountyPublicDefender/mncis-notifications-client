@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-12-20T11:03:43</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="OrdinanceOffenseCategoryType">
+    <xs:annotation>
+      <xs:documentation>Enumeration of values that are used to specify a category for an ordinance offense associated with a charge that is available for sumissions. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ABANDMV" />
+      <xs:enumeration value="ABANDMVCO" />
+      <xs:enumeration value="AIRPORT" />
+      <xs:enumeration value="AIRPORTCO" />
+      <xs:enumeration value="ALCOHOL" />
+      <xs:enumeration value="ALCOHOLCO" />
+      <xs:enumeration value="ANIMAL" />
+      <xs:enumeration value="ANIMALCO" />
+      <xs:enumeration value="COMMERC" />
+      <xs:enumeration value="COMMERCCO" />
+      <xs:enumeration value="CURFEW" />
+      <xs:enumeration value="CURFEWCO" />
+      <xs:enumeration value="DRUG" />
+      <xs:enumeration value="DRUGCO" />
+      <xs:enumeration value="FIRE" />
+      <xs:enumeration value="FIRECO" />
+      <xs:enumeration value="GARBAGE" />
+      <xs:enumeration value="GARBAGECO" />
+      <xs:enumeration value="HOUSING" />
+      <xs:enumeration value="HOUSINGCO" />
+      <xs:enumeration value="LMCD" />
+      <xs:enumeration value="NOISE" />
+      <xs:enumeration value="NOISECO" />
+      <xs:enumeration value="NONMOVE" />
+      <xs:enumeration value="NONMOVECO" />
+      <xs:enumeration value="OFFCON" />
+      <xs:enumeration value="OFFCONCO" />
+      <xs:enumeration value="PARK" />
+      <xs:enumeration value="PARKCO" />
+      <xs:enumeration value="PARKCURF" />
+      <xs:enumeration value="PARKING" />
+      <xs:enumeration value="PARKINGCO" />
+      <xs:enumeration value="PED" />
+      <xs:enumeration value="PEDCO" />
+      <xs:enumeration value="POLICE" />
+      <xs:enumeration value="POLICECO" />
+      <xs:enumeration value="REC" />
+      <xs:enumeration value="RECCO" />
+      <xs:enumeration value="SANITARY" />
+      <xs:enumeration value="THEFT" />
+      <xs:enumeration value="THEFTCO" />
+      <xs:enumeration value="TOBACCO" />
+      <xs:enumeration value="TOBACCOCO" />
+      <xs:enumeration value="TRAFFIC" />
+      <xs:enumeration value="TRAFFICCO" />
+      <xs:enumeration value="WBLCD" />
+      <xs:enumeration value="WEAPON" />
+      <xs:enumeration value="WEAPONCO" />
+      <xs:enumeration value="ZONING" />
+      <xs:enumeration value="ZONINGCO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

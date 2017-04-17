@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-02-28T03:40:47</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="FinancialCategoryTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated financial categories.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bond" />
+      <xs:enumeration value="Case Fines and Fees" />
+      <xs:enumeration value="Draw Down Financial Account" />
+      <xs:enumeration value="Fines and Fees" />
+      <xs:enumeration value="Miscellaneous Fees" />
+      <xs:enumeration value="Registry" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="FinancialCategoryCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated financial categories.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BAILBOND" />
+      <xs:enumeration value="CASEFEES" />
+      <xs:enumeration value="DDFINCAT" />
+      <xs:enumeration value="FINES" />
+      <xs:enumeration value="MISC" />
+      <xs:enumeration value="TRUST" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="FinancialCategoryCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="FinancialCategoryTextType">
+        <xs:attribute name="code" type="FinancialCategoryCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

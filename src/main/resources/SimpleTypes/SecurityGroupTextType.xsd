@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-08-22T05:06:52</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="SecurityGroupTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of security groups.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Confidential" />
+      <xs:enumeration value="Confidential1" />
+      <xs:enumeration value="Confidential2" />
+      <xs:enumeration value="ConfidentialX" />
+      <xs:enumeration value="Delete Case - Clerical Error" />
+      <xs:enumeration value="Expunged" />
+      <xs:enumeration value="Expunged1" />
+      <xs:enumeration value="ExpungedX" />
+      <xs:enumeration value="Pending Probable Cause" />
+      <xs:enumeration value="Restricted" />
+      <xs:enumeration value="Sealed" />
+      <xs:enumeration value="Sealed1" />
+      <xs:enumeration value="SealedX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SecurityGroupCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of security groups.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CONF" />
+      <xs:enumeration value="CONF1" />
+      <xs:enumeration value="CONF2" />
+      <xs:enumeration value="CONFX" />
+      <xs:enumeration value="DELETE" />
+      <xs:enumeration value="EXPUNGE" />
+      <xs:enumeration value="EXPUNGE1" />
+      <xs:enumeration value="EXPUNGEX" />
+      <xs:enumeration value="PROBCAUSE" />
+      <xs:enumeration value="RESTRICT" />
+      <xs:enumeration value="SEAL" />
+      <xs:enumeration value="SEAL1" />
+      <xs:enumeration value="SEALX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SecurityGroupCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="SecurityGroupTextType">
+        <xs:attribute name="code" type="SecurityGroupCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

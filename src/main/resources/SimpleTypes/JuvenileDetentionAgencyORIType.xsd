@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-04-20T09:01:21</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JuvenileDetentionAgencyORIType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Probation Agency Identifiers</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MN002015C" />
+      <xs:enumeration value="MN002043C" />
+      <xs:enumeration value="MN004023C" />
+      <xs:enumeration value="MN008023C" />
+      <xs:enumeration value="MN010023C" />
+      <xs:enumeration value="MN014023C" />
+      <xs:enumeration value="MN018023C" />
+      <xs:enumeration value="MN025015C" />
+      <xs:enumeration value="MN027023C" />
+      <xs:enumeration value="MN027033C" />
+      <xs:enumeration value="MN031015C" />
+      <xs:enumeration value="MN034023C" />
+      <xs:enumeration value="MN055015C" />
+      <xs:enumeration value="MN055023C" />
+      <xs:enumeration value="MN060043C" />
+      <xs:enumeration value="MN062033C" />
+      <xs:enumeration value="MN062043C" />
+      <xs:enumeration value="MN062063C" />
+      <xs:enumeration value="MN069033C" />
+      <xs:enumeration value="MN082014C" />
+      <xs:enumeration value="MN996200C" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

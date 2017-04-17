@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-02T11:00:02</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BondNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Bonds</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BondAdded" />
+      <xs:enumeration value="BondDeleted" />
+      <xs:enumeration value="BondLinkedToCase" />
+      <xs:enumeration value="BondModified" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-12-20T11:03:42</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="OrdinanceOffenseCategoryType">
+    <xs:annotation>
+      <xs:documentation>Enumeration of values that are used to specify a category for an ordinance offense associated with a charge.
+                        SimpleType Companion Associated values include:
+                                                        SeverityLevelText: The severity level or degree value(s) associated with this ordinance.
+                        </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ABANDMV" />
+      <xs:enumeration value="ABANDMVCO" />
+      <xs:enumeration value="AIRPORT" />
+      <xs:enumeration value="AIRPORTCO" />
+      <xs:enumeration value="ALCOHOL" />
+      <xs:enumeration value="ALCOHOLCO" />
+      <xs:enumeration value="ALCTOB" />
+      <xs:enumeration value="ANIMAL" />
+      <xs:enumeration value="ANIMALCO" />
+      <xs:enumeration value="BENTDOG" />
+      <xs:enumeration value="BENTEXHIB" />
+      <xs:enumeration value="BENTPARK" />
+      <xs:enumeration value="BENTSNOW" />
+      <xs:enumeration value="CACODOG" />
+      <xs:enumeration value="CACOEXHIB" />
+      <xs:enumeration value="CACOPARK" />
+      <xs:enumeration value="CACOSNOW" />
+      <xs:enumeration value="CARVDOG" />
+      <xs:enumeration value="CARVEXHIB" />
+      <xs:enumeration value="CARVPARK" />
+      <xs:enumeration value="CARVSNOW" />
+      <xs:enumeration value="CHANDOG" />
+      <xs:enumeration value="CHANEXHIB" />
+      <xs:enumeration value="CHANPARK" />
+      <xs:enumeration value="CHANSNOW" />
+      <xs:enumeration value="CHASDOG" />
+      <xs:enumeration value="CHASEXHIB" />
+      <xs:enumeration value="CHASPARK" />
+      <xs:enumeration value="CHASSNOW" />
+      <xs:enumeration value="COLODOG" />
+      <xs:enumeration value="COLOEXHIB" />
+      <xs:enumeration value="COLOPARK" />
+      <xs:enumeration value="COLOSNOW" />
+      <xs:enumeration value="COMMERC" />
+      <xs:enumeration value="COMMERCCO" />
+      <xs:enumeration value="COUNDOG" />
+      <xs:enumeration value="COUNEXHIB" />
+      <xs:enumeration value="COUNPARK" />
+      <xs:enumeration value="COUNSNOW" />
+      <xs:enumeration value="CURFEW" />
+      <xs:enumeration value="CURFEWCO" />
+      <xs:enumeration value="DAHLDOG" />
+      <xs:enumeration value="DAHLEXHIB" />
+      <xs:enumeration value="DAHLPARK" />
+      <xs:enumeration value="DAHLSNOW" />
+      <xs:enumeration value="DRUG" />
+      <xs:enumeration value="DRUGCO" />
+      <xs:enumeration value="ELSE" />
+      <xs:enumeration value="EXHIBDRV" />
+      <xs:enumeration value="FIRE" />
+      <xs:enumeration value="FIRECO" />
+      <xs:enumeration value="GARBAGE" />
+      <xs:enumeration value="GARBAGECO" />
+      <xs:enumeration value="GLASSCONT" />
+      <xs:enumeration value="HAMBDOG" />
+      <xs:enumeration value="HAMBEXHIB" />
+      <xs:enumeration value="HAMBPARK" />
+      <xs:enumeration value="HAMBSNOW" />
+      <xs:enumeration value="HOUSING" />
+      <xs:enumeration value="HOUSINGCO" />
+      <xs:enumeration value="LAKEDOG" />
+      <xs:enumeration value="LAKEEXHIB" />
+      <xs:enumeration value="LAKEPARK" />
+      <xs:enumeration value="LAKESNOW" />
+      <xs:enumeration value="LMCD" />
+      <xs:enumeration value="MAYEDOG" />
+      <xs:enumeration value="MAYEEXHIB" />
+      <xs:enumeration value="MAYEPARK" />
+      <xs:enumeration value="MAYESNOW" />
+      <xs:enumeration value="NEWGDOG" />
+      <xs:enumeration value="NEWGEXHIB" />
+      <xs:enumeration value="NEWGPARK" />
+      <xs:enumeration value="NEWGSNOW" />
+      <xs:enumeration value="NOISE" />
+      <xs:enumeration value="NOISECO" />
+      <xs:enumeration value="NONMOVE" />
+      <xs:enumeration value="NONMOVECO" />
+      <xs:enumeration value="NORWDOG" />
+      <xs:enumeration value="NORWEXHIB" />
+      <xs:enumeration value="NORWPARK" />
+      <xs:enumeration value="NORWSNOW" />
+      <xs:enumeration value="OFFCON" />
+      <xs:enumeration value="OFFCONCO" />
+      <xs:enumeration value="ORD" />
+      <xs:enumeration value="PARK" />
+      <xs:enumeration value="PARKCO" />
+      <xs:enumeration value="PARKCURF" />
+      <xs:enumeration value="PARKING" />
+      <xs:enumeration value="PARKINGCO" />
+      <xs:enumeration value="PARKPERM" />
+      <xs:enumeration value="PED" />
+      <xs:enumeration value="PEDCO" />
+      <xs:enumeration value="PKPERM" />
+      <xs:enumeration value="POLICE" />
+      <xs:enumeration value="POLICECO" />
+      <xs:enumeration value="REC" />
+      <xs:enumeration value="RECCO" />
+      <xs:enumeration value="RENTAL" />
+      <xs:enumeration value="SANITARY" />
+      <xs:enumeration value="SNOWBIRD" />
+      <xs:enumeration value="THEFT" />
+      <xs:enumeration value="THEFTCO" />
+      <xs:enumeration value="THREDOG" />
+      <xs:enumeration value="THREEXIB" />
+      <xs:enumeration value="THREPARK" />
+      <xs:enumeration value="THRESNOW" />
+      <xs:enumeration value="TOBACCO" />
+      <xs:enumeration value="TOBACCOCO" />
+      <xs:enumeration value="TRAFFIC" />
+      <xs:enumeration value="TRAFFICCO" />
+      <xs:enumeration value="TWSPORD" />
+      <xs:enumeration value="VEHICLE" />
+      <xs:enumeration value="VICTDOG" />
+      <xs:enumeration value="VICTEXHIB" />
+      <xs:enumeration value="VICTPARK" />
+      <xs:enumeration value="VICTSNOW" />
+      <xs:enumeration value="WACODOG" />
+      <xs:enumeration value="WACOEXHIB" />
+      <xs:enumeration value="WACOPARK" />
+      <xs:enumeration value="WACOSNOW" />
+      <xs:enumeration value="WATEDOG" />
+      <xs:enumeration value="WATEEXHIB" />
+      <xs:enumeration value="WATEPARK" />
+      <xs:enumeration value="WATESNOW" />
+      <xs:enumeration value="WBLCD" />
+      <xs:enumeration value="WEAPON" />
+      <xs:enumeration value="WEAPONCO" />
+      <xs:enumeration value="ZONING" />
+      <xs:enumeration value="ZONINGCO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

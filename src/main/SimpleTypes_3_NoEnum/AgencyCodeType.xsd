@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-05-23T10:03:43</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="AgencyCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Agency Identifiers (includes some agency identifiers that are not acutal ORI's since not all agencies have an ORI</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-03-28T01:39:43</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="ProsecutorORIType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Prosecution Agency Identifiers used on inbound (case update) messages.   Requires that the agency has an ORI assigned. An exception is city attorney offices from Washington County. They do not have ORIs, but their codes that start with CA82 are included here.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

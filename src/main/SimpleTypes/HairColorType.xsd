@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-02-28T08:06:07</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="HairColorType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Hair Colors</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bald" />
+      <xs:enumeration value="Black" />
+      <xs:enumeration value="Blond or Strawberry" />
+      <xs:enumeration value="Blue" />
+      <xs:enumeration value="Brown" />
+      <xs:enumeration value="Green" />
+      <xs:enumeration value="Grey or Partially Grey" />
+      <xs:enumeration value="Orange" />
+      <xs:enumeration value="Pink" />
+      <xs:enumeration value="Purple" />
+      <xs:enumeration value="Red or Auburn" />
+      <xs:enumeration value="Sandy" />
+      <xs:enumeration value="Unknown or Bald" />
+      <xs:enumeration value="White" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HairColorTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Hair Colors</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BLD" />
+      <xs:enumeration value="BLK" />
+      <xs:enumeration value="BLN" />
+      <xs:enumeration value="BLU" />
+      <xs:enumeration value="BRO" />
+      <xs:enumeration value="GRN" />
+      <xs:enumeration value="GRY" />
+      <xs:enumeration value="ONG" />
+      <xs:enumeration value="PNK" />
+      <xs:enumeration value="PLE" />
+      <xs:enumeration value="RED" />
+      <xs:enumeration value="SDY" />
+      <xs:enumeration value="XXX" />
+      <xs:enumeration value="WHI" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="HairColorTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="HairColorType">
+        <xs:attribute name="code" type="HairColorTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

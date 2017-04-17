@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:00:04</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CaseInitiationCriminalNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Criminal Case Initiations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CaseInitiationFamilyNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Family Case Initiations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CaseDetailsNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with case detail changes</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CaseSecurityNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with case security</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ChargeNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with non disposed charges</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ChargeDispositionNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with disposed charges</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CourtDecisionNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with court decisions</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="JuvenileInterimPlacementNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with juvenile interim placements</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="InterimConditionsNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with interim conditions</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="HearingTrialSettingNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with hearings</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="WarrantNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with warrants</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="SubjectPartyNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with the primary (subject) parties on a case</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ProbationOrderNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Probation Orders</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="AgencyNotesNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Agency Notes</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="TransportNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Transport</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="NoContactOrderNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with no contact orders</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CustodyReleaseOrderNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with custody release orders</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="OtherAgencyCrossReferenceNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with other agency cross reference numbers.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

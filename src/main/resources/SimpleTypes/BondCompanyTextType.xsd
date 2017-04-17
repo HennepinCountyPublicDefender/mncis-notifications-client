@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2012-04-02T07:03:26</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BondCompanyTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of bond companies.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1 800 Bail 4 Jail (dba: Guaranteed Freedom Bail Bonds)" />
+      <xs:enumeration value="1st Liberty Bail Bonds" />
+      <xs:enumeration value="24 Hour Bail Bonds" />
+      <xs:enumeration value="A Bail Bond" />
+      <xs:enumeration value="A-1 Bail Bonds" />
+      <xs:enumeration value="A-1 Bail Bonds(2)" />
+      <xs:enumeration value="A-ABC Discount Bail Bond" />
+      <xs:enumeration value="A-Affordable Bail Bonds" />
+      <xs:enumeration value="A-Alliance Bail Bonds, Inc." />
+      <xs:enumeration value="AA-1 Bail Bonds" />
+      <xs:enumeration value="AA-A Positive Bailbond" />
+      <xs:enumeration value="AAA Action Bonding" />
+      <xs:enumeration value="AAAA Bail Bonds, Inc." />
+      <xs:enumeration value="Ability Bonding Company, Inc." />
+      <xs:enumeration value="Above and Beyond Bonding" />
+      <xs:enumeration value="Absolute Bail Bonds Company" />
+      <xs:enumeration value="Accepted Bail Bonds, Inc" />
+      <xs:enumeration value="Ace Bail Bonds, LLC" />
+      <xs:enumeration value="Acme Bail Bonds, LLC" />
+      <xs:enumeration value="All Out Bail Bonds" />
+      <xs:enumeration value="Allstate Bonding" />
+      <xs:enumeration value="American Bail Bonds" />
+      <xs:enumeration value="AnyTime Bail Bonds, Inc." />
+      <xs:enumeration value="Area Bail Bonds" />
+      <xs:enumeration value="ASAP Bail Bonds" />
+      <xs:enumeration value="Assurance Bail Bonds, LLC" />
+      <xs:enumeration value="Assured Bond Service" />
+      <xs:enumeration value="Bail Bond Specialists, Inc." />
+      <xs:enumeration value="Bail Bonds" />
+      <xs:enumeration value="Bail Bonds by Randy" />
+      <xs:enumeration value="Bail Bonds by Serbus" />
+      <xs:enumeration value="Bail Master Bail Bond Co" />
+      <xs:enumeration value="Bail USA" />
+      <xs:enumeration value="Bailmaster Bail Bond Company" />
+      <xs:enumeration value="Bailout Bonding Company, Inc." />
+      <xs:enumeration value="Bartsh Bail Bonds" />
+      <xs:enumeration value="Best Source Bonding" />
+      <xs:enumeration value="Brett Bond Bail Bonds" />
+      <xs:enumeration value="Brian Landstrom Bail Bonds" />
+      <xs:enumeration value="Burris Bail Bonds" />
+      <xs:enumeration value="Capital Bonding Corp" />
+      <xs:enumeration value="Cassandra Bonding" />
+      <xs:enumeration value="Central Bonding Company" />
+      <xs:enumeration value="Cochran and Associates" />
+      <xs:enumeration value="Court Bonding Corporation" />
+      <xs:enumeration value="D and R Bonding Company" />
+      <xs:enumeration value="Dobmeier, Inc" />
+      <xs:enumeration value="DUI Bail Bonds" />
+      <xs:enumeration value="East Central Bail Bonds" />
+      <xs:enumeration value="Empire Fire and Marine Insurance" />
+      <xs:enumeration value="Empire Fire and Marine Insurance Co" />
+      <xs:enumeration value="Express Bail Bond Co" />
+      <xs:enumeration value="EZ Bail Bond" />
+      <xs:enumeration value="Farsdale Best Bonding" />
+      <xs:enumeration value="Freaky Fast Bail Bonds" />
+      <xs:enumeration value="Freedom Bail Bonds" />
+      <xs:enumeration value="Goldberg Bonding" />
+      <xs:enumeration value="Grande Bail Bond Corp" />
+      <xs:enumeration value="Greater Midwest Bail Bonds" />
+      <xs:enumeration value="Griffin Bail Bonds" />
+      <xs:enumeration value="Guaranteed Freedom Bail Bonds (aka: 1 800 Bail 4 Jail)" />
+      <xs:enumeration value="Gustafson Bail Bonds" />
+      <xs:enumeration value="Howe Bonding" />
+      <xs:enumeration value="Hudson Bail Bonds" />
+      <xs:enumeration value="Integrity Bonding" />
+      <xs:enumeration value="Interstate Bonding Co" />
+      <xs:enumeration value="Iowa Bail Bond Surety Company" />
+      <xs:enumeration value="Joshua A. Serbus" />
+      <xs:enumeration value="Lexington National Ins. Corp" />
+      <xs:enumeration value="Liberty Bonding Agency Inc" />
+      <xs:enumeration value="Martinson Bonding" />
+      <xs:enumeration value="Merk, Inc." />
+      <xs:enumeration value="Metro Bonding Service" />
+      <xs:enumeration value="Midwest Bonding" />
+      <xs:enumeration value="Minnesota Bonding" />
+      <xs:enumeration value="Minnesota Lawyers Mutual Insurance Company of Minneapolis" />
+      <xs:enumeration value="Minnesota Surety and Trust Company" />
+      <xs:enumeration value="Nick Miller Bail Bonds" />
+      <xs:enumeration value="Northstar Bail Bonds, Inc." />
+      <xs:enumeration value="Old Republic Surety Group" />
+      <xs:enumeration value="On-Call 24/7 Bail Bonds" />
+      <xs:enumeration value="Parkin Bonding Service" />
+      <xs:enumeration value="Peart and Associates Bail Bonds" />
+      <xs:enumeration value="Rhino Bail Bonds" />
+      <xs:enumeration value="Speedy Release Bail Bonds" />
+      <xs:enumeration value="Stubstad Insurance and Bonding Agency" />
+      <xs:enumeration value="Sun Surety" />
+      <xs:enumeration value="Thomes Bail Bonds Incorporated" />
+      <xs:enumeration value="UNKNOWN" />
+      <xs:enumeration value="Vanguard Bail Bonds" />
+      <xs:enumeration value="Western Bonding Inc" />
+      <xs:enumeration value="Wolverine Bail Bonds" />
+      <xs:enumeration value="You Walk Bail Bonds" />
+      <xs:enumeration value="Young Bonding" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

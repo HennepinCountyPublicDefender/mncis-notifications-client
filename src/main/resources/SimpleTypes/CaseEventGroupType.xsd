@@ -1,0 +1,2725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="CaseEventGroupType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="6-Month Report"/>
+			<xs:enumeration value="60-90 Day Commitment Report"/>
+			<xs:enumeration value="Acceptance &amp; Oath"/>
+			<xs:enumeration value="Acceptance of Appointment and Oath"/>
+			<xs:enumeration value="Acceptance Testamentary Appoint-Pet for Ltrs of Guardianship"/>
+			<xs:enumeration value="ACF-Filed as Adult Certification">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Acknowledgement of Rights"/>
+			<xs:enumeration value="ACN-Application">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-12T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ACO-Acceptance &amp; Oath">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Activity Child-Support">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Activity Non-Child Support">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Administrative Dissolution Denied">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Admit"/>
+			<xs:enumeration value="Adoptee&apos;s List of Assets"/>
+			<xs:enumeration value="Adoption Report"/>
+			<xs:enumeration value="ADR Held - Not Resolved">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Adult Certification Denied"/>
+			<xs:enumeration value="Adult Certification Granted"/>
+			<xs:enumeration value="Adult Certification Removed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-09-26T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Adult Certification Withdrawn"/>
+			<xs:enumeration value="AEJ-Adult Sentence Invoked">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AFF-Affidavit">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Affidavit and Motion to Modify Order for Protection"/>
+			<xs:enumeration value="Affidavit and Order for Dismissal"/>
+			<xs:enumeration value="Affidavit and Order for Publication or Alternate Service"/>
+			<xs:enumeration value="Affidavit and Order to Appear for Contempt"/>
+			<xs:enumeration value="Affidavit and Order to Show Cause for Contempt"/>
+			<xs:enumeration value="Affidavit for Escrow of Rent"/>
+			<xs:enumeration value="Affidavit for Expungement"/>
+			<xs:enumeration value="Affidavit for Proceeding In Forma Pauperis"/>
+			<xs:enumeration value="Affidavit for Reimbursement of Public Assistance"/>
+			<xs:enumeration value="Affidavit for Restitution"/>
+			<xs:enumeration value="Affidavit in Support of Order to Show Cause"/>
+			<xs:enumeration value="Affidavit of Custodial Parent"/>
+			<xs:enumeration value="Affidavit of Default"/>
+			<xs:enumeration value="Affidavit of Identification of Judgment Debtor"/>
+			<xs:enumeration value="Affidavit of Mailing"/>
+			<xs:enumeration value="Affidavit of No Answer"/>
+			<xs:enumeration value="Affidavit of No Answer, ID, Non-Military Status &amp; Amt Due"/>
+			<xs:enumeration value="Affidavit of Non-Custodial Parent"/>
+			<xs:enumeration value="Affidavit of Non-Military Status"/>
+			<xs:enumeration value="Affidavit of Prejudice"/>
+			<xs:enumeration value="Affidavit of Prior Background"/>
+			<xs:enumeration value="Affidavit of Publication"/>
+			<xs:enumeration value="Affidavit of Service"/>
+			<xs:enumeration value="Affidavit Supporting Application Modification-Child Support"/>
+			<xs:enumeration value="Affidavit to Appear for Contempt"/>
+			<xs:enumeration value="Affidavit-Other"/>
+			<xs:enumeration value="AFP-Affidavit of Prejudice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AGM-Child Support Agreement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Agreement"/>
+			<xs:enumeration value="AIE-Assigned in Error">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AJU-Adjudicated">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Alford Plea"/>
+			<xs:enumeration value="ALJ-Adminstrative Law Judge">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Allegation of Reason for Omitting Party"/>
+			<xs:enumeration value="Alternative Informational Statement"/>
+			<xs:enumeration value="AMC-Amended Crime">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Amended Criminal Complaint"/>
+			<xs:enumeration value="Amended Judgment Docketed"/>
+			<xs:enumeration value="Amended Judgment Entered"/>
+			<xs:enumeration value="Amended Judgment Entered and Docketed"/>
+			<xs:enumeration value="Amended Juvenile Petition">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-10T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Amended Letters"/>
+			<xs:enumeration value="Amended Motion"/>
+			<xs:enumeration value="Amended Order"/>
+			<xs:enumeration value="Amended Petition"/>
+			<xs:enumeration value="Amended Summons and Complaint"/>
+			<xs:enumeration value="AMN-Amendment Filed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Annual Notice of Rights"/>
+			<xs:enumeration value="Annual Notice of Rights [R]"/>
+			<xs:enumeration value="Annual/Periodic Accounting"/>
+			<xs:enumeration value="ANR-Annual Notice of Rights">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ANS-Answer Filed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Answer"/>
+			<xs:enumeration value="Answer and Counterpetition"/>
+			<xs:enumeration value="Answer Presenting Defenses Under Rule 12.02"/>
+			<xs:enumeration value="Answers to Interrogatories"/>
+			<xs:enumeration value="AOM-Affidavit of Mailing">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AOR-Acknowledgement of Rights">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Appeal Denied"/>
+			<xs:enumeration value="Appeal on Active Case"/>
+			<xs:enumeration value="Appeal Review"/>
+			<xs:enumeration value="Appellate Court Order"/>
+			<xs:enumeration value="Appl for Inf Probate of Will and Appointment of Personal Rep"/>
+			<xs:enumeration value="Appl for Informal Appointment of Personal Representative"/>
+			<xs:enumeration value="Appl to Enter a Guilty Plea in Juvenile Delinquency Cases"/>
+			<xs:enumeration value="Application"/>
+			<xs:enumeration value="Application - Extension Determination Prob Cause to Detain"/>
+			<xs:enumeration value="Application for Court Appointed Attorney"/>
+			<xs:enumeration value="Application for Discharge of Judgment(s)"/>
+			<xs:enumeration value="Application for Extension of Order for Protection"/>
+			<xs:enumeration value="Application for Informal Probate of Will"/>
+			<xs:enumeration value="Application for Name Change"/>
+			<xs:enumeration value="Application for Public Defender"/>
+			<xs:enumeration value="Application for Reimbursement of Witness Expenses"/>
+			<xs:enumeration value="Application for Temporary Relief"/>
+			<xs:enumeration value="Appraisal"/>
+			<xs:enumeration value="APR-Appeal Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Arbitrator&apos;s Award-ADR"/>
+			<xs:enumeration value="ARC-Archive">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ARW-Review for Archiving">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Assessment/Evaluation Report"/>
+			<xs:enumeration value="Assessor&apos;s Market Valuation"/>
+			<xs:enumeration value="Assignment of Bail"/>
+			<xs:enumeration value="Assignment of Judgment"/>
+			<xs:enumeration value="ASX-Executed Adult Sentence">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AUD-Pass to Auditor">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Auditor&apos;s Report">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-09-26T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Augmented Estate Computation"/>
+			<xs:enumeration value="Bail Study"/>
+			<xs:enumeration value="BAL-Total Cash Bail">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Bankruptcy"/>
+			<xs:enumeration value="BCA Report"/>
+			<xs:enumeration value="BDR-Bond Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BFT-Bail Forfeited">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Bill of Particulars"/>
+			<xs:enumeration value="BND-Bond">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BNK-Bankruptcy">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Bond"/>
+			<xs:enumeration value="Bond Premium Receipt"/>
+			<xs:enumeration value="BPR-Bond Premium Receipt">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Briefs"/>
+			<xs:enumeration value="Case Closed"/>
+			<xs:enumeration value="Case Consolidated"/>
+			<xs:enumeration value="Case Filed"/>
+			<xs:enumeration value="Case Filing Sent to Criminal History System"/>
+			<xs:enumeration value="Case Information Sheet"/>
+			<xs:enumeration value="Case Merged"/>
+			<xs:enumeration value="Case Remanded"/>
+			<xs:enumeration value="Case Review"/>
+			<xs:enumeration value="Case Separated"/>
+			<xs:enumeration value="Case Withdrawn from Arbitration"/>
+			<xs:enumeration value="CBL-10% Cash Bail">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Certificate of Attendance-class"/>
+			<xs:enumeration value="Certificate of Conviction-DPS"/>
+			<xs:enumeration value="Certificate of Conviction-Liquor License Violation"/>
+			<xs:enumeration value="Certificate of Conviction-Professional Licensing Boards"/>
+			<xs:enumeration value="Certificate of Non-Readiness"/>
+			<xs:enumeration value="Certificate of Prior Conviction"/>
+			<xs:enumeration value="Certificate of Readiness"/>
+			<xs:enumeration value="Certificate of Receipt of Transcript-Appellate Court"/>
+			<xs:enumeration value="Certificate of Registrar"/>
+			<xs:enumeration value="Certificate of Representation"/>
+			<xs:enumeration value="Certificate on Notice of Removal/Affidavit of Prejudice"/>
+			<xs:enumeration value="Certification of Court Record"/>
+			<xs:enumeration value="Certification of Discharge of Judgment(s)"/>
+			<xs:enumeration value="Certified Appraisal"/>
+			<xs:enumeration value="Certified Copy of Birth Certificate"/>
+			<xs:enumeration value="Certified Copy of Death Certificate"/>
+			<xs:enumeration value="Certified Copy of Death Certificate-Biological Parent"/>
+			<xs:enumeration value="Certified Copy of Divorce Decree"/>
+			<xs:enumeration value="Certified Copy of Foreign Decree"/>
+			<xs:enumeration value="Certified Copy of Order of Appointment of Trustee"/>
+			<xs:enumeration value="Certify Personal Service"/>
+			<xs:enumeration value="Certify Unserved Process"/>
+			<xs:enumeration value="CFE-Lawyer/Court Files-Exhibits">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CHA-Child Added">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Change of Decision Concerning Claim"/>
+			<xs:enumeration value="Change of Status Report"/>
+			<xs:enumeration value="Change of Venue From"/>
+			<xs:enumeration value="Change of Venue not Accepted"/>
+			<xs:enumeration value="Change of Venue To"/>
+			<xs:enumeration value="Chemical Dependency Evaluation Report"/>
+			<xs:enumeration value="Child Support Agreement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-07-24T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CIT-Citation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Citation"/>
+			<xs:enumeration value="Claims Due"/>
+			<xs:enumeration value="CLO-Closed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CLR-Clerical">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CNR-Certificate of Non-Readiness">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="COD-Codicil">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Codicil"/>
+			<xs:enumeration value="COL-Collections Officer">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Collection Account Manager"/>
+			<xs:enumeration value="Combined Motion"/>
+			<xs:enumeration value="Commissioner Exhibit"/>
+			<xs:enumeration value="Commissioners Appointed"/>
+			<xs:enumeration value="Competency Report"/>
+			<xs:enumeration value="Complaint Summons"/>
+			<xs:enumeration value="Complaint Warrant"/>
+			<xs:enumeration value="Complaint-Civil"/>
+			<xs:enumeration value="Complaint-Order for Detention"/>
+			<xs:enumeration value="Complex Assignment"/>
+			<xs:enumeration value="CON-Consolidated">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Confession of Judgment"/>
+			<xs:enumeration value="Confidential Information Form 11"/>
+			<xs:enumeration value="Consensual Special Magistrate"/>
+			<xs:enumeration value="Consent of Adult-Adult Adoption"/>
+			<xs:enumeration value="Consent of Child Over Age 14"/>
+			<xs:enumeration value="Consent of Commissioner"/>
+			<xs:enumeration value="Consent to Accounting"/>
+			<xs:enumeration value="Consent to Adopt"/>
+			<xs:enumeration value="Consent to Criminal Background Check"/>
+			<xs:enumeration value="Consent to Discharge by Commissioner of Revenue"/>
+			<xs:enumeration value="Consent to Final Acct-Issuance of Decree-Order of Distrib"/>
+			<xs:enumeration value="Consent-Family Court"/>
+			<xs:enumeration value="Consent-Probate"/>
+			<xs:enumeration value="Consolidated Special Assignment"/>
+			<xs:enumeration value="Continued for Publication">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Action Taken on Delinquent Time Payment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-09T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Activities">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-08-16T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Adult Certification Failed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-10-21T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Cancelled Activity">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted CHIPS Charge">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Defendant Status">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Documents">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-08-16T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Domestic Abuse">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Driver License Reinstatement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Driver License Suspension">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted EJJ Case-Youth Serving Adult Sentence">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-10-21T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted EJJ Case: Juvenile Serving Youth Sentence">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-10-21T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Export of Probate Document">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Filing Fee">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted ID of Time Payment Account Manager">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-09T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Judge Lock">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Jury Fee">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Juv Court Decision">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-01-30T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Juvenile Comment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Juvenile Petitioner">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-12-03T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Non-TCIS Master Case#">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Number of Continuances">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-12-03T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Other Race">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Participant Bail Amount">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-29T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Pending Activity"/>
+			<xs:enumeration value="Converted Pending Adjudication Activity">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-02-02T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Pending Submitted Activity">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-02-02T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Case Sub-Types">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-12-03T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Doc Status-Custodial">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Doc Status-Denied">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Doc Status-Exported">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Doc Status-Probated">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Doc Status-Safekeeping">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Doc Status-Uncertain">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Doc Status-Unprobated">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Doc Status-Withdrawn">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-01T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Probate Document">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Reference ID">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-02-26T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Results">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-08-16T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Revenue Recap Flag">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-09T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Service Date-Child Support">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted TCIS Foreign Driver License">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-09-17T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted TCIS Generated Attorney Information">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-09-17T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted TCIS History">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-12-19T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted TCIS Municipal Residence Code">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-09-17T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted TCIS Pre-Load Fine">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-29T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Transfer of Venue From">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-12-06T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Transfer of Venue To">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-21T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Witness Juror">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Converted Youth Resides With">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Conviction Certified to Criminal History Record"/>
+			<xs:enumeration value="Conviction Sent to DPS"/>
+			<xs:enumeration value="Copy of Foreign Adoption Decree"/>
+			<xs:enumeration value="COR-Certificate of Readiness">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Correspondence"/>
+			<xs:enumeration value="Counter Motion"/>
+			<xs:enumeration value="Counterclaim"/>
+			<xs:enumeration value="County Attorney Juvenile Intake Report"/>
+			<xs:enumeration value="Court Trial Concluded">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CPS-Certificate of Personal Service">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CPX-Complex Assignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Creditor&apos;s Objection to Exemption Claim"/>
+			<xs:enumeration value="Crime Victims Restitution Form"/>
+			<xs:enumeration value="Criminal History Disposition has been processed"/>
+			<xs:enumeration value="Criminal Judgment and Warrant of Commitment"/>
+			<xs:enumeration value="Cross Claim"/>
+			<xs:enumeration value="CRP-Certificate of Representation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CRS-Correspondence">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CSA-Consolidated Special Assignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CSF-Civil Scheduling Form">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CSR-Change of Status Report">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CST-Consent">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CUA-Chemical Use Assessment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CUP-Certified Unserved Process">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Current Events">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DCK-Docketing of Judgment Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DCL- Refuse Claim to Will">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DCM-Differentiated Case Management">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DCR-Decree">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DCS-Dismiss Child Support">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Death Certificate"/>
+			<xs:enumeration value="Decertification to DPS"/>
+			<xs:enumeration value="Declination"/>
+			<xs:enumeration value="Decree of Descent"/>
+			<xs:enumeration value="Decree-Civil"/>
+			<xs:enumeration value="Decree-Family Court"/>
+			<xs:enumeration value="Decree-Probate"/>
+			<xs:enumeration value="DED-Deadline">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Default Judgment Granted">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Default Scheduling Request"/>
+			<xs:enumeration value="DEL-Deliquent Time Payment Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Demand for Bond"/>
+			<xs:enumeration value="Demand for Evidentiary Hearing"/>
+			<xs:enumeration value="Demand for Judge"/>
+			<xs:enumeration value="Demand for Jury Trial"/>
+			<xs:enumeration value="Demand for Jury Trial"/>
+			<xs:enumeration value="Demand for Notice"/>
+			<xs:enumeration value="Demand for Removal to District Court"/>
+			<xs:enumeration value="Demand for Removal/Appeal"/>
+			<xs:enumeration value="Demand-Forfeiture of Motor Vehicle"/>
+			<xs:enumeration value="Demand-Forfeiture of Property"/>
+			<xs:enumeration value="Demand-Speedy Trial"/>
+			<xs:enumeration value="Demand-Trial"/>
+			<xs:enumeration value="Deny"/>
+			<xs:enumeration value="Departure Report"/>
+			<xs:enumeration value="Deposition of Witness to Will"/>
+			<xs:enumeration value="Designation as a Petty Misdemeanor"/>
+			<xs:enumeration value="DFN-Demand for Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DHS Background Check"/>
+			<xs:enumeration value="DHS-DHS Background Check">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Differentiated Case Management"/>
+			<xs:enumeration value="DIS-Dismissed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Discharge"/>
+			<xs:enumeration value="Discharge from Probation"/>
+			<xs:enumeration value="Disclaimer"/>
+			<xs:enumeration value="Disclaimer/Refuse Claim to Will"/>
+			<xs:enumeration value="Discovery Disclosure"/>
+			<xs:enumeration value="Dismiss Child Support Issue Order"/>
+			<xs:enumeration value="Dismissal by Prosecuting Attorney Pursuant to Rule 30.01"/>
+			<xs:enumeration value="Dismissal of Petition"/>
+			<xs:enumeration value="Distribution and Summary Decree"/>
+			<xs:enumeration value="Diversion Request"/>
+			<xs:enumeration value="DL Reinstated"/>
+			<xs:enumeration value="DL Suspend-Civ Judg No Insurance"/>
+			<xs:enumeration value="DL Suspend-Fail to Appear"/>
+			<xs:enumeration value="DL Suspend-Fail to Pay"/>
+			<xs:enumeration value="DL Suspend-Fail to Pay Child Support"/>
+			<xs:enumeration value="DL Suspend-Period of Time"/>
+			<xs:enumeration value="DLS-Drivers License Suspension Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DNR-Withdrawal of Demand for Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DOA-Dissolution without Appearance">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-21T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DOC-Document Filed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Domestic Abuse Evaluation Report"/>
+			<xs:enumeration value="DOR-Dormant">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DRV-ADR Status Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DSC-Held Dissent/Concur">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DSG-Discharge">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DSR-Default Scheduling Request">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Early Intervention Refiled"/>
+			<xs:enumeration value="Early Neutral Evaluation"/>
+			<xs:enumeration value="EIP-Early Intervention Petition">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EJF-Case Filed as EJJ">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EJJ Denied"/>
+			<xs:enumeration value="EJJ Granted"/>
+			<xs:enumeration value="EJJ Withdrawn"/>
+			<xs:enumeration value="ENJ-Entry Judgment Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Entry of Judgment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2005-03-23T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Evaluation Due[R]"/>
+			<xs:enumeration value="Examiner&apos;s Report"/>
+			<xs:enumeration value="Examiner&apos;s Report Distributed"/>
+			<xs:enumeration value="Examiner&apos;s Report in Support of Petition for Commitment"/>
+			<xs:enumeration value="EXH-Exhibits">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Exhibit List"/>
+			<xs:enumeration value="Exhibit Return Review"/>
+			<xs:enumeration value="EXP-Exported">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ExParte Motion"/>
+			<xs:enumeration value="ExParte Order"/>
+			<xs:enumeration value="ExParte Order for Protection"/>
+			<xs:enumeration value="Expedited Process"/>
+			<xs:enumeration value="Expungement Order"/>
+			<xs:enumeration value="EXR-Examiner&apos;s Report">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Extradition Document"/>
+			<xs:enumeration value="FAC-Final Accounting">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Facility Placement"/>
+			<xs:enumeration value="Fails Minnesota Legal Standards for Filing"/>
+			<xs:enumeration value="Family Law Facilitator Program"/>
+			<xs:enumeration value="FAR-Foster Care/Adoption Report">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FCR-Formal Complaint Request">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Fee Claim/Petition"/>
+			<xs:enumeration value="Felony Conviction Sent to Secretary of State"/>
+			<xs:enumeration value="Filed as Adult Certification"/>
+			<xs:enumeration value="Filed as Adult Certification - Non-Presumptive"/>
+			<xs:enumeration value="Filed as Adult Certification - Presumptive"/>
+			<xs:enumeration value="Filed as EJJ"/>
+			<xs:enumeration value="Final Accounting"/>
+			<xs:enumeration value="Final Accounting [R]"/>
+			<xs:enumeration value="Financial Disclosure Form"/>
+			<xs:enumeration value="Financial Institution Data Match"/>
+			<xs:enumeration value="Financial Transaction Sent to DNR"/>
+			<xs:enumeration value="Find of Fact-Order &amp; Pet Commitment-Dfd Found Incompetent"/>
+			<xs:enumeration value="Findings and Order"/>
+			<xs:enumeration value="Findings and Order for Discovery"/>
+			<xs:enumeration value="Findings and Order for Intrusive Treatment"/>
+			<xs:enumeration value="Findings and Order-Adoption"/>
+			<xs:enumeration value="Findings of Fact or Order to Transfer Custody"/>
+			<xs:enumeration value="Findings of Fact, Conclusions of Law and Order"/>
+			<xs:enumeration value="Findings, Order, Judgment and Decree-Dissolution"/>
+			<xs:enumeration value="Firearms Order"/>
+			<xs:enumeration value="FLD-Case Filed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FLT-Fine Letter">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Fnd of Fact Conclusions of Law; Order for Judg and Judg"/>
+			<xs:enumeration value="Fnd of Fact, Concl of Law-Order for Judg and Judg-Commitme"/>
+			<xs:enumeration value="Fnd of Fact-Conclusions of Law-Order for Judg and Decree"/>
+			<xs:enumeration value="Fnd, Conclusion &amp; Order in Civil Commitment Prob Cause Hrg"/>
+			<xs:enumeration value="FND-Fine Due">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Forfeiture Order"/>
+			<xs:enumeration value="Foster Care Report"/>
+			<xs:enumeration value="FSF-Family Scheduling Form">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Guardian Ad Litem Appointment, Consent and Oath">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-11-19T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Harassment Restraining Order"/>
+			<xs:enumeration value="Harhut Report"/>
+			<xs:enumeration value="Heard by Default">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Heirship Status Reserved"/>
+			<xs:enumeration value="Historical Events">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Home Study"/>
+			<xs:enumeration value="ICS-Informal Closing Statement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IFS-Informational Statement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IND-Inactive Docket">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Indeterminate Commitment Review"/>
+			<xs:enumeration value="Indictment"/>
+			<xs:enumeration value="Informal Closing Statement"/>
+			<xs:enumeration value="Informal Closing Statement [R]"/>
+			<xs:enumeration value="Informational Statement"/>
+			<xs:enumeration value="Intent to Transfer"/>
+			<xs:enumeration value="Interim Order Approving Partial Distribution Previously Made"/>
+			<xs:enumeration value="Interrogatories"/>
+			<xs:enumeration value="INV-Inventory">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Inventory"/>
+			<xs:enumeration value="Inventory [R]"/>
+			<xs:enumeration value="Inventory and Appraisement"/>
+			<xs:enumeration value="ITT-Intent to Transfer">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JAS-Judge Assignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JDG-Entry of Judgment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JDR-Joint Disposition Report">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JED-Judicial Education">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JIM-Joint at Issue Memorandum">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JIN-Jury Instructions">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JMT-Judges Meeting">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Joint at Issue Memorandum"/>
+			<xs:enumeration value="Joint Disposition Conference Report"/>
+			<xs:enumeration value="Joint Disposition Report"/>
+			<xs:enumeration value="Joint Informational Statement"/>
+			<xs:enumeration value="Joint Petition-Dissolution"/>
+			<xs:enumeration value="Joint Statement of the Case"/>
+			<xs:enumeration value="Joint Will"/>
+			<xs:enumeration value="JOT-Judicial Other">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JSC-Joint Statement of Case">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JSL-Judicial Sick Leave">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JTD-Jury Trial Demanded">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JTE-Judicial Teaching">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Judgment"/>
+			<xs:enumeration value="Judgment and Decree-Adoption"/>
+			<xs:enumeration value="Judgment and Notice of Judgment"/>
+			<xs:enumeration value="Judgment Docketed"/>
+			<xs:enumeration value="Judgment Entered"/>
+			<xs:enumeration value="Judgment Entered and Docketed"/>
+			<xs:enumeration value="Judgment on Pleadings Granted">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Judgment Renewed"/>
+			<xs:enumeration value="Judgment, Notice of Entry and Statement"/>
+			<xs:enumeration value="Judicial Officer Assigned in Error">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-05-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Judicial Officer Assignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-05-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Judicial Officer Lock Removal">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-05-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Judicial Officer Reassignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-05-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Judicial Officer Recused">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-05-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Judicial Officer Removed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-05-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Judicial Review - No Hearing"/>
+			<xs:enumeration value="Judicial Review Approved"/>
+			<xs:enumeration value="Judicial Review Denied">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Jury Instructions Document"/>
+			<xs:enumeration value="Jury Verdict Returned"/>
+			<xs:enumeration value="Juvenile Offense Report"/>
+			<xs:enumeration value="Juvenile Petition-Adult Certification-Non-Presumptive">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-10T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Juvenile Petition-Adult Certification-Presumptive">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-10T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Juvenile Petition-Delinquency &amp; Petty Offender">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-10T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Juvenile Petition-Designated EJJ">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-10T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JVA-Judicial Vacation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JWL-Joint Will">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Law Enforcement Information Sheet-Service"/>
+			<xs:enumeration value="Letters of Conservatorship"/>
+			<xs:enumeration value="Letters of Emergency Guardianship/Conservatorship"/>
+			<xs:enumeration value="Letters of General Administration"/>
+			<xs:enumeration value="Letters of Guardianship"/>
+			<xs:enumeration value="Letters of Guardianship/Conservatorship"/>
+			<xs:enumeration value="Letters of Special Administration"/>
+			<xs:enumeration value="Letters Testamentary"/>
+			<xs:enumeration value="Licensing Board"/>
+			<xs:enumeration value="Long Arm Petition-Expedited Process"/>
+			<xs:enumeration value="Long Term Foster Care Review"/>
+			<xs:enumeration value="Lothenbach Plea"/>
+			<xs:enumeration value="LRM-Lock Removal">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LTR-Letters">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MAC-Motion for Adult Certification">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Marital Termination Agreement"/>
+			<xs:enumeration value="Marriage Dissolution Sent to Dept of Health"/>
+			<xs:enumeration value="MCC-Motion for Correct">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MCE-Referred to Minnesota Collection Enterprise">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="McNaughton Plea"/>
+			<xs:enumeration value="Mediated Agreement-ADR"/>
+			<xs:enumeration value="Mediation Held (Or Occurred)">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Mediation report on mediation outcome"/>
+			<xs:enumeration value="Medical Assistance Clearance"/>
+			<xs:enumeration value="Meets Minimum Legal Standards for Filing"/>
+			<xs:enumeration value="MEJ-Motion for EJJ">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Memorandum"/>
+			<xs:enumeration value="Miscellaneous Supporting Documentation"/>
+			<xs:enumeration value="Mistrial - Court"/>
+			<xs:enumeration value="Mistrial - Jury"/>
+			<xs:enumeration value="MON-Monitor">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Motion"/>
+			<xs:enumeration value="Motion for Adult Certification-Non-Presumptive"/>
+			<xs:enumeration value="Motion for Adult Certification-Presumptive"/>
+			<xs:enumeration value="Motion for Change of Venue"/>
+			<xs:enumeration value="Motion for Clerical Correction-Child Support"/>
+			<xs:enumeration value="Motion for Discovery"/>
+			<xs:enumeration value="Motion for EJJ"/>
+			<xs:enumeration value="Motion for Modification of Child Support"/>
+			<xs:enumeration value="Motion for Permanent Placement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-29T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Motion for Production of Medical Records"/>
+			<xs:enumeration value="Motion for Review"/>
+			<xs:enumeration value="Motion for Review -Referee Order"/>
+			<xs:enumeration value="Motion for Review-Magistrate Order"/>
+			<xs:enumeration value="Motion for Summary Judgment"/>
+			<xs:enumeration value="Motion for Waiver of Investigation"/>
+			<xs:enumeration value="Motion to Amend"/>
+			<xs:enumeration value="Motion to Amend and Order to Appear">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-03-17T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Motion to Dismiss"/>
+			<xs:enumeration value="Motion to Establish"/>
+			<xs:enumeration value="Motion to Extend Time of Omnibus Hearing"/>
+			<xs:enumeration value="Motion to Intervene"/>
+			<xs:enumeration value="Motion to Intervene as a Party"/>
+			<xs:enumeration value="Motion to Modify Sentence"/>
+			<xs:enumeration value="Motion to Vacate Stay"/>
+			<xs:enumeration value="Motion-Contempt"/>
+			<xs:enumeration value="Motion-Post Conviction Relief"/>
+			<xs:enumeration value="MRG-Merged">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MRVMotion for Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MST-Mistrial">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MTA-Marital Termination Agreement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MTN-Motion Filed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Name Change Sent to Secretary of State"/>
+			<xs:enumeration value="NCR-Notice to Creditors">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NDN-Notification of Demand Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Neutral Fact Finding"/>
+			<xs:enumeration value="NOA-Notice of Appeal">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NOI-Note of Issue">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Nomination"/>
+			<xs:enumeration value="Nomination of Personal Representative"/>
+			<xs:enumeration value="Non-Cash Bond Discharged"/>
+			<xs:enumeration value="Non-Cash Bond Posted"/>
+			<xs:enumeration value="Non-Converted TCIS Involvement Codes">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-01-09T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NOP-Notice and Order of Appearance">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NOR-Notice of Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Not Proven"/>
+			<xs:enumeration value="NOT-Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Note of Issue"/>
+			<xs:enumeration value="Note to File/Clerical"/>
+			<xs:enumeration value="Notice and Acknowledgement of Service"/>
+			<xs:enumeration value="Notice and Consent of Biological Parent"/>
+			<xs:enumeration value="Notice and Order for Custody, Exam and Hearing"/>
+			<xs:enumeration value="Notice and Order to Appear"/>
+			<xs:enumeration value="Notice and Order to Proceed"/>
+			<xs:enumeration value="Notice for Implementation of Cost of Living Adjustment"/>
+			<xs:enumeration value="Notice in Lieu of Summons"/>
+			<xs:enumeration value="Notice Informal Probate Intestate"/>
+			<xs:enumeration value="Notice of Allowance of Claim"/>
+			<xs:enumeration value="Notice of Appeal"/>
+			<xs:enumeration value="Notice of Appeal-Child Support"/>
+			<xs:enumeration value="Notice of Appearance"/>
+			<xs:enumeration value="Notice of Application for Modification of Child Support"/>
+			<xs:enumeration value="Notice of Appointment &amp; Oath-GAL">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-11-19T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Notice of Case Assignment"/>
+			<xs:enumeration value="Notice of Case Filing"/>
+			<xs:enumeration value="Notice of Change of Address"/>
+			<xs:enumeration value="Notice of Death"/>
+			<xs:enumeration value="Notice of Defense and Defense Witnesses"/>
+			<xs:enumeration value="Notice of Deficiency"/>
+			<xs:enumeration value="Notice of Demand/Notice"/>
+			<xs:enumeration value="Notice of Disallowance or Partial Allowance of Claim"/>
+			<xs:enumeration value="Notice of Dismissal with Prejudice"/>
+			<xs:enumeration value="Notice of Dismissal without Prejudice"/>
+			<xs:enumeration value="Notice of Docketing of Amended Judgment"/>
+			<xs:enumeration value="Notice of Docketing of Judgment"/>
+			<xs:enumeration value="Notice of Entry and Docketing of Amended Judgment"/>
+			<xs:enumeration value="Notice of Entry and Docketing of Judgment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2005-03-23T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Notice of Entry and Docketing of Judgment"/>
+			<xs:enumeration value="Notice of Entry of Amended Judgment"/>
+			<xs:enumeration value="Notice of Entry of Judgment"/>
+			<xs:enumeration value="Notice of Evidence and Identification Procedures"/>
+			<xs:enumeration value="Notice of Evidence of Addl Offenses tobe Offrd at Trial-Pros"/>
+			<xs:enumeration value="Notice of Expiration-Ex parte Order for Protection"/>
+			<xs:enumeration value="Notice of Filing of Order"/>
+			<xs:enumeration value="Notice of Filing of Order, Judgment and Decree-Dissolution"/>
+			<xs:enumeration value="Notice of Filing of Order; Entry of Judg; Docketing of Judg"/>
+			<xs:enumeration value="Notice of Guardianship to state auditor.">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-09-26T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Notice of Hearing"/>
+			<xs:enumeration value="Notice of Hearing by Publication"/>
+			<xs:enumeration value="Notice of Hearing for Enforcement"/>
+			<xs:enumeration value="Notice of Hearing/Intent to Suspend DL">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-10-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Notice of Income Withholding"/>
+			<xs:enumeration value="Notice of Intent to Prosecute"/>
+			<xs:enumeration value="Notice of Intent to Revoke Provisional Discharge"/>
+			<xs:enumeration value="Notice of Intervention as a Matter of Right"/>
+			<xs:enumeration value="Notice of Issuance-Ex parte Order for Protection"/>
+			<xs:enumeration value="Notice of Lis Pendens"/>
+			<xs:enumeration value="Notice of Motion and Motion"/>
+			<xs:enumeration value="Notice of Motion and Motion for Custody"/>
+			<xs:enumeration value="Notice of Motion and Motion for Custody and Parenting Time"/>
+			<xs:enumeration value="Notice of Motion and Motion for Parenting Time Assistance"/>
+			<xs:enumeration value="Notice of Motion and Motion for Temporary Relief"/>
+			<xs:enumeration value="Notice of Order to a Payor of Funds"/>
+			<xs:enumeration value="Notice of Pros. Atty of Failure to Appear Pursuant to 609.49"/>
+			<xs:enumeration value="Notice of Respondent&apos;s Rights"/>
+			<xs:enumeration value="Notice of Review"/>
+			<xs:enumeration value="Notice of Review-Eviction"/>
+			<xs:enumeration value="Notice of Settlement"/>
+			<xs:enumeration value="Notice of Taking Deposition"/>
+			<xs:enumeration value="Notice of Withdrawal of Counsel"/>
+			<xs:enumeration value="Notice to Child Support Obligor"/>
+			<xs:enumeration value="Notice to Commissioner of Public Welfare"/>
+			<xs:enumeration value="Notice to Creditors"/>
+			<xs:enumeration value="Notice to Employer or Union of Medical Support"/>
+			<xs:enumeration value="Notice to Obligor of Medical Support Enforcement"/>
+			<xs:enumeration value="Notice to Remove"/>
+			<xs:enumeration value="Notice to Respondent/Defendant"/>
+			<xs:enumeration value="Notice to Take Action"/>
+			<xs:enumeration value="Notice to Victim of Offender Release"/>
+			<xs:enumeration value="Notice-Asset/Funds Release"/>
+			<xs:enumeration value="Notice-CD Renewal"/>
+			<xs:enumeration value="Notice-Emergency Hold"/>
+			<xs:enumeration value="Notice-Informal Probate Will"/>
+			<xs:enumeration value="Notice-Other"/>
+			<xs:enumeration value="Notice-Pay or Appear"/>
+			<xs:enumeration value="Notice-Probable Cause Found to Detain"/>
+			<xs:enumeration value="Notice-Publication of Order"/>
+			<xs:enumeration value="Notice-Rights of Victims in Juvenile Court"/>
+			<xs:enumeration value="Notice-Satisfaction of Judgment"/>
+			<xs:enumeration value="NPR-Notice and Order to Proceed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NRE-Notice to Remove Exhibit">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NTF-Note to File">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NTR-Notice to Remove">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NUL-Null Activity">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="O/A-Order for Apprehension">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OAC-Oath and Acceptance">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OAR-Order for Apprehension Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OBJ-Objections">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Objection"/>
+			<xs:enumeration value="Objection to Referee"/>
+			<xs:enumeration value="OFP Initiation Sent to OFP System"/>
+			<xs:enumeration value="OFT-Order for Transfer">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OGL-Appointment of Guardian Ad Litem">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ORD-Order">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Order Allow Acct-Final Acct-Discharg Trustee-Terminat Trust"/>
+			<xs:enumeration value="Order Allow Final Acct &amp; Settling Estate &amp; Order of Distrib"/>
+			<xs:enumeration value="Order Allowing Acct &amp; Discharging Special Administrator"/>
+			<xs:enumeration value="Order Allowing Acct, Final Acct and Terminating Trust"/>
+			<xs:enumeration value="Order Allowing Annual Account"/>
+			<xs:enumeration value="Order Allowing Fee Claim/Petition"/>
+			<xs:enumeration value="Order Allowing Final Account"/>
+			<xs:enumeration value="Order and Judgment-Eviction"/>
+			<xs:enumeration value="Order and Notice of Hearing"/>
+			<xs:enumeration value="Order Appointing Attorney"/>
+			<xs:enumeration value="Order Appointing Examiner"/>
+			<xs:enumeration value="Order Appointing Examiner and Attorney"/>
+			<xs:enumeration value="Order Appointing Second Examiner Selected by Respondent"/>
+			<xs:enumeration value="Order Appointing Successor"/>
+			<xs:enumeration value="Order Appointing Visitor"/>
+			<xs:enumeration value="Order Appointment Executor"/>
+			<xs:enumeration value="Order Approving Medical Treatment"/>
+			<xs:enumeration value="Order Authorizing Use of ECT Therapy"/>
+			<xs:enumeration value="Order Authorizing Use of Neuroleptic Medications"/>
+			<xs:enumeration value="Order Based on Stipulation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-06-19T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Order Continuing Hold"/>
+			<xs:enumeration value="Order Denying Court Appointed Attorney"/>
+			<xs:enumeration value="Order Denying Hearing"/>
+			<xs:enumeration value="Order Denying In Forma Pauperis Petition"/>
+			<xs:enumeration value="Order Denying Motion"/>
+			<xs:enumeration value="Order Denying Name Change"/>
+			<xs:enumeration value="Order Denying Pet to Sell, Mortgage or Lease Real Estate"/>
+			<xs:enumeration value="Order Denying Public Defender"/>
+			<xs:enumeration value="Order Destroying Record"/>
+			<xs:enumeration value="Order Determining Heirship"/>
+			<xs:enumeration value="Order Determining Inheritance Tax"/>
+			<xs:enumeration value="Order Directing Mortgage/Sale"/>
+			<xs:enumeration value="Order Directing Return of Identification Data to Defendant"/>
+			<xs:enumeration value="Order Discharging Conservator"/>
+			<xs:enumeration value="Order Discharging Guardian"/>
+			<xs:enumeration value="Order Discharging Guardian Ad Litem"/>
+			<xs:enumeration value="Order Discharging Personal Representative"/>
+			<xs:enumeration value="Order Dismissing Petition"/>
+			<xs:enumeration value="Order Dismissing/Restricting In Forma Pauperis Action"/>
+			<xs:enumeration value="Order Establishing Paternity"/>
+			<xs:enumeration value="Order for Appointment of Counsel"/>
+			<xs:enumeration value="Order for Appointment of Guardian Ad Litem"/>
+			<xs:enumeration value="Order for Appointment of Standby Counsel"/>
+			<xs:enumeration value="Order for Apprehension &amp; Return of Resp on Unauth Absence"/>
+			<xs:enumeration value="Order for Apprehension Review"/>
+			<xs:enumeration value="Order for Apprehension, Confinement &amp; Notice of Hrg"/>
+			<xs:enumeration value="Order for Child Support"/>
+			<xs:enumeration value="Order for Commitment"/>
+			<xs:enumeration value="Order for Conditional Release-Domestic Assault"/>
+			<xs:enumeration value="Order for Continuance"/>
+			<xs:enumeration value="Order for Continuance of Dismissal"/>
+			<xs:enumeration value="Order for Continued Commitment"/>
+			<xs:enumeration value="Order for Custody"/>
+			<xs:enumeration value="Order for Detention-Juvenile"/>
+			<xs:enumeration value="Order for Determination of Descent"/>
+			<xs:enumeration value="Order for DHS Background Check"/>
+			<xs:enumeration value="Order for Disclosure"/>
+			<xs:enumeration value="Order for Dismissal"/>
+			<xs:enumeration value="Order for DNA Analysis"/>
+			<xs:enumeration value="Order for Docket and Termination of Jurisdiction"/>
+			<xs:enumeration value="Order for Emergency Guardianship/Conservatorship"/>
+			<xs:enumeration value="Order for Family Maintenance"/>
+			<xs:enumeration value="Order for Formal Appointment of Special Administrator"/>
+			<xs:enumeration value="Order for Frml Adjudication of Intestacy, Determin of Heir"/>
+			<xs:enumeration value="Order for Frml Probate of Will &amp; Appoint of Pers Rep-Supv"/>
+			<xs:enumeration value="Order for Frml Probate of Will &amp; Summary Assignment/Distrib"/>
+			<xs:enumeration value="Order for Frml Probate of Will-Appointment of Pers Rep-Unsup"/>
+			<xs:enumeration value="Order for Guardianship/Conservatorship"/>
+			<xs:enumeration value="Order for Harass Hrg &amp; Ex Parte Harass Restraining Order"/>
+			<xs:enumeration value="Order for Harrassment Hearing"/>
+			<xs:enumeration value="Order for Hearing"/>
+			<xs:enumeration value="Order for Hearing &amp; Notice of Rights"/>
+			<xs:enumeration value="Order for Hearing, Appointing Attorney and Notice of Heari"/>
+			<xs:enumeration value="Order for Hrg Apptg Atty &amp; Guardian Ad Litem &amp; Notice of Hrg"/>
+			<xs:enumeration value="Order for Hrg on 6-Month Rpt &amp; Notice for Final Commitment"/>
+			<xs:enumeration value="Order for Hrg on Final Acct-Pet for Distrib-Published Notice"/>
+			<xs:enumeration value="Order for Immediate Income Withholding"/>
+			<xs:enumeration value="Order for Inf Probate of Will &amp; Appointment of Personal Rep"/>
+			<xs:enumeration value="Order for Informal Appointment of Personal Representative"/>
+			<xs:enumeration value="Order for Informal Probate of Will"/>
+			<xs:enumeration value="Order for Intercounty Adoption"/>
+			<xs:enumeration value="Order for Judgment"/>
+			<xs:enumeration value="Order for Minor Settlement"/>
+			<xs:enumeration value="Order for Modification of Child Support">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-05-30T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Order for Preparation of Sentencing Worksheet"/>
+			<xs:enumeration value="Order for Proceeding In Forma Pauperis"/>
+			<xs:enumeration value="Order for Production of Medical Records"/>
+			<xs:enumeration value="Order for Protection"/>
+			<xs:enumeration value="Order for Protection-Extension"/>
+			<xs:enumeration value="Order for Recommitment"/>
+			<xs:enumeration value="Order for Release"/>
+			<xs:enumeration value="Order for Release of Records from Confidential/Sealed File"/>
+			<xs:enumeration value="Order for Submissions-Under Advisement"/>
+			<xs:enumeration value="Order for Substitute Decision Maker"/>
+			<xs:enumeration value="Order for Summary Distribution-Exempt/Non-Exempt"/>
+			<xs:enumeration value="Order for Temporary Child Support"/>
+			<xs:enumeration value="Order for Temporary Relief"/>
+			<xs:enumeration value="Order for Transfer"/>
+			<xs:enumeration value="Order for Trial"/>
+			<xs:enumeration value="Order for Visitation Expeditor"/>
+			<xs:enumeration value="Order for Waiver of Investigation"/>
+			<xs:enumeration value="Order For/Notice of Hrg for Revocation of Conditl Release"/>
+			<xs:enumeration value="Order Formal Probate of Will"/>
+			<xs:enumeration value="Order Granting Conservatorship"/>
+			<xs:enumeration value="Order Granting Court Appointed Attorney"/>
+			<xs:enumeration value="Order Granting Guardianship"/>
+			<xs:enumeration value="Order Granting Motion"/>
+			<xs:enumeration value="Order Granting Name Change"/>
+			<xs:enumeration value="Order Granting Public Defender"/>
+			<xs:enumeration value="Order of Complete Settlement of Estate &amp; Decree of Distrib"/>
+			<xs:enumeration value="Order of Restoration to Capacity"/>
+			<xs:enumeration value="Order of Stayed Commitment"/>
+			<xs:enumeration value="Order re: Intervention"/>
+			<xs:enumeration value="Order Restoring Dfd&apos;s Civ Rgts-Set Aside Convict-Sealing Rec"/>
+			<xs:enumeration value="Order Returning Record"/>
+			<xs:enumeration value="Order Revoking Stay of Commitment"/>
+			<xs:enumeration value="Order Sealing Name Change"/>
+			<xs:enumeration value="Order Sealing Record"/>
+			<xs:enumeration value="Order Setting Aside Conviction"/>
+			<xs:enumeration value="Order Setting Aside Conviction and Sealing Record"/>
+			<xs:enumeration value="Order Terminating Proceeding and Discharging Patient"/>
+			<xs:enumeration value="Order to Appear"/>
+			<xs:enumeration value="Order to Appear for Contempt">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-03-17T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Order to Apprehend"/>
+			<xs:enumeration value="Order to Apprehend and Hold"/>
+			<xs:enumeration value="Order to Change Hearing Date"/>
+			<xs:enumeration value="Order to Recuse"/>
+			<xs:enumeration value="Order to Remove"/>
+			<xs:enumeration value="Order to Remove Guardian Ad Litem"/>
+			<xs:enumeration value="Order to Show Cause"/>
+			<xs:enumeration value="Order to Show Cause [R]"/>
+			<xs:enumeration value="Order to Transport"/>
+			<xs:enumeration value="Order Vacating Judgment"/>
+			<xs:enumeration value="Order Vacating Prior Order"/>
+			<xs:enumeration value="Order Vacating Stay and Executing Commitment"/>
+			<xs:enumeration value="Order-Assessment/Evaluation"/>
+			<xs:enumeration value="Order-Change of Venue"/>
+			<xs:enumeration value="Order-Chemical Dependency Evaluation"/>
+			<xs:enumeration value="Order-Commit of Psychopath Personality or Sexually Dangerous"/>
+			<xs:enumeration value="Order-Contempt"/>
+			<xs:enumeration value="Order-Discharge"/>
+			<xs:enumeration value="Order-Domestic Abuse Evaluation"/>
+			<xs:enumeration value="Order-Emergency Hold"/>
+			<xs:enumeration value="Order-Evaluation for Competency to Proceed (Rule 20.01)"/>
+			<xs:enumeration value="Order-Evaluation for Mental Deficiency/Illness (Rule 20.02)"/>
+			<xs:enumeration value="Order-Impoundment of Plates"/>
+			<xs:enumeration value="Order-Other"/>
+			<xs:enumeration value="Order-Other Investigation/Evaluation/Assessment"/>
+			<xs:enumeration value="Order-Predisposition Investigation"/>
+			<xs:enumeration value="Order-Presentence Investigation"/>
+			<xs:enumeration value="Order-Psychological Evaluation"/>
+			<xs:enumeration value="Order-Psychosexual Evaluation"/>
+			<xs:enumeration value="Order-Quiet Title"/>
+			<xs:enumeration value="Order-Sex Offender Evaluation"/>
+			<xs:enumeration value="ORN-Order with Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ORP-Paternity Order">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ORS-Child Support Order">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OSC-Order to Show Cause">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OSI-Order Scheduling Information">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Other Assignment Reason">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Other Document"/>
+			<xs:enumeration value="Other Emergency Assigned">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Other Investigation/Evaluation/Assessment Report"/>
+			<xs:enumeration value="Other Removal Reason">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OTR-Other Custody Status">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OTS-Temporary Support Order">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Parental Consent to Termination"/>
+			<xs:enumeration value="Partial Paternity Order"/>
+			<xs:enumeration value="Party Incompetent to Vote Sent to Secretary of State"/>
+			<xs:enumeration value="Pass notice address information from TCIS to MNCIS">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-12-23T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PCR-Post Conviction Relief">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PDI-Pre-Disposition Investigation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PED-Prison Earnings Due">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Pen Register"/>
+			<xs:enumeration value="Pending Permanency Placement Review"/>
+			<xs:enumeration value="PER-Periodic Accounting">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Periodic Accounting [R]"/>
+			<xs:enumeration value="Personal Representative Nominations [R]"/>
+			<xs:enumeration value="Personal Well-Being Report"/>
+			<xs:enumeration value="Personal Well-Being Report &amp; Annual Notice of Rights"/>
+			<xs:enumeration value="Personal Well-being Report [R]"/>
+			<xs:enumeration value="Petition Admitted Out of County"/>
+			<xs:enumeration value="Petition for Alternative Permanent Placement"/>
+			<xs:enumeration value="Petition for Approval of Medical Treatment"/>
+			<xs:enumeration value="Petition for Auth to Impose Intrusive Trtmt &amp; Appoint GAL"/>
+			<xs:enumeration value="Petition for Auth to Impose Treatment Neuroleptic Meds"/>
+			<xs:enumeration value="Petition for Authorization to Impose Treatment ECT"/>
+			<xs:enumeration value="Petition for Change of Venue">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-02-11T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Petition for Conservatorship"/>
+			<xs:enumeration value="Petition for Custody"/>
+			<xs:enumeration value="Petition for Determination of Descent"/>
+			<xs:enumeration value="Petition for Discharge"/>
+			<xs:enumeration value="Petition for Discharge [R]"/>
+			<xs:enumeration value="Petition for Discharge of Personal Representative"/>
+			<xs:enumeration value="Petition for Dissolution of Marriage"/>
+			<xs:enumeration value="Petition for Emergency Guardianship/Conservatorship"/>
+			<xs:enumeration value="Petition for Formal Appointment of Special Administrator"/>
+			<xs:enumeration value="Petition for Formal Probate of Will and Formal Appointment o"/>
+			<xs:enumeration value="Petition for Frml Adjudication of Intestacy-Determ of Heirs"/>
+			<xs:enumeration value="Petition for Frml Appointment of Successor Personal Rep"/>
+			<xs:enumeration value="Petition for Frml Probate of Will-Appoint of Pers Rep-Unsup"/>
+			<xs:enumeration value="Petition for Frml Probate of Will-Summary Assignment/Distrib"/>
+			<xs:enumeration value="Petition for Guardianship"/>
+			<xs:enumeration value="Petition for Guardianship/Conservatorship"/>
+			<xs:enumeration value="Petition for Harassment Restraining Order"/>
+			<xs:enumeration value="Petition for Hearing"/>
+			<xs:enumeration value="Petition for Judicial Commitment"/>
+			<xs:enumeration value="Petition for Long Term Foster Care"/>
+			<xs:enumeration value="Petition for Long Term Foster Care Specific Period of Time"/>
+			<xs:enumeration value="Petition for Minor Settlement"/>
+			<xs:enumeration value="Petition for Ord of Comp Settle of Estate-Decree of Distrib"/>
+			<xs:enumeration value="Petition for Order for Protection"/>
+			<xs:enumeration value="Petition for Physician&apos;s Auth-Release of Medical Info"/>
+			<xs:enumeration value="Petition for Protective Order"/>
+			<xs:enumeration value="Petition for Recommitment"/>
+			<xs:enumeration value="Petition for Release of Information"/>
+			<xs:enumeration value="Petition for Restoration to Capacity"/>
+			<xs:enumeration value="Petition for Review of Decision of Court of Appeals"/>
+			<xs:enumeration value="Petition for Rvw of Proposed Treatment &amp; Appoint of GAL"/>
+			<xs:enumeration value="Petition for Special Conservatorship">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-12-23T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Petition for Special Guardianship">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-12-23T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Petition for Summary Distribution-Exempt/Non-Exempt"/>
+			<xs:enumeration value="Petition for Termination of Parental Rights"/>
+			<xs:enumeration value="Petition for Writ of Habeas Corpus"/>
+			<xs:enumeration value="Petition to Allow Final Acctg., Settle &amp; Distribute Estate"/>
+			<xs:enumeration value="Petition to Appoint Successor"/>
+			<xs:enumeration value="Petition to Enter Guilty Plea"/>
+			<xs:enumeration value="Petition to Proceed as ProSe Counsel"/>
+			<xs:enumeration value="Petition Withdrawn By Plaintiff">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Petition-Adoption"/>
+			<xs:enumeration value="Petition-Child in Need of Protection"/>
+			<xs:enumeration value="Petition-Early Intervention"/>
+			<xs:enumeration value="Petition-Juvenile"/>
+			<xs:enumeration value="Petition-Other"/>
+			<xs:enumeration value="Petition-Probate"/>
+			<xs:enumeration value="Petition-Property Tax"/>
+			<xs:enumeration value="Petition-Summary Dissolution"/>
+			<xs:enumeration value="Petition-Transfer of Legal Custody"/>
+			<xs:enumeration value="PFD-Petition for Discharge">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Physician&apos;s Statement"/>
+			<xs:enumeration value="Physician&apos;s Statement in Support of Petition"/>
+			<xs:enumeration value="PIF-Paid in Full">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Plea Not Accepted">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-01-30T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="POP-Affidavit of Publication">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="POS-Proof of Service">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Power of Authority in Unlawful Detainer"/>
+			<xs:enumeration value="PPF-Prepaid Funeral">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PPO-Proof of Placement for Order Publication">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PPY-Partial Payment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PRC-Parties Ready for Court Trial">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PRD-Progress Report Due">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Pre-Hearing Statement"/>
+			<xs:enumeration value="Pre-Paid Funeral"/>
+			<xs:enumeration value="Pre-Petition Screening Report"/>
+			<xs:enumeration value="Pre-Trial Order-Dissolution"/>
+			<xs:enumeration value="Predator Sex Offender-Change of Address Form"/>
+			<xs:enumeration value="Predatory Offender Notification Form"/>
+			<xs:enumeration value="Predatory Offender Registration Sent to BCA"/>
+			<xs:enumeration value="Predatory Sex Offender-Change of Information Form"/>
+			<xs:enumeration value="Predisposition Investigation Report"/>
+			<xs:enumeration value="Presentence Investigation Report"/>
+			<xs:enumeration value="Prima Facie Case Established"/>
+			<xs:enumeration value="PRJ-Parties Ready for Jury Trial">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PRN-Personal Representative Nominations">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PRO-Probate Document">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Probable Cause Found to Detain"/>
+			<xs:enumeration value="Probable Cause Order"/>
+			<xs:enumeration value="Probate Reminder Review [R]"/>
+			<xs:enumeration value="Probation Agreement"/>
+			<xs:enumeration value="Probation Referral Notification"/>
+			<xs:enumeration value="Probation Transfer of Agent"/>
+			<xs:enumeration value="Probation Violation"/>
+			<xs:enumeration value="Probation Violation Admitted"/>
+			<xs:enumeration value="Probation Violation Denied"/>
+			<xs:enumeration value="Probation Violation Report"/>
+			<xs:enumeration value="Progress Report"/>
+			<xs:enumeration value="Proof of Insurance"/>
+			<xs:enumeration value="Proof of Placing Publication"/>
+			<xs:enumeration value="Proof of Service"/>
+			<xs:enumeration value="Proof of Service with Service Date-Child Support">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-12-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Proof of Termination of Parental Rights"/>
+			<xs:enumeration value="Proposal for Distribution"/>
+			<xs:enumeration value="Protective Order"/>
+			<xs:enumeration value="Proven"/>
+			<xs:enumeration value="Provisional Discharge"/>
+			<xs:enumeration value="Provisional Discharge Revoked"/>
+			<xs:enumeration value="PRW-Probation Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PSF-Pre-Sentence Investigation Filed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PSI Distributed"/>
+			<xs:enumeration value="PSI-Pre-Sentence Investigation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PSO-Pre-Sentence Investigation Ordered">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PSS-Physician&apos;s Statement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Psychological Evaluation Report"/>
+			<xs:enumeration value="Psychopathic Personality Report"/>
+			<xs:enumeration value="Psychosexual Evaluation Report"/>
+			<xs:enumeration value="PTN-Petition">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PVA-Admit Probation Violation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PVD-Deny Probation Violation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PWB-Personal Well-Being Report">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Qualified Domestic Relations Order"/>
+			<xs:enumeration value="RAC-Remove Adult Certification">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RAR-Renounce Right to Appointment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RAS-Reassignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RCL-Reduced Cost Civil Litigation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RCP-Receipts">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RCR-Review for Certificate of Representation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RCS-Review Community Service">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RCU-Judge Recused">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Receipt-Appeal Bond">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-12-17T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Receipts"/>
+			<xs:enumeration value="Receipts [R]"/>
+			<xs:enumeration value="Receipts for Assets by Distributee"/>
+			<xs:enumeration value="Receipts for Taxes"/>
+			<xs:enumeration value="Recertify to DPS"/>
+			<xs:enumeration value="Recognition of Parentage"/>
+			<xs:enumeration value="Redistribution of Caseload">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Refer for Administrative Review"/>
+			<xs:enumeration value="Refer to Brookdale"/>
+			<xs:enumeration value="Refer to Court Services"/>
+			<xs:enumeration value="Refer to District Court-Expedited Process"/>
+			<xs:enumeration value="Refer to Expedited Process"/>
+			<xs:enumeration value="Refer to Minneapolis"/>
+			<xs:enumeration value="Refer to Prosecutor"/>
+			<xs:enumeration value="Refer to Ridgedale"/>
+			<xs:enumeration value="Refer to Southdale"/>
+			<xs:enumeration value="Referee&apos;s Order Confirmed"/>
+			<xs:enumeration value="Referred to Family Court"/>
+			<xs:enumeration value="Referred to Internal Arbitration Program"/>
+			<xs:enumeration value="Referred to Mediation"/>
+			<xs:enumeration value="Referred to Mediation/Arbitration"/>
+			<xs:enumeration value="Referred to Private Mediation"/>
+			<xs:enumeration value="Referred to Revenue Recapture"/>
+			<xs:enumeration value="Referred to Settlement Program"/>
+			<xs:enumeration value="Referred to Summary Jury Trial"/>
+			<xs:enumeration value="REG-Registrar Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Registrar&apos;s Determination"/>
+			<xs:enumeration value="Registrar&apos;s Review"/>
+			<xs:enumeration value="Registration Statement"/>
+			<xs:enumeration value="REI-Refiled Early Intervention">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Release of Rent"/>
+			<xs:enumeration value="REM-Reminder Notice">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Reminder Notice"/>
+			<xs:enumeration value="Remove DPS Certification (clerical error)"/>
+			<xs:enumeration value="Removed from ADR"/>
+			<xs:enumeration value="Removed from Revenue Recapture"/>
+			<xs:enumeration value="Removed from Settlement Program"/>
+			<xs:enumeration value="REN-Drivers License Reinstated">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Rent Escrow Decision &amp; Order"/>
+			<xs:enumeration value="Renunciation of RIght to Appointment [R]"/>
+			<xs:enumeration value="Renunciation of Right to Appointment or to Nominate"/>
+			<xs:enumeration value="Report Due"/>
+			<xs:enumeration value="Report of Applic Fld-Pen Register-Trap/Trace-Mobile Tracking"/>
+			<xs:enumeration value="Report of Guardian Ad Litem"/>
+			<xs:enumeration value="Report of Guardian Ad Litem or Petitioner">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-11-15T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Report of Petitioner"/>
+			<xs:enumeration value="Report of Visitation Expeditor"/>
+			<xs:enumeration value="Report to Secretary of State"/>
+			<xs:enumeration value="Report-Other"/>
+			<xs:enumeration value="Request for Administrative Review-Dissolution"/>
+			<xs:enumeration value="Request for Admission Under Rule 36"/>
+			<xs:enumeration value="Request for Appointment of Substitute Decision Maker"/>
+			<xs:enumeration value="Request for Bill of Particulars"/>
+			<xs:enumeration value="Request for Change of Venue"/>
+			<xs:enumeration value="Request for Continuance"/>
+			<xs:enumeration value="Request for Continued Commitment"/>
+			<xs:enumeration value="Request for Default Hearing"/>
+			<xs:enumeration value="Request for Detention"/>
+			<xs:enumeration value="Request for Determin of Competency-Proceed ProSe on Appeal"/>
+			<xs:enumeration value="Request for Disclosure"/>
+			<xs:enumeration value="Request for Expungement"/>
+			<xs:enumeration value="Request for Hearing"/>
+			<xs:enumeration value="Request for Interpreter"/>
+			<xs:enumeration value="Request for Production of Documents"/>
+			<xs:enumeration value="Request for Renewal for Cause"/>
+			<xs:enumeration value="Request for Subpoena"/>
+			<xs:enumeration value="Request for Transcript"/>
+			<xs:enumeration value="Request for Trial After Arbitration"/>
+			<xs:enumeration value="Request for Trial Court Record-Appellate Court"/>
+			<xs:enumeration value="Request for Waiver of Bond"/>
+			<xs:enumeration value="Request Minimum Bond"/>
+			<xs:enumeration value="Request Order to Hold"/>
+			<xs:enumeration value="Request to Allow Service by Publication"/>
+			<xs:enumeration value="Request to Apprehend and Hold"/>
+			<xs:enumeration value="Request to Extend Probation"/>
+			<xs:enumeration value="Request to Revoke Provisional Discharge"/>
+			<xs:enumeration value="Request-Emergency Hold"/>
+			<xs:enumeration value="Request-Emergency Protective Care"/>
+			<xs:enumeration value="Request-Formal Complaint"/>
+			<xs:enumeration value="Request-Investigation/Evaluation"/>
+			<xs:enumeration value="Request-Judicial Officer Removal"/>
+			<xs:enumeration value="Request-Pre-Disposition Assessment/Investigation"/>
+			<xs:enumeration value="Request-Trial"/>
+			<xs:enumeration value="Requested Assignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Resignation"/>
+			<xs:enumeration value="Resignation of Personal Representative"/>
+			<xs:enumeration value="Response to Motion for Review"/>
+			<xs:enumeration value="Responsive Motion"/>
+			<xs:enumeration value="Restitution Order"/>
+			<xs:enumeration value="Restitution Order and Judgment"/>
+			<xs:enumeration value="Reversed and Remanded"/>
+			<xs:enumeration value="RFL-Case Refiled">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RFR-Referred to Judge/Consensual Special Magistrate">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RJD-Review of Entry of Judgment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RLQ-Reported to Liquor Control Board">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RML-Judge Removal">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RMR-Reminder Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RNR-Reported to Department of Natural Resources">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ROR-Released on Own Recognizance">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RPL-Refer to Prosecutor Later">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RPT-Report Filed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RRC-Revenue Recapture">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RSI-Review for Scheduling Information">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RSO-Review for Scheduling Order">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RTC-Refer to Collections">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RTP-Refer to Prosecutor">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Rule 20 Evaluation Report"/>
+			<xs:enumeration value="Rule 20 Report Distributed"/>
+			<xs:enumeration value="Rule 20.01 Felony"/>
+			<xs:enumeration value="Rule 20.01 Gross Misdemeanor"/>
+			<xs:enumeration value="Rule 20.01 Misdemeanor"/>
+			<xs:enumeration value="Rule 20.02 Felony"/>
+			<xs:enumeration value="Rule 20.02 Gross Misdemeanor"/>
+			<xs:enumeration value="Rule 20.02 Misdemeanor"/>
+			<xs:enumeration value="Runaway Review"/>
+			<xs:enumeration value="RVB-Review Bail">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RVW-Case Status Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RWR-Review Warrant Ref">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SAC-Satisfaction fo Claim">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Safe Deposit Inventory"/>
+			<xs:enumeration value="Safe Deposit Opening"/>
+			<xs:enumeration value="SAR-Special Account Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Satisfaction of Claim"/>
+			<xs:enumeration value="Satisfaction of Claim and Withdrawal of Demand for Notice"/>
+			<xs:enumeration value="Satisfaction of Judgment"/>
+			<xs:enumeration value="SCH-Schedule Hearing">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Schedule Court Trial"/>
+			<xs:enumeration value="Schedule Hearing"/>
+			<xs:enumeration value="Schedule Jury Trial"/>
+			<xs:enumeration value="Scheduling Order"/>
+			<xs:enumeration value="SCL-Statement of Claim">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SCT-Schedule Court Trial">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SDI-Safe Deposit Box Inventory">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SDO-Safe Deposit Box Opening">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Search Warrant"/>
+			<xs:enumeration value="Sent to Minnesota Collection Enterprise"/>
+			<xs:enumeration value="Sentencing Order"/>
+			<xs:enumeration value="Sentencing Worksheet"/>
+			<xs:enumeration value="Sentencing Worksheet-EJJ"/>
+			<xs:enumeration value="SEP-Case Separated">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Separate Writing"/>
+			<xs:enumeration value="Settled - Referred for Administrative Dissolution">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Settlement Agreement"/>
+			<xs:enumeration value="Settlement Conference Held - Not Resolved">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Settlement Hearing Held - Not Resolved">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sex Offender Evaluation Report"/>
+			<xs:enumeration value="Sexually Dangerous Personality Report"/>
+			<xs:enumeration value="Signed Oath Accepting Appointment-GAL">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-11-19T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SIP-Statement of Informal Probate">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SJY-Schedule Jury Trial">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SKT-Successor Letters">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SLT-Successor Letters">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SMM-Summons of Hearing">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SOC-Statement of Claim">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SOH-Schedule Omnibus">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SOP-Statement of Proceedings">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SOR-Statement of Record">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SPA-Subpoena">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SPD-Speedy Trial Demand">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Special Assignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SPH-Schedule Permanency Hearing">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SPT-Schedule Pre-Trial">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Standard Assignment"/>
+			<xs:enumeration value="State Ward Reviews"/>
+			<xs:enumeration value="Statement of Case of Appellant"/>
+			<xs:enumeration value="Statement of Claim"/>
+			<xs:enumeration value="Statement of Claim and Summons"/>
+			<xs:enumeration value="Statement of Content-Lost, Destroyed or Unavailable Will"/>
+			<xs:enumeration value="Statement of Mandatory Transcript Expenses"/>
+			<xs:enumeration value="Statement of Proceeding"/>
+			<xs:enumeration value="Statement of Record"/>
+			<xs:enumeration value="Statement of Rights"/>
+			<xs:enumeration value="Statement of the Case-Dissolution"/>
+			<xs:enumeration value="Statement to Close"/>
+			<xs:enumeration value="Statement to Close [R]"/>
+			<xs:enumeration value="STC-Statement to Close">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="STD-Standard Assignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Stipulation"/>
+			<xs:enumeration value="Stipulation and Agreement-ADR"/>
+			<xs:enumeration value="Stipulation and Order"/>
+			<xs:enumeration value="Stipulation and Order for Dismissal"/>
+			<xs:enumeration value="STK-Stricken">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="STL-Settled">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Stmt of Inf Probate of Will/Appt of Personal Rep/Not to Cred"/>
+			<xs:enumeration value="STP-Stipulation">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Stricken">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-12-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SUB-Submitted">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Subpoena"/>
+			<xs:enumeration value="Subpoena with Service"/>
+			<xs:enumeration value="Substitution of Counsel"/>
+			<xs:enumeration value="Successor Letters"/>
+			<xs:enumeration value="Summary Dissolution Denied">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Summary Real Estate Disposition Judgment"/>
+			<xs:enumeration value="Summons"/>
+			<xs:enumeration value="Summons and Complaint"/>
+			<xs:enumeration value="Summons and Notice"/>
+			<xs:enumeration value="Summons and Petition"/>
+			<xs:enumeration value="Summons for Hearing"/>
+			<xs:enumeration value="Supplemental Account"/>
+			<xs:enumeration value="Supplemental Affidavit for Proceeding In Forma Pauperis"/>
+			<xs:enumeration value="Supplemental Affidavit of Default of Maintenance Judgment"/>
+			<xs:enumeration value="Supplemental Final Account"/>
+			<xs:enumeration value="Supplemental Order for Proceeding In Forma Pauperis">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-03-17T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Surcharge and Chemical Dependency Assessment Order"/>
+			<xs:enumeration value="SUS-Drivers License Suspended">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Suspended - Hennepin County"/>
+			<xs:enumeration value="Suspended - Service Obligation"/>
+			<xs:enumeration value="SVR-Supervised Release">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Tab Charge"/>
+			<xs:enumeration value="Taken Under Advisement"/>
+			<xs:enumeration value="Tax Court Order"/>
+			<xs:enumeration value="TCC-Trial Calendar Call">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TCIS Case Activity">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2003-09-09T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Test Event Type">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-03-19T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Testacy Status Reserved"/>
+			<xs:enumeration value="Testimony of Subscribing Witness"/>
+			<xs:enumeration value="Transcript"/>
+			<xs:enumeration value="Transcript of Judgment"/>
+			<xs:enumeration value="Transfer of Caseload">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Trap and Trace"/>
+			<xs:enumeration value="TRC-Treatment Report">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Treatment Report"/>
+			<xs:enumeration value="TRO Assigned">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TRT-Trust Document">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Trust Document"/>
+			<xs:enumeration value="Trust Instrument"/>
+			<xs:enumeration value="Trustee&apos;s Annual Account"/>
+			<xs:enumeration value="TSC-Transcript Filed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TSW-Testimony of Subscribing Witness">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TVB-TVB Disposition">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UAG-Unassigned-Agreement">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UJA-Remove Adult Sentence">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UJJ-Remove EJJ Case Status">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Unassigned">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-05-20T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Update Sent to DPS"/>
+			<xs:enumeration value="VCR-Vouchers">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Verification and/or Acknowledgement"/>
+			<xs:enumeration value="Verification Under Oath"/>
+			<xs:enumeration value="Victim Impact Statement"/>
+			<xs:enumeration value="Victim Notification Request"/>
+			<xs:enumeration value="Violation Sent to DNR"/>
+			<xs:enumeration value="Violation Sent to Liquor Control Board"/>
+			<xs:enumeration value="VIS-Visitor&apos;s Report">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Visitor&apos;s Report"/>
+			<xs:enumeration value="VNU-Change of Venue">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Voluntary Dismissal by Plaintiff">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2004-10-14T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Volunteer Report"/>
+			<xs:enumeration value="Vouchers"/>
+			<xs:enumeration value="VRT-Volunteer Reoprt">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VRW-Volunteer Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="W/D-Withdrawn">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WAC-Withdrawn Adult Certification">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Waiver"/>
+			<xs:enumeration value="Waiver of Appearance"/>
+			<xs:enumeration value="Waiver of Continued Commitment Hearing"/>
+			<xs:enumeration value="Waiver of Cost Bond on Appeal"/>
+			<xs:enumeration value="Waiver of Counsel"/>
+			<xs:enumeration value="Waiver of Counsel on Direct Appeal"/>
+			<xs:enumeration value="Waiver of Evidentiary Hearing"/>
+			<xs:enumeration value="Waiver of Extradition"/>
+			<xs:enumeration value="Waiver of Jury Trial"/>
+			<xs:enumeration value="Waiver of Right to Contested Hearing"/>
+			<xs:enumeration value="WAR-Warrant Issued">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Warrant Issued"/>
+			<xs:enumeration value="Warrant Issued"/>
+			<xs:enumeration value="Warrant Notification Sent to CriMNet"/>
+			<xs:enumeration value="Warrant of Commitment and Receipt"/>
+			<xs:enumeration value="Warrant Quashed"/>
+			<xs:enumeration value="Warrant Quashed">
+				<xs:annotation>
+					<xs:documentation>EffectiveDate: 2003-07-23T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Warrant Request"/>
+			<xs:enumeration value="Warrant Returned"/>
+			<xs:enumeration value="Warrant Status Change Sent to CriMNet"/>
+			<xs:enumeration value="WCS-Withdrawn Child Support">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WEJ-Withdrwan EJJ">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WIL-Will">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Will"/>
+			<xs:enumeration value="Withdraw/Cancel Child Support Issue"/>
+			<xs:enumeration value="Withdrawal Demand for Notice"/>
+			<xs:enumeration value="Withdrawal of Written Statement of Claim"/>
+			<xs:enumeration value="Withdrawn"/>
+			<xs:enumeration value="Witness List"/>
+			<xs:enumeration value="WOB-Request re:Bond">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WQU-Warrant Quashed">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WRC-Recall Warrant">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WRD-Warrant Returned">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Writ"/>
+			<xs:enumeration value="Writ of Execution"/>
+			<xs:enumeration value="Writ of Habeas Corpus"/>
+			<xs:enumeration value="Writ of Restitution in Unlawful Detainer"/>
+			<xs:enumeration value="Written Statement of Claim"/>
+			<xs:enumeration value="WRQ-Warrant Requested">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WRV-Warrant Review">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WVR-Waiver">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="XPD-Expedited Assignment">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="XPL-Expedited Process-Long Arm">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="XPO-Expedited Process">
+				<xs:annotation>
+					<xs:documentation>Obsolete Date: 2002-11-07T00:00:00</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

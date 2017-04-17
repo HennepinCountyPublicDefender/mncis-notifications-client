@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-06-22T06:18:08</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BaseCaseTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of base case types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Adoption" />
+      <xs:enumeration value="Adult" />
+      <xs:enumeration value="Bad Checks" />
+      <xs:enumeration value="Bond Forfeiture" />
+      <xs:enumeration value="Check" />
+      <xs:enumeration value="Civil Domestic Violence" />
+      <xs:enumeration value="Community Corrections" />
+      <xs:enumeration value="Contracts, Torts, Damage or Injury" />
+      <xs:enumeration value="Divorce" />
+      <xs:enumeration value="Drug Court" />
+      <xs:enumeration value="Guardianship (Family)" />
+      <xs:enumeration value="Guardianship (Probate)" />
+      <xs:enumeration value="Inquest" />
+      <xs:enumeration value="Juvenile" />
+      <xs:enumeration value="Mental Health" />
+      <xs:enumeration value="Other Civil" />
+      <xs:enumeration value="Other Family" />
+      <xs:enumeration value="Parent/Child Relationship" />
+      <xs:enumeration value="Paternity" />
+      <xs:enumeration value="Pre-Trial Supervision" />
+      <xs:enumeration value="Probate" />
+      <xs:enumeration value="Probation" />
+      <xs:enumeration value="Prosecutor" />
+      <xs:enumeration value="Related Civil" />
+      <xs:enumeration value="Support" />
+      <xs:enumeration value="Tax Suits or Condemnation" />
+      <xs:enumeration value="Traffic" />
+      <xs:enumeration value="Transfer-In" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BaseCaseTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of base case types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="17" />
+      <xs:enumeration value="1" />
+      <xs:enumeration value="4" />
+      <xs:enumeration value="13" />
+      <xs:enumeration value="22" />
+      <xs:enumeration value="19" />
+      <xs:enumeration value="29" />
+      <xs:enumeration value="6" />
+      <xs:enumeration value="14" />
+      <xs:enumeration value="28" />
+      <xs:enumeration value="20" />
+      <xs:enumeration value="12" />
+      <xs:enumeration value="27" />
+      <xs:enumeration value="2" />
+      <xs:enumeration value="9" />
+      <xs:enumeration value="10" />
+      <xs:enumeration value="7" />
+      <xs:enumeration value="16" />
+      <xs:enumeration value="18" />
+      <xs:enumeration value="24" />
+      <xs:enumeration value="8" />
+      <xs:enumeration value="25" />
+      <xs:enumeration value="23" />
+      <xs:enumeration value="11" />
+      <xs:enumeration value="15" />
+      <xs:enumeration value="5" />
+      <xs:enumeration value="3" />
+      <xs:enumeration value="26" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="BaseCaseTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="BaseCaseTypeTextType">
+        <xs:attribute name="code" type="BaseCaseTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

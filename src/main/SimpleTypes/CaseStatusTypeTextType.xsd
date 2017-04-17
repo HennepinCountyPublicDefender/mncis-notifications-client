@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-02-10T09:06:57</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CaseStatusTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of case status types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Active" />
+      <xs:enumeration value="Adult Certification Pending" />
+      <xs:enumeration value="Closed" />
+      <xs:enumeration value="Closed-Physical File Destroyed" />
+      <xs:enumeration value="Converted Closed" />
+      <xs:enumeration value="Custodial" />
+      <xs:enumeration value="Denied" />
+      <xs:enumeration value="Dormant" />
+      <xs:enumeration value="EJJ - Youth Serving Juvenile Snt" />
+      <xs:enumeration value="EJJ Case - Has Adult Sentence Only" />
+      <xs:enumeration value="EJJ Case - No Juvenile or Adult Sentence" />
+      <xs:enumeration value="EJJ Case - Youth Serving Adult Sentence" />
+      <xs:enumeration value="EJJ Case - Youth Serving Juvenile Sentence" />
+      <xs:enumeration value="Exported" />
+      <xs:enumeration value="Final Pay/Appear Notice Sent" />
+      <xs:enumeration value="Inactive" />
+      <xs:enumeration value="Interim Disposition" />
+      <xs:enumeration value="Motion for EJJ Filed" />
+      <xs:enumeration value="Old Code" />
+      <xs:enumeration value="Old Code 2" />
+      <xs:enumeration value="Old Code 3" />
+      <xs:enumeration value="Old Code 4" />
+      <xs:enumeration value="Old Code 5" />
+      <xs:enumeration value="On Hold" />
+      <xs:enumeration value="Open" />
+      <xs:enumeration value="Pending Probable Cause" />
+      <xs:enumeration value="Pending Referral" />
+      <xs:enumeration value="Petition for EJJ Filed" />
+      <xs:enumeration value="Probated" />
+      <xs:enumeration value="Reopened" />
+      <xs:enumeration value="Safekeeping" />
+      <xs:enumeration value="Test Case Status" />
+      <xs:enumeration value="Uncertain" />
+      <xs:enumeration value="Under Court Jurisdiction" />
+      <xs:enumeration value="Unprobated" />
+      <xs:enumeration value="Withdrawn" />
+      <xs:enumeration value="Youth Serving Adult Snt" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CaseStatusTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of case status types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A" />
+      <xs:enumeration value="ADULTCERT" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="CFD" />
+      <xs:enumeration value="CNVCLOSED" />
+      <xs:enumeration value="CU" />
+      <xs:enumeration value="DE" />
+      <xs:enumeration value="D" />
+      <xs:enumeration value="EJJ-SrvJuv" />
+      <xs:enumeration value="EJJADLTSNT" />
+      <xs:enumeration value="EJJNOJUV" />
+      <xs:enumeration value="ADULTSENT" />
+      <xs:enumeration value="EJJSRVJUV" />
+      <xs:enumeration value="E" />
+      <xs:enumeration value="PA" />
+      <xs:enumeration value="I" />
+      <xs:enumeration value="INTERIM" />
+      <xs:enumeration value="EJJMOTION" />
+      <xs:enumeration value="OLDCODE1" />
+      <xs:enumeration value="OLDCODE2" />
+      <xs:enumeration value="OLDCODE3" />
+      <xs:enumeration value="OLDCODE4" />
+      <xs:enumeration value="OLDCODE5" />
+      <xs:enumeration value="HOLD" />
+      <xs:enumeration value="O" />
+      <xs:enumeration value="PROBCAUSE" />
+      <xs:enumeration value="PENDING" />
+      <xs:enumeration value="EJJPETITIO" />
+      <xs:enumeration value="P" />
+      <xs:enumeration value="R" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="TESTCS" />
+      <xs:enumeration value="UN" />
+      <xs:enumeration value="COURT" />
+      <xs:enumeration value="U" />
+      <xs:enumeration value="W" />
+      <xs:enumeration value="AdultSNT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CaseStatusTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CaseStatusTypeTextType">
+        <xs:attribute name="code" type="CaseStatusTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

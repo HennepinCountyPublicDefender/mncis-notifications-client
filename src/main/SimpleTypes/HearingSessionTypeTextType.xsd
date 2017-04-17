@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2012-04-04T03:03:49</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="HearingSessionTypeTextType">
+    <xs:annotation>
+      <xs:documentation>
+                                                        Enumerated List of court session names.
+                                                        Uses courtORIs attribute to identify associated courts.
+                                                </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Building" />
+      <xs:enumeration value="Block Time" />
+      <xs:enumeration value="Brookdale A" />
+      <xs:enumeration value="Brookdale B" />
+      <xs:enumeration value="County Attorney" />
+      <xs:enumeration value="Community Court" />
+      <xs:enumeration value="Drug Court 1" />
+      <xs:enumeration value="Drug Court 2" />
+      <xs:enumeration value="Domestic Violence" />
+      <xs:enumeration value="Felony Arraignments" />
+      <xs:enumeration value="Mental Health" />
+      <xs:enumeration value="Minneapolis Serious Traffic" />
+      <xs:enumeration value="Property Crimes" />
+      <xs:enumeration value="Ridgedale A" />
+      <xs:enumeration value="Ridgedale C" />
+      <xs:enumeration value="Southdale A" />
+      <xs:enumeration value="Southdale C" />
+      <xs:enumeration value="Assigning Judge" />
+      <xs:enumeration value="Anytrax" />
+      <xs:enumeration value="Weekend Jail Duty" />
+      <xs:enumeration value="Conciliation Court" />
+      <xs:enumeration value="Civil Trials" />
+      <xs:enumeration value="Chief Judge" />
+      <xs:enumeration value="County Attorney PSF" />
+      <xs:enumeration value="Criminal Block" />
+      <xs:enumeration value="Criminal/Civil Block" />
+      <xs:enumeration value="Criminal Trials" />
+      <xs:enumeration value="Court Trials" />
+      <xs:enumeration value="Court Trials GC" />
+      <xs:enumeration value="Drug/DWI" />
+      <xs:enumeration value="Drug Court" />
+      <xs:enumeration value="Drug Judicial Sup" />
+      <xs:enumeration value="DWI Judicial Sup" />
+      <xs:enumeration value="DWI One day Program Return" />
+      <xs:enumeration value="Expungements" />
+      <xs:enumeration value="Family" />
+      <xs:enumeration value="Family Court" />
+      <xs:enumeration value="Felony First App" />
+      <xs:enumeration value="Felony Block" />
+      <xs:enumeration value="Felony Revocations" />
+      <xs:enumeration value="Pretrials-Community" />
+      <xs:enumeration value="Pretrials-Serious Traffic" />
+      <xs:enumeration value="GM Prob Cause" />
+      <xs:enumeration value="Harassment" />
+      <xs:enumeration value="Implied Consents" />
+      <xs:enumeration value="Implied Consents - Division 1" />
+      <xs:enumeration value="Implied Consents - Suburban" />
+      <xs:enumeration value="Judicial Business" />
+      <xs:enumeration value="Juvenile Court" />
+      <xs:enumeration value="Juvenile Traffic" />
+      <xs:enumeration value="Adoption" />
+      <xs:enumeration value="Juvenile Block" />
+      <xs:enumeration value="DD/VLP" />
+      <xs:enumeration value="Detentions" />
+      <xs:enumeration value="GC EJJ" />
+      <xs:enumeration value="EPC" />
+      <xs:enumeration value="EPC Emergency" />
+      <xs:enumeration value="FEL/GMD/MSD Arraignments" />
+      <xs:enumeration value="In Custody Pretrials" />
+      <xs:enumeration value="ICWA EPC" />
+      <xs:enumeration value="LTFC" />
+      <xs:enumeration value="Petty Arraignments" />
+      <xs:enumeration value="Pretrials" />
+      <xs:enumeration value="Pretrials - EHM/Shelter" />
+      <xs:enumeration value="Runaway ADH" />
+      <xs:enumeration value="Status" />
+      <xs:enumeration value="Private TPR" />
+      <xs:enumeration value="Traffic Arraignments" />
+      <xs:enumeration value="Trials" />
+      <xs:enumeration value="Truancy ADH" />
+      <xs:enumeration value="State Ward" />
+      <xs:enumeration value="Evictions and Rent Escrow" />
+      <xs:enumeration value="Mental Health Ct" />
+      <xs:enumeration value="Mental Health GC" />
+      <xs:enumeration value="No Judge - No Calendar" />
+      <xs:enumeration value="On Assignment" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Prop/Drug Calendar" />
+      <xs:enumeration value="Prop/Drug Evidence" />
+      <xs:enumeration value="Prop/Drug Omnibus" />
+      <xs:enumeration value="PDC-Other" />
+      <xs:enumeration value="Misd Pretrials" />
+      <xs:enumeration value="Probate Court" />
+      <xs:enumeration value="Mpls Serious Traffic" />
+      <xs:enumeration value="Serious Traffic Arraign" />
+      <xs:enumeration value="Mpls Payable Pretrials" />
+      <xs:enumeration value="Ridgedale B" />
+      <xs:enumeration value="Rent" />
+      <xs:enumeration value="Southdale B" />
+      <xs:enumeration value="Signing Judge" />
+      <xs:enumeration value="Source Code" />
+      <xs:enumeration value="Special Calendar" />
+      <xs:enumeration value="Special Term" />
+      <xs:enumeration value="St. Anthony PSF" />
+      <xs:enumeration value="St. Anthony" />
+      <xs:enumeration value="Suburban Domestics" />
+      <xs:enumeration value="Mpls Payable Traffic" />
+      <xs:enumeration value="Housing Court" />
+      <xs:enumeration value="Housing Court Backup" />
+      <xs:enumeration value="Unavailable" />
+      <xs:enumeration value="Vacation" />
+      <xs:enumeration value="Veterans Court" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HearingSessionTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>
+                                                        Enumerated List of court session names.
+                                                        Uses courtORIs attribute to identify associated courts.
+                                                </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="27BLDG" />
+      <xs:enumeration value="27BLOCKT" />
+      <xs:enumeration value="27BROOKA" />
+      <xs:enumeration value="27BROOKB" />
+      <xs:enumeration value="27COAT" />
+      <xs:enumeration value="27COMCRT" />
+      <xs:enumeration value="27DC1" />
+      <xs:enumeration value="27DC2" />
+      <xs:enumeration value="27DOMV" />
+      <xs:enumeration value="27FELA" />
+      <xs:enumeration value="27MH" />
+      <xs:enumeration value="27MPLSST" />
+      <xs:enumeration value="27PC" />
+      <xs:enumeration value="27RIDGA" />
+      <xs:enumeration value="27RIDGC" />
+      <xs:enumeration value="27SOUTHA" />
+      <xs:enumeration value="27SOUTHC" />
+      <xs:enumeration value="D04AJ" />
+      <xs:enumeration value="D04ANYTRAX" />
+      <xs:enumeration value="D04BA" />
+      <xs:enumeration value="D04BAIL" />
+      <xs:enumeration value="D04BB" />
+      <xs:enumeration value="D04BLDG" />
+      <xs:enumeration value="D04CC" />
+      <xs:enumeration value="D04CIV" />
+      <xs:enumeration value="D04CJ" />
+      <xs:enumeration value="D04COAT" />
+      <xs:enumeration value="D04COATPSF" />
+      <xs:enumeration value="D04COMM" />
+      <xs:enumeration value="D04CRB" />
+      <xs:enumeration value="D04CRCVB" />
+      <xs:enumeration value="D04CT" />
+      <xs:enumeration value="D04CTRL" />
+      <xs:enumeration value="D04CTRLGC" />
+      <xs:enumeration value="D04DA" />
+      <xs:enumeration value="D04DRDW" />
+      <xs:enumeration value="D04DRUG" />
+      <xs:enumeration value="D04DRUG2" />
+      <xs:enumeration value="D04DWI" />
+      <xs:enumeration value="D04DWI2" />
+      <xs:enumeration value="D04EXPG" />
+      <xs:enumeration value="D04FABLOCK" />
+      <xs:enumeration value="D04FAM" />
+      <xs:enumeration value="D04FEL" />
+      <xs:enumeration value="D04FELB" />
+      <xs:enumeration value="D04FELREV" />
+      <xs:enumeration value="D04GCPTCOM" />
+      <xs:enumeration value="D04GCPTST" />
+      <xs:enumeration value="D04GMPC" />
+      <xs:enumeration value="D04HA" />
+      <xs:enumeration value="D04IC" />
+      <xs:enumeration value="D04ICM" />
+      <xs:enumeration value="D04ICSUB" />
+      <xs:enumeration value="D04JBR" />
+      <xs:enumeration value="D04JUV" />
+      <xs:enumeration value="D04JUVTR" />
+      <xs:enumeration value="D04JVADP" />
+      <xs:enumeration value="D04JVBLOCK" />
+      <xs:enumeration value="D04JVDD" />
+      <xs:enumeration value="D04JVDET" />
+      <xs:enumeration value="D04JVEJJ" />
+      <xs:enumeration value="D04JVEPC" />
+      <xs:enumeration value="D04JVEPCEM" />
+      <xs:enumeration value="D04JVFARG" />
+      <xs:enumeration value="D04JVICP" />
+      <xs:enumeration value="D04JVICWA" />
+      <xs:enumeration value="D04JVLTFC" />
+      <xs:enumeration value="D04JVPET" />
+      <xs:enumeration value="D04JVPR" />
+      <xs:enumeration value="D04JVPREHM" />
+      <xs:enumeration value="D04JVRUN" />
+      <xs:enumeration value="D04JVSTAT" />
+      <xs:enumeration value="D04JVTPR" />
+      <xs:enumeration value="D04JVTRAF" />
+      <xs:enumeration value="D04JVTRIAL" />
+      <xs:enumeration value="D04JVTRU" />
+      <xs:enumeration value="D04JVWARD" />
+      <xs:enumeration value="D04LAND" />
+      <xs:enumeration value="D04MH" />
+      <xs:enumeration value="D04MHC" />
+      <xs:enumeration value="D04MHGC" />
+      <xs:enumeration value="D04NO" />
+      <xs:enumeration value="D04OA" />
+      <xs:enumeration value="D04OTHR" />
+      <xs:enumeration value="D04PDC" />
+      <xs:enumeration value="D04PDCEV" />
+      <xs:enumeration value="D04PDCOM" />
+      <xs:enumeration value="D04PDCOTH" />
+      <xs:enumeration value="D04PREC" />
+      <xs:enumeration value="D04PROB" />
+      <xs:enumeration value="D04PROP" />
+      <xs:enumeration value="D04PSFTR" />
+      <xs:enumeration value="D04PSFTR1" />
+      <xs:enumeration value="D04PTRAF" />
+      <xs:enumeration value="D04RA" />
+      <xs:enumeration value="D04RB" />
+      <xs:enumeration value="D04RENT" />
+      <xs:enumeration value="D04SA" />
+      <xs:enumeration value="D04SB" />
+      <xs:enumeration value="D04SC" />
+      <xs:enumeration value="D04SJ" />
+      <xs:enumeration value="D04SOCO" />
+      <xs:enumeration value="D04SPCAL" />
+      <xs:enumeration value="D04SPTRM" />
+      <xs:enumeration value="D04STANPSF" />
+      <xs:enumeration value="D04STANT" />
+      <xs:enumeration value="D04SUDO" />
+      <xs:enumeration value="D04TRAF" />
+      <xs:enumeration value="D04UD" />
+      <xs:enumeration value="D04UDBU" />
+      <xs:enumeration value="D04UNV" />
+      <xs:enumeration value="D04VAC" />
+      <xs:enumeration value="D04VETCRT" />
+      <xs:enumeration value="XXXAJ" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="HearingSessionTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="HearingSessionTypeTextType">
+        <xs:attribute name="code" type="HearingSessionTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

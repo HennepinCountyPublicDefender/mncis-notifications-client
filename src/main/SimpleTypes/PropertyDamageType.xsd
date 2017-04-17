@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2009-02-05T07:57:24</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="PropertyDamageType">
+    <xs:annotation>
+      <xs:documentation>Enumerates valid property damage types appearing on citations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Endanger Life/Property" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PropertyDamageTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates valid property damage types appearing on citations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ENDANGER" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PropertyDamageTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="PropertyDamageType">
+        <xs:attribute name="code" type="PropertyDamageTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-01-22T07:04:15</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="AddressStreetType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of street types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Alley" />
+      <xs:enumeration value="Avenue" />
+      <xs:enumeration value="Bend" />
+      <xs:enumeration value="Boulevard" />
+      <xs:enumeration value="Causeway" />
+      <xs:enumeration value="Center" />
+      <xs:enumeration value="Circle" />
+      <xs:enumeration value="Connector" />
+      <xs:enumeration value="Court" />
+      <xs:enumeration value="Cove" />
+      <xs:enumeration value="Crossing" />
+      <xs:enumeration value="Curve" />
+      <xs:enumeration value="Drive" />
+      <xs:enumeration value="Expressway" />
+      <xs:enumeration value="Extension" />
+      <xs:enumeration value="Freeway" />
+      <xs:enumeration value="Highway" />
+      <xs:enumeration value="Junction" />
+      <xs:enumeration value="Landing" />
+      <xs:enumeration value="Lane" />
+      <xs:enumeration value="Loop" />
+      <xs:enumeration value="Park" />
+      <xs:enumeration value="Parkway" />
+      <xs:enumeration value="Pass" />
+      <xs:enumeration value="Path" />
+      <xs:enumeration value="Pike" />
+      <xs:enumeration value="Place" />
+      <xs:enumeration value="Plaza" />
+      <xs:enumeration value="Point" />
+      <xs:enumeration value="Road" />
+      <xs:enumeration value="Run" />
+      <xs:enumeration value="Square" />
+      <xs:enumeration value="Street" />
+      <xs:enumeration value="Terrace" />
+      <xs:enumeration value="Trace" />
+      <xs:enumeration value="Trail" />
+      <xs:enumeration value="Turnpike" />
+      <xs:enumeration value="Village" />
+      <xs:enumeration value="Walk" />
+      <xs:enumeration value="Way" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AddressStreetTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of street types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ALY" />
+      <xs:enumeration value="AVE" />
+      <xs:enumeration value="BEND" />
+      <xs:enumeration value="BLVD" />
+      <xs:enumeration value="CSWY" />
+      <xs:enumeration value="CTR" />
+      <xs:enumeration value="CIR" />
+      <xs:enumeration value="CONN" />
+      <xs:enumeration value="CT" />
+      <xs:enumeration value="CV" />
+      <xs:enumeration value="CRSG" />
+      <xs:enumeration value="CUR" />
+      <xs:enumeration value="DR" />
+      <xs:enumeration value="EXPY" />
+      <xs:enumeration value="EXT" />
+      <xs:enumeration value="FWY" />
+      <xs:enumeration value="HWY" />
+      <xs:enumeration value="JCT" />
+      <xs:enumeration value="LDG" />
+      <xs:enumeration value="LN" />
+      <xs:enumeration value="LP" />
+      <xs:enumeration value="PK" />
+      <xs:enumeration value="PKWY" />
+      <xs:enumeration value="PASS" />
+      <xs:enumeration value="PATH" />
+      <xs:enumeration value="PIKE" />
+      <xs:enumeration value="PL" />
+      <xs:enumeration value="PLZ" />
+      <xs:enumeration value="PT" />
+      <xs:enumeration value="RD" />
+      <xs:enumeration value="RUN" />
+      <xs:enumeration value="SQ" />
+      <xs:enumeration value="ST" />
+      <xs:enumeration value="TER" />
+      <xs:enumeration value="TRCE" />
+      <xs:enumeration value="TRL" />
+      <xs:enumeration value="TPKE" />
+      <xs:enumeration value="VLG" />
+      <xs:enumeration value="WK" />
+      <xs:enumeration value="WAY" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="AddressStreetTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="AddressStreetType">
+        <xs:attribute name="code" type="AddressStreetTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

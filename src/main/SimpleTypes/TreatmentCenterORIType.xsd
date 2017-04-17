@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-02-16T08:28:23</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="TreatmentCenterORIType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Treatment Center Agency Identifiers based on Odyssey uAgency Code Table</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MN002015M" />
+      <xs:enumeration value="MN007015M" />
+      <xs:enumeration value="MN009015M" />
+      <xs:enumeration value="MN018015M" />
+      <xs:enumeration value="MN019015M" />
+      <xs:enumeration value="MN030015M" />
+      <xs:enumeration value="MN034015M" />
+      <xs:enumeration value="MN052015M" />
+      <xs:enumeration value="MN055015M" />
+      <xs:enumeration value="MN056015M" />
+      <xs:enumeration value="MN066015M" />
+      <xs:enumeration value="MNVA00100" />
+      <xs:enumeration value="MNVA00200" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

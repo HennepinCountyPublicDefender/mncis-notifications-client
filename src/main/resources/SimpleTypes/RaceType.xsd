@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:46:31</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="RaceType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates race type values. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Asian" />
+      <xs:enumeration value="Black" />
+      <xs:enumeration value="Native Hawaiian or Other Pacific Islander" />
+      <xs:enumeration value="Indian" />
+      <xs:enumeration value="Multiracial" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Refused" />
+      <xs:enumeration value="Unavailable" />
+      <xs:enumeration value="White" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RaceTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates race type values. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A" />
+      <xs:enumeration value="B" />
+      <xs:enumeration value="H" />
+      <xs:enumeration value="I" />
+      <xs:enumeration value="M" />
+      <xs:enumeration value="O" />
+      <xs:enumeration value="R" />
+      <xs:enumeration value="U" />
+      <xs:enumeration value="W" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="RaceTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="RaceType">
+        <xs:attribute name="code" type="RaceTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

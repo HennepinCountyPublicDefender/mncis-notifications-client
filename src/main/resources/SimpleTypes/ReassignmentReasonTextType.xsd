@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-07-12T11:04:48</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="ReassignmentReasonTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of reassignment reason types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Affidavit of Prejudice Approved" />
+      <xs:enumeration value="Case consolidated for special assignment" />
+      <xs:enumeration value="Change of venue" />
+      <xs:enumeration value="Change of venue - court personnel involved" />
+      <xs:enumeration value="Change of venue - parties moved" />
+      <xs:enumeration value="Change of venue - pretrial publicity" />
+      <xs:enumeration value="Filed in wrong court" />
+      <xs:enumeration value="Hearing scheduled for other location" />
+      <xs:enumeration value="Initial Assignment" />
+      <xs:enumeration value="Judge conflict" />
+      <xs:enumeration value="Judicial Officer Recused" />
+      <xs:enumeration value="Judicial Officer Removed" />
+      <xs:enumeration value="Judicial officer to hear in alternate location" />
+      <xs:enumeration value="Objection to Referee" />
+      <xs:enumeration value="Reassigned" />
+      <xs:enumeration value="Reassigned by Agreement" />
+      <xs:enumeration value="Transfer venue for disposition (juvenile)" />
+      <xs:enumeration value="Transfer venue for first appearance (juvenile)" />
+      <xs:enumeration value="Transfer venue for trial (juvenile)" />
+      <xs:enumeration value="Unassigned" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ReassignmentReasonCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of reassignment reason types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AP" />
+      <xs:enumeration value="CCSA" />
+      <xs:enumeration value="CV" />
+      <xs:enumeration value="CVC" />
+      <xs:enumeration value="CVPM" />
+      <xs:enumeration value="CVPTP" />
+      <xs:enumeration value="WC" />
+      <xs:enumeration value="HOC" />
+      <xs:enumeration value="INT" />
+      <xs:enumeration value="JC" />
+      <xs:enumeration value="JOREC" />
+      <xs:enumeration value="JOREM" />
+      <xs:enumeration value="JOAL" />
+      <xs:enumeration value="OBJREF" />
+      <xs:enumeration value="R" />
+      <xs:enumeration value="RBA" />
+      <xs:enumeration value="TVD" />
+      <xs:enumeration value="TV1" />
+      <xs:enumeration value="TVT" />
+      <xs:enumeration value="U" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ReassignmentReasonCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="ReassignmentReasonTextType">
+        <xs:attribute name="code" type="ReassignmentReasonCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

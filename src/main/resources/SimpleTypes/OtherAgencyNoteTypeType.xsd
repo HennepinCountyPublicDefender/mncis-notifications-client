@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-02-14T12:51:27</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="OtherAgencyNoteTypeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Case Events used by other agencies.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Justice Agency Note to File" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="OtherAgencyNoteTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Case Events used by other agencies.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IJUSAGYNOT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="OtherAgencyNoteTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="OtherAgencyNoteTypeType">
+        <xs:attribute name="code" type="OtherAgencyNoteTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:02</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="GeneralOffenseCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated General Offense Code Types - Literals are enumerated and the GOC code is contained in the document Annotation to the enumerated value.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="GeneralOffenseCodeTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated General Offense Code Types - Literals are enumerated and the GOC code is contained in the document Annotation to the enumerated value.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="GeneralOffenseCodeTextTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="GeneralOffenseCodeType">
+        <xs:attribute name="code" type="GeneralOffenseCodeTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

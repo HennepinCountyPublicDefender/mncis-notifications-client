@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-04T11:01:39</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="SupplementalStatuteTypeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates types for supplemental statutes that are available to submission messages.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Definition" />
+      <xs:enumeration value="Not chargeable" />
+      <xs:enumeration value="Penalty" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

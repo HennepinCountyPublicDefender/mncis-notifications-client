@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2012-03-24T07:03:52</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="StateTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of states</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Alabama" />
+      <xs:enumeration value="Alaska" />
+      <xs:enumeration value="Alberta" />
+      <xs:enumeration value="American Samoa" />
+      <xs:enumeration value="Arizona" />
+      <xs:enumeration value="Arkansas" />
+      <xs:enumeration value="Armed Forces Europe" />
+      <xs:enumeration value="Armed Forces Pacific" />
+      <xs:enumeration value="Armed Forces the Americas" />
+      <xs:enumeration value="British Columbia" />
+      <xs:enumeration value="California" />
+      <xs:enumeration value="Canada" />
+      <xs:enumeration value="Colorado" />
+      <xs:enumeration value="Connecticut" />
+      <xs:enumeration value="Delaware" />
+      <xs:enumeration value="District of Columbia" />
+      <xs:enumeration value="Federated States of Micronesia" />
+      <xs:enumeration value="Florida" />
+      <xs:enumeration value="Georgia" />
+      <xs:enumeration value="Guam" />
+      <xs:enumeration value="Hawaii" />
+      <xs:enumeration value="Idaho" />
+      <xs:enumeration value="Illinois" />
+      <xs:enumeration value="Indiana" />
+      <xs:enumeration value="Iowa" />
+      <xs:enumeration value="Kansas" />
+      <xs:enumeration value="Kentucky" />
+      <xs:enumeration value="Louisiana" />
+      <xs:enumeration value="Maine" />
+      <xs:enumeration value="Manitoba" />
+      <xs:enumeration value="Marshall Islands" />
+      <xs:enumeration value="Maryland" />
+      <xs:enumeration value="Massachusetts" />
+      <xs:enumeration value="Mexico" />
+      <xs:enumeration value="Michigan" />
+      <xs:enumeration value="Minnesota" />
+      <xs:enumeration value="Mississippi" />
+      <xs:enumeration value="Missouri" />
+      <xs:enumeration value="Montana" />
+      <xs:enumeration value="Nebraska" />
+      <xs:enumeration value="Nevada" />
+      <xs:enumeration value="New Brunswick" />
+      <xs:enumeration value="New Hampshire" />
+      <xs:enumeration value="New Jersey" />
+      <xs:enumeration value="New Mexico" />
+      <xs:enumeration value="New York" />
+      <xs:enumeration value="Newfoundland and Labrador" />
+      <xs:enumeration value="North Carolina" />
+      <xs:enumeration value="North Dakota" />
+      <xs:enumeration value="Northern Mariana Islands" />
+      <xs:enumeration value="Northwest Territories" />
+      <xs:enumeration value="Nova Scotia" />
+      <xs:enumeration value="Nunavut" />
+      <xs:enumeration value="Ohio" />
+      <xs:enumeration value="Oklahoma" />
+      <xs:enumeration value="Ontario" />
+      <xs:enumeration value="Oregon" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Pennsylvania" />
+      <xs:enumeration value="Prince Edward Island" />
+      <xs:enumeration value="Puerto Rico" />
+      <xs:enumeration value="Quebec " />
+      <xs:enumeration value="Rhode Island" />
+      <xs:enumeration value="Saskatchewan" />
+      <xs:enumeration value="South Carolina" />
+      <xs:enumeration value="South Dakota" />
+      <xs:enumeration value="Tennessee" />
+      <xs:enumeration value="Texas" />
+      <xs:enumeration value="Tribal" />
+      <xs:enumeration value="Utah" />
+      <xs:enumeration value="Vermont" />
+      <xs:enumeration value="Virgin Islands, U.S." />
+      <xs:enumeration value="Virginia" />
+      <xs:enumeration value="Washington" />
+      <xs:enumeration value="West Virginia" />
+      <xs:enumeration value="Wisconsin" />
+      <xs:enumeration value="Wyoming" />
+      <xs:enumeration value="Yukon " />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StateCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of states</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AL" />
+      <xs:enumeration value="AK" />
+      <xs:enumeration value="AB" />
+      <xs:enumeration value="AS" />
+      <xs:enumeration value="AZ" />
+      <xs:enumeration value="AR" />
+      <xs:enumeration value="AE" />
+      <xs:enumeration value="AP" />
+      <xs:enumeration value="AA" />
+      <xs:enumeration value="BC" />
+      <xs:enumeration value="CA" />
+      <xs:enumeration value="CD" />
+      <xs:enumeration value="CO" />
+      <xs:enumeration value="CT" />
+      <xs:enumeration value="DE" />
+      <xs:enumeration value="DC" />
+      <xs:enumeration value="FM" />
+      <xs:enumeration value="FL" />
+      <xs:enumeration value="GA" />
+      <xs:enumeration value="GU" />
+      <xs:enumeration value="HI" />
+      <xs:enumeration value="ID" />
+      <xs:enumeration value="IL" />
+      <xs:enumeration value="IN" />
+      <xs:enumeration value="IA" />
+      <xs:enumeration value="KS" />
+      <xs:enumeration value="KY" />
+      <xs:enumeration value="LA" />
+      <xs:enumeration value="ME" />
+      <xs:enumeration value="MB" />
+      <xs:enumeration value="MH" />
+      <xs:enumeration value="MD" />
+      <xs:enumeration value="MA" />
+      <xs:enumeration value="MM" />
+      <xs:enumeration value="MI" />
+      <xs:enumeration value="MN" />
+      <xs:enumeration value="MS" />
+      <xs:enumeration value="MO" />
+      <xs:enumeration value="MT" />
+      <xs:enumeration value="NE" />
+      <xs:enumeration value="NV" />
+      <xs:enumeration value="NB" />
+      <xs:enumeration value="NH" />
+      <xs:enumeration value="NJ" />
+      <xs:enumeration value="NM" />
+      <xs:enumeration value="NY" />
+      <xs:enumeration value="NL" />
+      <xs:enumeration value="NC" />
+      <xs:enumeration value="ND" />
+      <xs:enumeration value="MP" />
+      <xs:enumeration value="NT" />
+      <xs:enumeration value="NS" />
+      <xs:enumeration value="NU" />
+      <xs:enumeration value="OH" />
+      <xs:enumeration value="OK" />
+      <xs:enumeration value="ON" />
+      <xs:enumeration value="OR" />
+      <xs:enumeration value="OA" />
+      <xs:enumeration value="PA" />
+      <xs:enumeration value="PE" />
+      <xs:enumeration value="PR" />
+      <xs:enumeration value="QC" />
+      <xs:enumeration value="RI" />
+      <xs:enumeration value="SK" />
+      <xs:enumeration value="SC" />
+      <xs:enumeration value="SD" />
+      <xs:enumeration value="TN" />
+      <xs:enumeration value="TX" />
+      <xs:enumeration value="TR" />
+      <xs:enumeration value="UT" />
+      <xs:enumeration value="VT" />
+      <xs:enumeration value="VI" />
+      <xs:enumeration value="VA" />
+      <xs:enumeration value="WA" />
+      <xs:enumeration value="WV" />
+      <xs:enumeration value="WI" />
+      <xs:enumeration value="WY" />
+      <xs:enumeration value="YT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="StateCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="StateTextType">
+        <xs:attribute name="code" type="StateCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

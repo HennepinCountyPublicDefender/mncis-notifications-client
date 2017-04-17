@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-06-06T01:00:55</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="DriverLicenseStateType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Drivers License States</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AA" />
+      <xs:enumeration value="AE" />
+      <xs:enumeration value="AK" />
+      <xs:enumeration value="AL" />
+      <xs:enumeration value="AP" />
+      <xs:enumeration value="AR" />
+      <xs:enumeration value="AS" />
+      <xs:enumeration value="AZ" />
+      <xs:enumeration value="CA" />
+      <xs:enumeration value="CDAB" />
+      <xs:enumeration value="CDBC" />
+      <xs:enumeration value="CDMB" />
+      <xs:enumeration value="CDNF" />
+      <xs:enumeration value="CDNK" />
+      <xs:enumeration value="CDNS" />
+      <xs:enumeration value="CDNT" />
+      <xs:enumeration value="CDNU" />
+      <xs:enumeration value="CDON" />
+      <xs:enumeration value="CDPE" />
+      <xs:enumeration value="CDPQ" />
+      <xs:enumeration value="CDSN" />
+      <xs:enumeration value="CDU" />
+      <xs:enumeration value="CDYT" />
+      <xs:enumeration value="CO" />
+      <xs:enumeration value="CT" />
+      <xs:enumeration value="CZ" />
+      <xs:enumeration value="DC" />
+      <xs:enumeration value="DE" />
+      <xs:enumeration value="DEN" />
+      <xs:enumeration value="EL" />
+      <xs:enumeration value="FL" />
+      <xs:enumeration value="FM" />
+      <xs:enumeration value="GA" />
+      <xs:enumeration value="GRMY" />
+      <xs:enumeration value="GU" />
+      <xs:enumeration value="HI" />
+      <xs:enumeration value="IA" />
+      <xs:enumeration value="ID" />
+      <xs:enumeration value="IL" />
+      <xs:enumeration value="IN" />
+      <xs:enumeration value="INBS" />
+      <xs:enumeration value="INTDL" />
+      <xs:enumeration value="IT" />
+      <xs:enumeration value="KS" />
+      <xs:enumeration value="KY" />
+      <xs:enumeration value="LA" />
+      <xs:enumeration value="MA" />
+      <xs:enumeration value="MD" />
+      <xs:enumeration value="ME" />
+      <xs:enumeration value="MH" />
+      <xs:enumeration value="MI" />
+      <xs:enumeration value="MM" />
+      <xs:enumeration value="MN" />
+      <xs:enumeration value="MO" />
+      <xs:enumeration value="MP" />
+      <xs:enumeration value="MS" />
+      <xs:enumeration value="MT" />
+      <xs:enumeration value="MY" />
+      <xs:enumeration value="NC" />
+      <xs:enumeration value="ND" />
+      <xs:enumeration value="NE" />
+      <xs:enumeration value="NH" />
+      <xs:enumeration value="NJ" />
+      <xs:enumeration value="NM" />
+      <xs:enumeration value="NV" />
+      <xs:enumeration value="NY" />
+      <xs:enumeration value="OH" />
+      <xs:enumeration value="OK" />
+      <xs:enumeration value="OR" />
+      <xs:enumeration value="PA" />
+      <xs:enumeration value="PR" />
+      <xs:enumeration value="RI" />
+      <xs:enumeration value="SC" />
+      <xs:enumeration value="SD" />
+      <xs:enumeration value="TN" />
+      <xs:enumeration value="TX" />
+      <xs:enumeration value="UK" />
+      <xs:enumeration value="US" />
+      <xs:enumeration value="UT" />
+      <xs:enumeration value="VA" />
+      <xs:enumeration value="VI" />
+      <xs:enumeration value="VT" />
+      <xs:enumeration value="WA" />
+      <xs:enumeration value="WI" />
+      <xs:enumeration value="WV" />
+      <xs:enumeration value="WY" />
+      <xs:enumeration value="YY" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

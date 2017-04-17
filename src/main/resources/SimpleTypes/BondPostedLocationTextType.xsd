@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:42</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BondPostedLocationTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of bond posting location values.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="County Sheriff Department" />
+      <xs:enumeration value="County where defendant was arrested" />
+      <xs:enumeration value="Court" />
+      <xs:enumeration value="Court Administrator" />
+      <xs:enumeration value="Jail / Adult Detention Center" />
+      <xs:enumeration value="Juvenile and Family Justice Center" />
+      <xs:enumeration value="Juvenile Detention Center" />
+      <xs:enumeration value="Law Enforcement Center" />
+      <xs:enumeration value="Local Police Department" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Rice County Law Enforcement Center" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BondPostedLocationCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of bond posting location values.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CSD" />
+      <xs:enumeration value="CTYARR" />
+      <xs:enumeration value="CRT" />
+      <xs:enumeration value="CRTADMIN" />
+      <xs:enumeration value="JAIL" />
+      <xs:enumeration value="62JFJC" />
+      <xs:enumeration value="JDC" />
+      <xs:enumeration value="LEC" />
+      <xs:enumeration value="LPD" />
+      <xs:enumeration value="O" />
+      <xs:enumeration value="66LEC" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="BondPostedLocationCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="BondPostedLocationTextType">
+        <xs:attribute name="code" type="BondPostedLocationCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

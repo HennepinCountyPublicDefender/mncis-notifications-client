@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-08-05T05:01:32</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CriminalCaseTypeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Criminal Case Types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Crim/Traf Mandatory" />
+      <xs:enumeration value="Extradition (Adult Criminal)" />
+      <xs:enumeration value="Out of State No Contact Order" />
+      <xs:enumeration value="Delinquency Felony (Age 16 and Older)" />
+      <xs:enumeration value="Delinquency" />
+      <xs:enumeration value="Juvenile Petty Offense" />
+      <xs:enumeration value="Juvenile Traffic" />
+      <xs:enumeration value="Crim/Traf Non-Mand" />
+      <xs:enumeration value="ViBES" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CriminalCaseTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Criminal Case Types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CRM" />
+      <xs:enumeration value="EXT" />
+      <xs:enumeration value="OUT" />
+      <xs:enumeration value="D16" />
+      <xs:enumeration value="DEL" />
+      <xs:enumeration value="JPO" />
+      <xs:enumeration value="JTR" />
+      <xs:enumeration value="VIB" />
+      <xs:enumeration value="VBS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CriminalCaseTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CriminalCaseTypeType">
+        <xs:attribute name="code" type="CriminalCaseTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

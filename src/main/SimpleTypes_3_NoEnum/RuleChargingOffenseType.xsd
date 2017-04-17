@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-04-06T02:58:43</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="RuleChargingOffenseType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are used to specify a rule for an offense associated with a charge.
+                         SimpleType Companion Associated values include:
+                                                        SeverityLevelText: The severity level or degree value(s) associated with this rule.
+                       </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-04-14T05:00:31</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="EthnicType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates ethnicity type values. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Hispanic" />
+      <xs:enumeration value="Non Hispanic" />
+      <xs:enumeration value="Refused" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EthnicTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates ethnicity type values. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="H" />
+      <xs:enumeration value="NH" />
+      <xs:enumeration value="R" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="EthnicTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="EthnicType">
+        <xs:attribute name="code" type="EthnicTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-09-10T11:05:54</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="SettingRescheduledReasonTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Reasons for Rescheduling a Hearing Setting</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Attorney Unavailable" />
+      <xs:enumeration value="By agreement" />
+      <xs:enumeration value="Converted Hearing" />
+      <xs:enumeration value="Courtroom unavailable" />
+      <xs:enumeration value="Fail to appear" />
+      <xs:enumeration value="Interpreter Unavailable" />
+      <xs:enumeration value="Judge Recusal" />
+      <xs:enumeration value="Judge Removal" />
+      <xs:enumeration value="Judge Unavailable" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Party Not Served" />
+      <xs:enumeration value="Party Unavailable" />
+      <xs:enumeration value="Settlement Pending" />
+      <xs:enumeration value="Victim Unavailable" />
+      <xs:enumeration value="Witness Unavailable" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SettingRescheduledReasonCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Reasons for Rescheduling a Hearing Setting</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ATTYUN" />
+      <xs:enumeration value="AGREE" />
+      <xs:enumeration value="CONVERTED" />
+      <xs:enumeration value="CRTRMUN" />
+      <xs:enumeration value="FTA" />
+      <xs:enumeration value="INTERPUN" />
+      <xs:enumeration value="JUDGREC" />
+      <xs:enumeration value="JUDGREM" />
+      <xs:enumeration value="JUDGUN" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="PARTYNOT" />
+      <xs:enumeration value="PARTUN" />
+      <xs:enumeration value="SETTPNDG" />
+      <xs:enumeration value="VICTUN" />
+      <xs:enumeration value="WITNUN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SettingRescheduledReasonCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="SettingRescheduledReasonTextType">
+        <xs:attribute name="code" type="SettingRescheduledReasonCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

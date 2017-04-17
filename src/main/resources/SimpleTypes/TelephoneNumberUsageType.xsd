@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:46:32</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="TelephoneNumberUsageType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates telephone usage type values. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Cell" />
+      <xs:enumeration value="Fax" />
+      <xs:enumeration value="Home" />
+      <xs:enumeration value="Work" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TelephoneNumberUsageTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates telephone usage type values. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CELL" />
+      <xs:enumeration value="FAX" />
+      <xs:enumeration value="HOME" />
+      <xs:enumeration value="WORK" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="TelephoneNumberUsageTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="TelephoneNumberUsageType">
+        <xs:attribute name="code" type="TelephoneNumberUsageTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

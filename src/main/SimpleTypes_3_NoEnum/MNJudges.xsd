@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:22:58</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JudgeAllType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Minnesota State Court Judge IDs</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="JudgeSupremeCourtType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Minnesota Supreme Court Justices</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="JudgeCourtOfAppealsType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Minnesota Court of Appeals Judges</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="JudgeDistrictCourtType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Minnesota District Court Judges</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="JudgeRefereeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Minnesota District Court Referees</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="JudgeChildSupportMagistrateType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Minnesota Child Support Magistrates</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

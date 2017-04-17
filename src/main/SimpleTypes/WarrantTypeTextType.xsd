@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-09-10T11:05:54</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="WarrantTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated sentence cost types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Arrest, Complaint, Order of Detention" />
+      <xs:enumeration value="Bench Warrant" />
+      <xs:enumeration value="Bench Warrant-fail to appear at a hearing" />
+      <xs:enumeration value="Converted Warrant" />
+      <xs:enumeration value="Juvenile Warrant" />
+      <xs:enumeration value="Order to Apprehend and Hold" />
+      <xs:enumeration value="Violation or Probation Warrant" />
+      <xs:enumeration value="Writ of Attachment" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="WarrantTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated sentence cost types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AWRNT" />
+      <xs:enumeration value="BWRNT" />
+      <xs:enumeration value="BWFTA" />
+      <xs:enumeration value="CNVWRNT" />
+      <xs:enumeration value="JWRNT" />
+      <xs:enumeration value="OWRNT" />
+      <xs:enumeration value="VWRNT" />
+      <xs:enumeration value="WRITWRNT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="WarrantTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="WarrantTypeTextType">
+        <xs:attribute name="code" type="WarrantTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-04-06T02:58:44</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CourtCalendarNameTextType">
+    <xs:annotation>
+      <xs:documentation>
+                                                        Enumerated List of Court Calendar names available for sumissions.
+                                                        Uses courtORIs attribute to identify associated courts.
+                                                </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CourtCalendarNameCodeType">
+    <xs:annotation>
+      <xs:documentation>
+                                                        Enumerated List of Court Calendar names available for sumissions.
+                                                        Uses courtORIs attribute to identify associated courts.
+                                                </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="CourtCalendarNameCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CourtCalendarNameTextType">
+        <xs:attribute name="code" type="CourtCalendarNameCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

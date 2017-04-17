@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2009-08-06T10:14:27</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CaseInitiationCriminalNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Criminal Case Initiations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CaseInitiated" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CaseInitiationFamilyNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Family Case Initiations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CaseInitiated" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CaseDetailsNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with case detail changes</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CaseAssignmentModified" />
+      <xs:enumeration value="CaseFlagAdded" />
+      <xs:enumeration value="CaseFlagDeleted" />
+      <xs:enumeration value="CaseFlagModified" />
+      <xs:enumeration value="CaseNumberModified" />
+      <xs:enumeration value="CaseReassigned" />
+      <xs:enumeration value="CaseTitleModified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CaseSecurityNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with case security</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CaseDeleted" />
+      <xs:enumeration value="CaseExpunged" />
+      <xs:enumeration value="CaseMadeConfidential" />
+      <xs:enumeration value="CaseSealed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ChargeNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with non disposed charges</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ChargeAmended" />
+      <xs:enumeration value="ChargeAmendmentDeleted" />
+      <xs:enumeration value="ChargeDeleted" />
+      <xs:enumeration value="ChargeFiled" />
+      <xs:enumeration value="ChargeModified" />
+      <xs:enumeration value="PleaAdded" />
+      <xs:enumeration value="PleaAmended" />
+      <xs:enumeration value="PleaAmendmentDeleted" />
+      <xs:enumeration value="PleaDeleted" />
+      <xs:enumeration value="PleaModified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ChargeDispositionNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with disposed charges</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ChargeAmended" />
+      <xs:enumeration value="ChargeDeleted" />
+      <xs:enumeration value="ChargeModified" />
+      <xs:enumeration value="DispositionAdded" />
+      <xs:enumeration value="DispositionAmended" />
+      <xs:enumeration value="DispositionAmendmentDeleted" />
+      <xs:enumeration value="DispositionDeleted" />
+      <xs:enumeration value="DispositionModified" />
+      <xs:enumeration value="PleaAdded" />
+      <xs:enumeration value="PleaAmended" />
+      <xs:enumeration value="PleaAmendmentDeleted" />
+      <xs:enumeration value="PleaDeleted" />
+      <xs:enumeration value="PleaModified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CourtDecisionNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with court decisions</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CourtDecisionAdded" />
+      <xs:enumeration value="CourtDecisionAmended" />
+      <xs:enumeration value="CourtDecisionAmendmentDeleted" />
+      <xs:enumeration value="CourtDecisionAmendmentUnDeleted" />
+      <xs:enumeration value="CourtDecisionDeleted" />
+      <xs:enumeration value="CourtDecisionModified" />
+      <xs:enumeration value="CourtDecisionUnDeleted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="JuvenileInterimPlacementNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with juvenile interim placements</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="InterimPlacementAdded" />
+      <xs:enumeration value="InterimPlacementDeleted" />
+      <xs:enumeration value="InterimPlacementModified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="InterimConditionsNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with interim conditions</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="InterimConditionsAdded" />
+      <xs:enumeration value="InterimConditionsDeleted" />
+      <xs:enumeration value="InterimConditionsExpired" />
+      <xs:enumeration value="InterimConditionsModified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HearingTrialSettingNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with hearings</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CourtSessionCourtroomAdded" />
+      <xs:enumeration value="CourtSessionCourtroomChange" />
+      <xs:enumeration value="CourtSessionCourtroomDeleted" />
+      <xs:enumeration value="CourtSessionJudicialOfficerAdded" />
+      <xs:enumeration value="CourtSessionJudicialOfficerChange" />
+      <xs:enumeration value="CourtSessionJudicialOfficerDeleted" />
+      <xs:enumeration value="HearingCancelled" />
+      <xs:enumeration value="HearingDeleted" />
+      <xs:enumeration value="HearingModified" />
+      <xs:enumeration value="HearingScheduled" />
+      <xs:enumeration value="SettingCancelled" />
+      <xs:enumeration value="SettingHeld" />
+      <xs:enumeration value="SettingHeldModified" />
+      <xs:enumeration value="SettingHeldReversed" />
+      <xs:enumeration value="SettingModified" />
+      <xs:enumeration value="SettingRescheduled" />
+      <xs:enumeration value="SettingScheduled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="WarrantNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with warrants</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="WarrantDeleted" />
+      <xs:enumeration value="WarrantInactivated" />
+      <xs:enumeration value="WarrantIssued" />
+      <xs:enumeration value="WarrantModified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SubjectPartyNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with the primary (subject) parties on a case</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AttorneyAdded" />
+      <xs:enumeration value="AttorneyCaseAddressAdded" />
+      <xs:enumeration value="AttorneyCaseAddressDeleted" />
+      <xs:enumeration value="AttorneyCaseAddressModified" />
+      <xs:enumeration value="AttorneyDetailsModified" />
+      <xs:enumeration value="AttorneyRemoved" />
+      <xs:enumeration value="SubjectPartyAdded" />
+      <xs:enumeration value="SubjectPartyCaseAddressAdded" />
+      <xs:enumeration value="SubjectPartyCaseAddressDeleted" />
+      <xs:enumeration value="SubjectPartyCaseAddressModified" />
+      <xs:enumeration value="SubjectPartyNameAdded" />
+      <xs:enumeration value="SubjectPartyNameModified" />
+      <xs:enumeration value="SubjectPartyRemoved" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProbationOrderNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Probation Orders</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ProbationOrderAdded" />
+      <xs:enumeration value="ProbationOrderDeleted" />
+      <xs:enumeration value="ProbationOrderModified" />
+      <xs:enumeration value="ProbationOrderUnDeleted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AgencyNotesNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Agency Notes</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AgencyNoteAdded" />
+      <xs:enumeration value="AgencyNoteDeleted" />
+      <xs:enumeration value="AgencyNoteModified" />
+      <xs:enumeration value="AgencyNoteUnDeleted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TransportNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with Transport</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="TransportAdded" />
+      <xs:enumeration value="TransportDeleted" />
+      <xs:enumeration value="TransportModified" />
+      <xs:enumeration value="TransportUnDeleted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="NoContactOrderNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with no contact orders</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoContactOrderAdded" />
+      <xs:enumeration value="NoContactOrderDeleted" />
+      <xs:enumeration value="NoContactOrderModified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CustodyReleaseOrderNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with custody release orders</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CustodyReleaseOrderAdded" />
+      <xs:enumeration value="CustodyReleaseOrderDeleted" />
+      <xs:enumeration value="CustodyReleaseOrderModified" />
+      <xs:enumeration value="CustodyReleaseOrderUnDeleted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="OtherAgencyCrossReferenceNotificationEventType">
+    <xs:annotation>
+      <xs:documentation>Notification events associated with other agency cross reference numbers.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OtherAgencyNumberAdded" />
+      <xs:enumeration value="OtherAgencyNumberDeleted" />
+      <xs:enumeration value="OtherAgencyNumberModified" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

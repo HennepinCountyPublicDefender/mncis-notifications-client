@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:46:29</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="MaritalStatusTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of marital status types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Divorced" />
+      <xs:enumeration value="Married" />
+      <xs:enumeration value="Separated" />
+      <xs:enumeration value="Single" />
+      <xs:enumeration value="Widowed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MaritalStatusCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of marital status types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DIV" />
+      <xs:enumeration value="MAR" />
+      <xs:enumeration value="SEP" />
+      <xs:enumeration value="SIN" />
+      <xs:enumeration value="WID" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="MaritalStatusCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="MaritalStatusTextType">
+        <xs:attribute name="code" type="MaritalStatusCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

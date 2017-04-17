@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-09-16T11:02:12</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="StatutoryChargingOffenseType">
+    <xs:annotation>
+      <xs:documentation>Enumeration of Statute ID's that are currently used to specify a specific statutory offense associated with a charge.
+                        SimpleType Companion Associated values include:
+                                                        SeverityLevelText: The severity level or degree value(s) associated with this statute.
+                                                        StatuteOrdinanceRuleCite: The statute "cite" associated with the statute id.
+                                                        RepealDate: The date the statute was repealed.
+                                                        VehicleRequired: This requirement will not be activated until mid 2012.
+                                                        If present, indicates the associated charge requires vehicle information when filed
+                                                        with the court.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

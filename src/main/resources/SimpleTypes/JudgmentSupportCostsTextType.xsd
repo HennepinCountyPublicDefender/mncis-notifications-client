@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:05:30</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JudgmentSupportCostsTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment support cost types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Arrearages" />
+      <xs:enumeration value="Birth costs" />
+      <xs:enumeration value="Child care" />
+      <xs:enumeration value="Confinement expenses" />
+      <xs:enumeration value="Dental costs" />
+      <xs:enumeration value="DNA testing" />
+      <xs:enumeration value="Medical costs" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="JudgmentSupportCostsCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment support cost types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ARR" />
+      <xs:enumeration value="BIRTH" />
+      <xs:enumeration value="CHILD" />
+      <xs:enumeration value="CONFINE" />
+      <xs:enumeration value="DENTAL" />
+      <xs:enumeration value="DNA" />
+      <xs:enumeration value="MED" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="JudgmentSupportCostsCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="JudgmentSupportCostsTextType">
+        <xs:attribute name="code" type="JudgmentSupportCostsCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

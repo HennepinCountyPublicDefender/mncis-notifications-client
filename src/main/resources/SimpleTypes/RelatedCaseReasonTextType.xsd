@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:37</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="RelatedCaseReasonTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of reason that cases can be related</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Administrative" />
+      <xs:enumeration value="Adult Criminal/Juvenile Delinquency" />
+      <xs:enumeration value="Bifurcated" />
+      <xs:enumeration value="Case merged/error" />
+      <xs:enumeration value="Class Action" />
+      <xs:enumeration value="Codefendant" />
+      <xs:enumeration value="Companion Case" />
+      <xs:enumeration value="Consolidated" />
+      <xs:enumeration value="Converted Probate Document / Case Relationship" />
+      <xs:enumeration value="Converted/Master case in TCIS" />
+      <xs:enumeration value="Converted/Merged case in TCIS" />
+      <xs:enumeration value="Converted/Related case in TCIS" />
+      <xs:enumeration value="Converted/Separated case in TCIS" />
+      <xs:enumeration value="Criminal/Commitment" />
+      <xs:enumeration value="Dissolution/Domestic Abuse" />
+      <xs:enumeration value="Dissolution/Family" />
+      <xs:enumeration value="Dissolution/Support" />
+      <xs:enumeration value="Joint and Several Restitution" />
+      <xs:enumeration value="Juvenile Delinquency/CHIPS" />
+      <xs:enumeration value="Master case/Individual case file" />
+      <xs:enumeration value="Merged" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Probate Case/Will" />
+      <xs:enumeration value="Sentence combined with another case" />
+      <xs:enumeration value="Transfer of Jurisdiction" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RelatedCaseReasonCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of reason that cases can be related</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Admin" />
+      <xs:enumeration value="Crimjuv" />
+      <xs:enumeration value="Bifur" />
+      <xs:enumeration value="Mergeerror" />
+      <xs:enumeration value="Class" />
+      <xs:enumeration value="Codef" />
+      <xs:enumeration value="Comp" />
+      <xs:enumeration value="Consol" />
+      <xs:enumeration value="CNVDOCCASE" />
+      <xs:enumeration value="CnvMaster" />
+      <xs:enumeration value="CnvMerged" />
+      <xs:enumeration value="CnvRelated" />
+      <xs:enumeration value="CNVSEPARTD" />
+      <xs:enumeration value="Crimcommit" />
+      <xs:enumeration value="Dissda" />
+      <xs:enumeration value="Dissfam" />
+      <xs:enumeration value="Disssupp" />
+      <xs:enumeration value="JSR" />
+      <xs:enumeration value="Juvchips" />
+      <xs:enumeration value="Master" />
+      <xs:enumeration value="Merged" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Prowill" />
+      <xs:enumeration value="PROBWILL" />
+      <xs:enumeration value="Sentcomb" />
+      <xs:enumeration value="TOJ" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="RelatedCaseReasonCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="RelatedCaseReasonTextType">
+        <xs:attribute name="code" type="RelatedCaseReasonCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

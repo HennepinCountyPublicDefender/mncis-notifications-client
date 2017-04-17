@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-06-22T06:18:08</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CaseCategoryTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of high level case type categories</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Check" />
+      <xs:enumeration value="Civil" />
+      <xs:enumeration value="Community Corrections" />
+      <xs:enumeration value="Criminal" />
+      <xs:enumeration value="Drug Court" />
+      <xs:enumeration value="Family" />
+      <xs:enumeration value="Index" />
+      <xs:enumeration value="Jail" />
+      <xs:enumeration value="Law Enforcement" />
+      <xs:enumeration value="Pre-Trial Supervision" />
+      <xs:enumeration value="Probate or Mental Health" />
+      <xs:enumeration value="Probation" />
+      <xs:enumeration value="Prosecutor" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CaseCategoryCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of high level case type categories</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CHECK" />
+      <xs:enumeration value="CV" />
+      <xs:enumeration value="CC" />
+      <xs:enumeration value="CR" />
+      <xs:enumeration value="DC" />
+      <xs:enumeration value="FAM" />
+      <xs:enumeration value="IN" />
+      <xs:enumeration value="JAIL" />
+      <xs:enumeration value="LE" />
+      <xs:enumeration value="PT" />
+      <xs:enumeration value="PR" />
+      <xs:enumeration value="PROB" />
+      <xs:enumeration value="PROS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CaseCategoryCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CaseCategoryTextType">
+        <xs:attribute name="code" type="CaseCategoryCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

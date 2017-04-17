@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2009-04-09T08:43:02</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="HearingSettingCancellationReasonTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Hearing/Setting Cancellation Reasons</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Assigned in error" />
+      <xs:enumeration value="Change of venue" />
+      <xs:enumeration value="Dismissed" />
+      <xs:enumeration value="Fail to appear" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Paid without appearance" />
+      <xs:enumeration value="Party Not Served" />
+      <xs:enumeration value="Settled" />
+      <xs:enumeration value="Waived" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HearingSettingCancellationReasonCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Hearing/Setting Cancellation Reasons</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AIE" />
+      <xs:enumeration value="COV" />
+      <xs:enumeration value="DIS" />
+      <xs:enumeration value="FTA" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="PWOA" />
+      <xs:enumeration value="PARNOT" />
+      <xs:enumeration value="SETT" />
+      <xs:enumeration value="WAIVE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="HearingSettingCancellationReasonCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="HearingSettingCancellationReasonTextType">
+        <xs:attribute name="code" type="HearingSettingCancellationReasonCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

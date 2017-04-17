@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-09-22T01:07:25</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="ConditionNoContactType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of No Contact Order Conditions</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Do not enter additional locations" />
+      <xs:enumeration value="Do not enter or call victim's place of employment" />
+      <xs:enumeration value="Do not enter victim's residence" />
+      <xs:enumeration value="Domestic No Contact" />
+      <xs:enumeration value="No Contact" />
+      <xs:enumeration value="No Contact with Co-Defendant(s)" />
+      <xs:enumeration value="No contact with known gang members" />
+      <xs:enumeration value="No contact with other party" />
+      <xs:enumeration value="No Contact with Persons Associated with Illegal Drugs" />
+      <xs:enumeration value="No contact with persons under age 18" />
+      <xs:enumeration value="No Contact with Persons Underage as Ordered by the Court" />
+      <xs:enumeration value="No contact with the child(ren)" />
+      <xs:enumeration value="No contact with the other party or the minor children" />
+      <xs:enumeration value="No contact with victim or family" />
+      <xs:enumeration value="No contact with victim(s)" />
+      <xs:enumeration value="No Contact With Vulnerable Adults" />
+      <xs:enumeration value="No contact with witness(es)" />
+      <xs:enumeration value="No contact, with exceptions" />
+      <xs:enumeration value="No unsupervised contact w/children in certain circumstances" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ConditionNoContactTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of No Contact Order Conditions</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NOENTADDLO" />
+      <xs:enumeration value="NOENTREMPL" />
+      <xs:enumeration value="ENTVICTRES" />
+      <xs:enumeration value="DOMNC" />
+      <xs:enumeration value="29CONTACT" />
+      <xs:enumeration value="NCWCD" />
+      <xs:enumeration value="NOCNTGANGM" />
+      <xs:enumeration value="NCOP" />
+      <xs:enumeration value="NCPAID" />
+      <xs:enumeration value="NCUE" />
+      <xs:enumeration value="66NOCONT" />
+      <xs:enumeration value="NCCHILD" />
+      <xs:enumeration value="NCOPCHILD" />
+      <xs:enumeration value="NOVICTFAM" />
+      <xs:enumeration value="NOVICTIM" />
+      <xs:enumeration value="NOCONTVUAD" />
+      <xs:enumeration value="WITNC" />
+      <xs:enumeration value="NCEXCEPT" />
+      <xs:enumeration value="NOCNTCHILD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ConditionNoContactTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="ConditionNoContactType">
+        <xs:attribute name="code" type="ConditionNoContactTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-04-06T02:54:15</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CommunityOfOffenseTextType">
+    <xs:annotation>
+      <xs:documentation>
+                                                        Designates political subdivisions.'
+                                                        Makes use of attribute courtORIs to specify which courts apply to a given enumeration value.
+                        </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CommunityOfOffenseCodeType">
+    <xs:annotation>
+      <xs:documentation>
+                                                        Designates political subdivisions.'
+                                                        Makes use of attribute courtORIs to specify which courts apply to a given enumeration value.
+                        </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="CommunityOfOffenseCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CommunityOfOffenseTextType">
+        <xs:attribute name="code" type="CommunityOfOffenseCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

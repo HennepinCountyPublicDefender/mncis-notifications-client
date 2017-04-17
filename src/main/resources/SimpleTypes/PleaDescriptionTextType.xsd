@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:38</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="PleaDescriptionTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated plea types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Admit" />
+      <xs:enumeration value="Alford plea" />
+      <xs:enumeration value="Default" />
+      <xs:enumeration value="Deny" />
+      <xs:enumeration value="Forfeiture" />
+      <xs:enumeration value="Guilty" />
+      <xs:enumeration value="Lothenbach plea" />
+      <xs:enumeration value="M'Naghten plea" />
+      <xs:enumeration value="No Response" />
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Not guilty" />
+      <xs:enumeration value="Plea unavailable" />
+      <xs:enumeration value="Withdrawn" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PleaDescriptionCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated plea types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ADM" />
+      <xs:enumeration value="ALF" />
+      <xs:enumeration value="DEF" />
+      <xs:enumeration value="DENY" />
+      <xs:enumeration value="FORFEIT" />
+      <xs:enumeration value="CNVFORFEIT" />
+      <xs:enumeration value="GUI" />
+      <xs:enumeration value="LOTH" />
+      <xs:enumeration value="MCN" />
+      <xs:enumeration value="CNVNORESP" />
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="NGUI" />
+      <xs:enumeration value="CNVUNKN" />
+      <xs:enumeration value="CNVPLEW" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PleaDescriptionCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="PleaDescriptionTextType">
+        <xs:attribute name="code" type="PleaDescriptionCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

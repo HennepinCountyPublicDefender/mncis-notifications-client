@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:46:19</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="GeneralOffenseCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated General Offense Code Types - Literals are enumerated and the GOC code is contained in the document Annotation to the enumerated value.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Accessory After the Fact - GOC" />
+      <xs:enumeration value="Accessory Before the Fact - GOC" />
+      <xs:enumeration value="Aid/Abet - GOC" />
+      <xs:enumeration value="Assault to Commit - GOC" />
+      <xs:enumeration value="Attempt to Commit - GOC" />
+      <xs:enumeration value="Conspiracy to Commit - GOC" />
+      <xs:enumeration value="Facilitation of - GOC" />
+      <xs:enumeration value="Not applicable - GOC" />
+      <xs:enumeration value="Solicitation of - GOC" />
+      <xs:enumeration value="Threat to Commit - GOC" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="GeneralOffenseCodeTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated General Offense Code Types - Literals are enumerated and the GOC code is contained in the document Annotation to the enumerated value.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Z" />
+      <xs:enumeration value="Y" />
+      <xs:enumeration value="X" />
+      <xs:enumeration value="B" />
+      <xs:enumeration value="A" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="F" />
+      <xs:enumeration value="N" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="T" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="GeneralOffenseCodeTextTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="GeneralOffenseCodeType">
+        <xs:attribute name="code" type="GeneralOffenseCodeTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

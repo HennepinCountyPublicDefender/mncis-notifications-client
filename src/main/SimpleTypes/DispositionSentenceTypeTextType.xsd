@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-12-20T05:07:08</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="DispositionSentenceTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated the types of sentence disposition components.
+                        This enumeration is not tied directly to a mncis code table and is maintained outside of MNCIS in the ServiceCatalog database.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Commit to Commissioner of Corrections - Adult" />
+      <xs:enumeration value="Commit to Commissioner of Corrections - Juvenile" />
+      <xs:enumeration value="ConcurrentConsecutive" />
+      <xs:enumeration value="Condition - Adult" />
+      <xs:enumeration value="Condition - Juvenile" />
+      <xs:enumeration value="Converted Disposition Component" />
+      <xs:enumeration value="Diversion Program - Adult" />
+      <xs:enumeration value="Diversion Program - Juvenile" />
+      <xs:enumeration value="Electronic Monitor - Adult" />
+      <xs:enumeration value="Electronic Monitor - Juvenile" />
+      <xs:enumeration value="Fees" />
+      <xs:enumeration value="Fees - Adult" />
+      <xs:enumeration value="Fees - Juvenile" />
+      <xs:enumeration value="Home Detention - Adult" />
+      <xs:enumeration value="Home Detention - Juvenile" />
+      <xs:enumeration value="Home Monitoring" />
+      <xs:enumeration value="Juvenile Correctional/Placement Facility" />
+      <xs:enumeration value="Juvenile Facility" />
+      <xs:enumeration value="Local Confinement" />
+      <xs:enumeration value="Probation - Adult" />
+      <xs:enumeration value="Probation - Juvenile" />
+      <xs:enumeration value="Service - Adult" />
+      <xs:enumeration value="Service - Juvenile" />
+      <xs:enumeration value="Stayed Adult Sentence" />
+      <xs:enumeration value="Treatment - Adult" />
+      <xs:enumeration value="Treatment - Juvenile" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DispositionSentenceTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated the types of sentence disposition components.
+                        This enumeration is not tied directly to a mncis code table and is maintained outside of MNCIS in the ServiceCatalog database.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PRI" />
+      <xs:enumeration value="COM" />
+      <xs:enumeration value="CONC" />
+      <xs:enumeration value="ACOND" />
+      <xs:enumeration value="JCOND" />
+      <xs:enumeration value="COMMT" />
+      <xs:enumeration value="ADIV" />
+      <xs:enumeration value="JDIV" />
+      <xs:enumeration value="AELE" />
+      <xs:enumeration value="JELE" />
+      <xs:enumeration value="FEES" />
+      <xs:enumeration value="AFEE" />
+      <xs:enumeration value="JFEE" />
+      <xs:enumeration value="AHOM" />
+      <xs:enumeration value="JHOM" />
+      <xs:enumeration value="HMON" />
+      <xs:enumeration value="JUV" />
+      <xs:enumeration value="PLA" />
+      <xs:enumeration value="LOC" />
+      <xs:enumeration value="APRO" />
+      <xs:enumeration value="JPRO" />
+      <xs:enumeration value="ASER" />
+      <xs:enumeration value="JSER" />
+      <xs:enumeration value="STAY" />
+      <xs:enumeration value="ATRE" />
+      <xs:enumeration value="JTRE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="DispositionSentenceTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="DispositionSentenceTypeTextType">
+        <xs:attribute name="code" type="DispositionSentenceTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

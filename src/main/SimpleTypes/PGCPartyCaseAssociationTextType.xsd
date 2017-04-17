@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:46:35</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="PGCPartyCaseAssociationTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Types of Associations a Parent, Guardian or Custodian may have with a Case.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Acknowledged Father" />
+      <xs:enumeration value="Adjudicated Father" />
+      <xs:enumeration value="Alleged Father" />
+      <xs:enumeration value="Custodian" />
+      <xs:enumeration value="Father" />
+      <xs:enumeration value="Guardian" />
+      <xs:enumeration value="Guardian Ad Litem" />
+      <xs:enumeration value="Mother" />
+      <xs:enumeration value="Presumed Father" />
+      <xs:enumeration value="Putative Father" />
+      <xs:enumeration value="Step Father" />
+      <xs:enumeration value="Step Mother" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PGCPartyCaseAssociationCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Types of Associations a Parent, Guardian or Custodian may have with a Case.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACF" />
+      <xs:enumeration value="AJF" />
+      <xs:enumeration value="ALF" />
+      <xs:enumeration value="CUS" />
+      <xs:enumeration value="FTH" />
+      <xs:enumeration value="GRD" />
+      <xs:enumeration value="GAL" />
+      <xs:enumeration value="MTH" />
+      <xs:enumeration value="PRF" />
+      <xs:enumeration value="PTF" />
+      <xs:enumeration value="SFR" />
+      <xs:enumeration value="SMR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PGCPartyCaseAssociationCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="PGCPartyCaseAssociationTextType">
+        <xs:attribute name="code" type="PGCPartyCaseAssociationCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-10-26T09:02:45</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="PartyRemovedReasonTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated type of reasons a party can be removed from a case.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ordered" />
+      <xs:enumeration value="Party Connection Added in Error" />
+      <xs:enumeration value="Reason added by conversion" />
+      <xs:enumeration value="Remove party from case" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PartyRemovedReasonCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated type of reasons a party can be removed from a case.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="O" />
+      <xs:enumeration value="E" />
+      <xs:enumeration value="ZCNV" />
+      <xs:enumeration value="R" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PartyRemovedReasonCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="PartyRemovedReasonTextType">
+        <xs:attribute name="code" type="PartyRemovedReasonCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

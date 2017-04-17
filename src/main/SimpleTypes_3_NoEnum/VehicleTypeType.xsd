@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:23:10</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="VehicleTypeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Vehicle Types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="VehicleTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Vehicle Types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="VehicleTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="VehicleTypeType">
+        <xs:attribute name="code" type="VehicleTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

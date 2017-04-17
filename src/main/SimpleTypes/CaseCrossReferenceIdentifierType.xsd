@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2012-03-29T05:00:39</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CaseCrossReferenceIdentifierType">
+    <xs:annotation>
+      <xs:documentation>
+                            Used to enumerate the other agency identifiers stored on MNCIS, e.g., prosecutor file number, ICR Number, appellate case numbers.
+                                                        Makes use of attribute courtORIs to specify which courts apply to a given enumeration value.   Values without the courtORIs attribute apply
+                                                        to all courts.
+                      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Appellate Case Number" />
+      <xs:enumeration value="BCS Case Number" />
+      <xs:enumeration value="Booking Number" />
+      <xs:enumeration value="Conciliation Court File Number" />
+      <xs:enumeration value="County Attorney File Number" />
+      <xs:enumeration value="Examiner of Titles Number" />
+      <xs:enumeration value="NICS Record Identifier" />
+      <xs:enumeration value="Out of State Case Number" />
+      <xs:enumeration value="Prosecutor File Number" />
+      <xs:enumeration value="Prosecutor Submission ID" />
+      <xs:enumeration value="Real Estate Confession File Number" />
+      <xs:enumeration value="SILS Tracking Number" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CaseCrossReferenceIdentifierTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>
+                            Used to enumerate the other agency identifiers stored on MNCIS, e.g., prosecutor file number, ICR Number, appellate case numbers.
+                                                        Makes use of attribute courtORIs to specify which courts apply to a given enumeration value.   Values without the courtORIs attribute apply
+                                                        to all courts.
+                      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="COA" />
+      <xs:enumeration value="BCSNUM" />
+      <xs:enumeration value="BKNMBR" />
+      <xs:enumeration value="CONC" />
+      <xs:enumeration value="CTYATTYFN" />
+      <xs:enumeration value="EXAMTITLE" />
+      <xs:enumeration value="IBNICSRI" />
+      <xs:enumeration value="OUTSTATE" />
+      <xs:enumeration value="PRSF" />
+      <xs:enumeration value="IBPRSID" />
+      <xs:enumeration value="REALEST" />
+      <xs:enumeration value="SILSTRACK" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CaseCrossReferenceIdentifierTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CaseCrossReferenceIdentifierType">
+        <xs:attribute name="code" type="CaseCrossReferenceIdentifierTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

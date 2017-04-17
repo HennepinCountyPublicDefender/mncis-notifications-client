@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-04-26T01:01:17</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="VehicleTypeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Vehicle Types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="16+ Passenger Vehicle" />
+      <xs:enumeration value="All Terrain Vehicle" />
+      <xs:enumeration value="Bicycle" />
+      <xs:enumeration value="Bus" />
+      <xs:enumeration value="Construction equipment" />
+      <xs:enumeration value="Electric Bike" />
+      <xs:enumeration value="Emergency Vehicle" />
+      <xs:enumeration value="Farm vehicle" />
+      <xs:enumeration value="Hino" />
+      <xs:enumeration value="Motorboat" />
+      <xs:enumeration value="Motorcycle" />
+      <xs:enumeration value="Motorized Bike" />
+      <xs:enumeration value="Off-road motorcycle" />
+      <xs:enumeration value="Off-road recreational vehicle" />
+      <xs:enumeration value="Other vehicle" />
+      <xs:enumeration value="Passenger Vehicle" />
+      <xs:enumeration value="Road Tractor" />
+      <xs:enumeration value="School bus" />
+      <xs:enumeration value="Semi-truck" />
+      <xs:enumeration value="Snowmobile" />
+      <xs:enumeration value="Tow truck" />
+      <xs:enumeration value="Transit bus" />
+      <xs:enumeration value="Truck" />
+      <xs:enumeration value="Vento Motorcycles/Mopeds" />
+      <xs:enumeration value="Western Star" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="VehicleTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Vehicle Types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PASSVEH16" />
+      <xs:enumeration value="ATV" />
+      <xs:enumeration value="BIKE" />
+      <xs:enumeration value="BUS" />
+      <xs:enumeration value="CONSTEQUIP" />
+      <xs:enumeration value="ELECBIKE" />
+      <xs:enumeration value="EMERGVEH" />
+      <xs:enumeration value="FARM" />
+      <xs:enumeration value="HINO" />
+      <xs:enumeration value="BOAT" />
+      <xs:enumeration value="MOTORCYCLE" />
+      <xs:enumeration value="MOTORBIKE" />
+      <xs:enumeration value="ORMOTORCY" />
+      <xs:enumeration value="ORRV" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="PASSVEH" />
+      <xs:enumeration value="ROADTRAC" />
+      <xs:enumeration value="SCHOOL" />
+      <xs:enumeration value="SEMI" />
+      <xs:enumeration value="SNOWMO" />
+      <xs:enumeration value="TOW" />
+      <xs:enumeration value="TRANSIT" />
+      <xs:enumeration value="TRUCK" />
+      <xs:enumeration value="VENTO" />
+      <xs:enumeration value="WSTAR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="VehicleTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="VehicleTypeType">
+        <xs:attribute name="code" type="VehicleTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-11-14T06:58:22</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="ProbationAgencyORIType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Probation Agency Identifiers</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MN001013G" />
+      <xs:enumeration value="MN002013G" />
+      <xs:enumeration value="MN003013G" />
+      <xs:enumeration value="MN004013G" />
+      <xs:enumeration value="MN005013G" />
+      <xs:enumeration value="MN006013G" />
+      <xs:enumeration value="MN007013G" />
+      <xs:enumeration value="MN007015G" />
+      <xs:enumeration value="MN008013G" />
+      <xs:enumeration value="MN009013G" />
+      <xs:enumeration value="MN010013G" />
+      <xs:enumeration value="MN010113G" />
+      <xs:enumeration value="MN011013G" />
+      <xs:enumeration value="MN012013G" />
+      <xs:enumeration value="MN013013G" />
+      <xs:enumeration value="MN014013G" />
+      <xs:enumeration value="MN015013G" />
+      <xs:enumeration value="MN016013G" />
+      <xs:enumeration value="MN017013G" />
+      <xs:enumeration value="MN018013G" />
+      <xs:enumeration value="MN019013G" />
+      <xs:enumeration value="MN020013G" />
+      <xs:enumeration value="MN021013G" />
+      <xs:enumeration value="MN022013G" />
+      <xs:enumeration value="MN023013G" />
+      <xs:enumeration value="MN024013G" />
+      <xs:enumeration value="MN025013G" />
+      <xs:enumeration value="MN026013G" />
+      <xs:enumeration value="MN027013G" />
+      <xs:enumeration value="MN027023G" />
+      <xs:enumeration value="MN027033G" />
+      <xs:enumeration value="MN027043G" />
+      <xs:enumeration value="MN027103G" />
+      <xs:enumeration value="MN028013G" />
+      <xs:enumeration value="MN029013G" />
+      <xs:enumeration value="MN030013G" />
+      <xs:enumeration value="MN031013G" />
+      <xs:enumeration value="MN032013G" />
+      <xs:enumeration value="MN033013G" />
+      <xs:enumeration value="MN034013G" />
+      <xs:enumeration value="MN035013G" />
+      <xs:enumeration value="MN036013G" />
+      <xs:enumeration value="MN037013G" />
+      <xs:enumeration value="MN038013G" />
+      <xs:enumeration value="MN039013G" />
+      <xs:enumeration value="MN040013G" />
+      <xs:enumeration value="MN041013G" />
+      <xs:enumeration value="MN042013G" />
+      <xs:enumeration value="MN043013G" />
+      <xs:enumeration value="MN044013G" />
+      <xs:enumeration value="MN045013G" />
+      <xs:enumeration value="MN046013G" />
+      <xs:enumeration value="MN047013G" />
+      <xs:enumeration value="MN048013G" />
+      <xs:enumeration value="MN049013G" />
+      <xs:enumeration value="MN050013G" />
+      <xs:enumeration value="MN051013G" />
+      <xs:enumeration value="MN052013G" />
+      <xs:enumeration value="MN053013G" />
+      <xs:enumeration value="MN054013G" />
+      <xs:enumeration value="MN055013G" />
+      <xs:enumeration value="MN055023G" />
+      <xs:enumeration value="MN056013G" />
+      <xs:enumeration value="MN057013G" />
+      <xs:enumeration value="MN058013G" />
+      <xs:enumeration value="MN059013G" />
+      <xs:enumeration value="MN060013G" />
+      <xs:enumeration value="MN061013G" />
+      <xs:enumeration value="MN062013G" />
+      <xs:enumeration value="MN062015G" />
+      <xs:enumeration value="MN062017G" />
+      <xs:enumeration value="MN062025G" />
+      <xs:enumeration value="MN062033G" />
+      <xs:enumeration value="MN063013G" />
+      <xs:enumeration value="MN064013G" />
+      <xs:enumeration value="MN065013G" />
+      <xs:enumeration value="MN066013G" />
+      <xs:enumeration value="MN067013G" />
+      <xs:enumeration value="MN068013G" />
+      <xs:enumeration value="MN069013G" />
+      <xs:enumeration value="MN069017G" />
+      <xs:enumeration value="MN069023G" />
+      <xs:enumeration value="MN069033G" />
+      <xs:enumeration value="MN070013G" />
+      <xs:enumeration value="MN071013G" />
+      <xs:enumeration value="MN072013G" />
+      <xs:enumeration value="MN073013G" />
+      <xs:enumeration value="MN073015G" />
+      <xs:enumeration value="MN074013G" />
+      <xs:enumeration value="MN075013G" />
+      <xs:enumeration value="MN076013G" />
+      <xs:enumeration value="MN077013G" />
+      <xs:enumeration value="MN078013G" />
+      <xs:enumeration value="MN079013G" />
+      <xs:enumeration value="MN080013G" />
+      <xs:enumeration value="MN081013G" />
+      <xs:enumeration value="MN082013G" />
+      <xs:enumeration value="MN082023G" />
+      <xs:enumeration value="MN083013G" />
+      <xs:enumeration value="MN084013G" />
+      <xs:enumeration value="MN085013G" />
+      <xs:enumeration value="MN086013G" />
+      <xs:enumeration value="MN087013G" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

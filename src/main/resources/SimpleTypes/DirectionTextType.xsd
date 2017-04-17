@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:46:28</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="DirectionTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of direction values</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="East" />
+      <xs:enumeration value="North" />
+      <xs:enumeration value="Northeast" />
+      <xs:enumeration value="Northwest" />
+      <xs:enumeration value="South" />
+      <xs:enumeration value="Southeast" />
+      <xs:enumeration value="Southwest" />
+      <xs:enumeration value="West" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DirectionCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of direction values</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="E" />
+      <xs:enumeration value="N" />
+      <xs:enumeration value="NE" />
+      <xs:enumeration value="NW" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="SE" />
+      <xs:enumeration value="SW" />
+      <xs:enumeration value="W" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="DirectionCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="DirectionTextType">
+        <xs:attribute name="code" type="DirectionCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

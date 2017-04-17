@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:05:29</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JudgmentSupportTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment support types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Child" />
+      <xs:enumeration value="Maintenance" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="JudgmentSupportTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment support types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CHILD" />
+      <xs:enumeration value="MAINT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="JudgmentSupportTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="JudgmentSupportTypeTextType">
+        <xs:attribute name="code" type="JudgmentSupportTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

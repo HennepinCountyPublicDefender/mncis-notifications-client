@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:24</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="DirectionTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of direction values</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="DirectionCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of direction values</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="DirectionCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="DirectionTextType">
+        <xs:attribute name="code" type="DirectionCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

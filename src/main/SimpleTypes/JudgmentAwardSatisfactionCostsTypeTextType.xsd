@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:05:29</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JudgmentAwardSatisfactionCostsTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment satisfaction cost types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Billed sheriff's fees" />
+      <xs:enumeration value="Disclosure fee" />
+      <xs:enumeration value="Execution fee" />
+      <xs:enumeration value="Manually calculated interest" />
+      <xs:enumeration value="Motion Fee" />
+      <xs:enumeration value="Order to Show Cause" />
+      <xs:enumeration value="Other enforcement fees" />
+      <xs:enumeration value="Partial satisfaction filing fee" />
+      <xs:enumeration value="Test Cost Code" />
+      <xs:enumeration value="Transcript fees" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="JudgmentAwardSatisfactionCostsTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment satisfaction cost types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SHER" />
+      <xs:enumeration value="ORDDISC" />
+      <xs:enumeration value="EXEC" />
+      <xs:enumeration value="MINT" />
+      <xs:enumeration value="MOT" />
+      <xs:enumeration value="ORDSC" />
+      <xs:enumeration value="OTH" />
+      <xs:enumeration value="PART" />
+      <xs:enumeration value="TESTCOST" />
+      <xs:enumeration value="TRANS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="JudgmentAwardSatisfactionCostsTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="JudgmentAwardSatisfactionCostsTypeTextType">
+        <xs:attribute name="code" type="JudgmentAwardSatisfactionCostsTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:29</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="OffenseSeverityLevelType">
+    <xs:annotation>
+      <xs:documentation>Enumerates Severity Level of Offenses for Charges</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Converted: Offense Level Not Available" />
+      <xs:enumeration value="Felony" />
+      <xs:enumeration value="Gross Misdemeanor" />
+      <xs:enumeration value="Juvenile Petty Offense" />
+      <xs:enumeration value="Juvenile Traffic Offense" />
+      <xs:enumeration value="Misdemeanor" />
+      <xs:enumeration value="No Level" />
+      <xs:enumeration value="Petty Misdemeanor" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="OffenseSeverityLevelTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates Severity Level of Offenses for Charges</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CNVUNKNOWN" />
+      <xs:enumeration value="CNVLEVEL" />
+      <xs:enumeration value="FEL" />
+      <xs:enumeration value="GMD" />
+      <xs:enumeration value="JPO" />
+      <xs:enumeration value="JTO" />
+      <xs:enumeration value="MSD" />
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="PMD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="OffenseSeverityLevelTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="OffenseSeverityLevelType">
+        <xs:attribute name="code" type="OffenseSeverityLevelTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

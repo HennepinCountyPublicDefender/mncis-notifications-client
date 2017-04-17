@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:44:57</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="EyeColorType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Eye Colors</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Black" />
+      <xs:enumeration value="Blue" />
+      <xs:enumeration value="Brown" />
+      <xs:enumeration value="Green" />
+      <xs:enumeration value="Grey" />
+      <xs:enumeration value="Hazel" />
+      <xs:enumeration value="Maroon" />
+      <xs:enumeration value="Multi Colored" />
+      <xs:enumeration value="Pink" />
+      <xs:enumeration value="Unknown" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EyeColorTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Eye Colors</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BLK" />
+      <xs:enumeration value="BLU" />
+      <xs:enumeration value="BRO" />
+      <xs:enumeration value="GRN" />
+      <xs:enumeration value="GRY" />
+      <xs:enumeration value="HAZ" />
+      <xs:enumeration value="MAR" />
+      <xs:enumeration value="MUL" />
+      <xs:enumeration value="PNK" />
+      <xs:enumeration value="XXX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="EyeColorTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="EyeColorType">
+        <xs:attribute name="code" type="EyeColorTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

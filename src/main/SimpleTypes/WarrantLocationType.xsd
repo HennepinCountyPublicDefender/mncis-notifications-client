@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:23:09</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="WarrantLocationType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Warrant Locations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="APD" />
+      <xs:enumeration value="Benton Sheriff's Office" />
+      <xs:enumeration value="Carlos PD" />
+      <xs:enumeration value="City Attorney" />
+      <xs:enumeration value="Converted Location" />
+      <xs:enumeration value="County Attorney" />
+      <xs:enumeration value="Court Administration" />
+      <xs:enumeration value="Court File" />
+      <xs:enumeration value="Dept of Corrections" />
+      <xs:enumeration value="Detroit Lakes Highway Patrol" />
+      <xs:enumeration value="DNR" />
+      <xs:enumeration value="In Transit from Sheriff" />
+      <xs:enumeration value="Judge Chambers" />
+      <xs:enumeration value="MN State Patrol Detroit Lakes" />
+      <xs:enumeration value="Mower County Corrections" />
+      <xs:enumeration value="Osakis PD" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Sealed Search Warrant File" />
+      <xs:enumeration value="Sheriffs Office" />
+      <xs:enumeration value="Signature Bin" />
+      <xs:enumeration value="St. Cloud Police Department" />
+      <xs:enumeration value="State Patrol" />
+      <xs:enumeration value="Stearns Sheriff's Office" />
+      <xs:enumeration value="Unfiled Search Warrant File" />
+      <xs:enumeration value="Warrant Prep Bin" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="WarrantLocationTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Warrant Locations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="21APD" />
+      <xs:enumeration value="73BSO" />
+      <xs:enumeration value="21CPD" />
+      <xs:enumeration value="CIATT" />
+      <xs:enumeration value="CNVLOCATE" />
+      <xs:enumeration value="COATT" />
+      <xs:enumeration value="CA" />
+      <xs:enumeration value="COURTFILE" />
+      <xs:enumeration value="DOC" />
+      <xs:enumeration value="77HP" />
+      <xs:enumeration value="21DNR" />
+      <xs:enumeration value="INTRANSHER" />
+      <xs:enumeration value="CHAMBERS" />
+      <xs:enumeration value="80SPDL" />
+      <xs:enumeration value="50MCC" />
+      <xs:enumeration value="21OPD" />
+      <xs:enumeration value="OTH" />
+      <xs:enumeration value="63SSWF" />
+      <xs:enumeration value="60SSWF" />
+      <xs:enumeration value="SHERIFF" />
+      <xs:enumeration value="73SB" />
+      <xs:enumeration value="73SCPD" />
+      <xs:enumeration value="STPATROL" />
+      <xs:enumeration value="73SSO" />
+      <xs:enumeration value="63USWF" />
+      <xs:enumeration value="60USWF" />
+      <xs:enumeration value="86WPB" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="WarrantLocationTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="WarrantLocationType">
+        <xs:attribute name="code" type="WarrantLocationTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

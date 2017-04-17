@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-07-18T11:05:34</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CautionFlagTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of person caution flags</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Abuses alcohol" />
+      <xs:enumeration value="Abuses illegal drugs" />
+      <xs:enumeration value="Carries weapon" />
+      <xs:enumeration value="Confirm ID before using this party  see Party Notes" />
+      <xs:enumeration value="Hostile to law enforcement" />
+      <xs:enumeration value="Prescription drug user - may impair judgment" />
+      <xs:enumeration value="Violent" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CautionFlagCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of person caution flags</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ALCOHOL" />
+      <xs:enumeration value="ILICITDRUG" />
+      <xs:enumeration value="WEAPON" />
+      <xs:enumeration value="CONFIRMID" />
+      <xs:enumeration value="HOSTILE" />
+      <xs:enumeration value="CNTRDRUG" />
+      <xs:enumeration value="VIOLENT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CautionFlagCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CautionFlagTextType">
+        <xs:attribute name="code" type="CautionFlagCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2010-03-05T11:01:02</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="SentenceEventType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Sentence Events describing action taken at a sentencing/disposition hearing.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Adult sentence executed-EJJ" />
+      <xs:enumeration value="Certified as an adult" />
+      <xs:enumeration value="Certified as EJJ" />
+      <xs:enumeration value="Change of venue" />
+      <xs:enumeration value="Closed" />
+      <xs:enumeration value="Continued" />
+      <xs:enumeration value="Continued Juvenile" />
+      <xs:enumeration value="Converted Juvenile Court Disposition" />
+      <xs:enumeration value="Converted TCIS Criminal Sentence" />
+      <xs:enumeration value="Converted TCIS Criminal Sentence: Stay of Imposition" />
+      <xs:enumeration value="Delinquency disposition imposed" />
+      <xs:enumeration value="Disposition/permanency ordered" />
+      <xs:enumeration value="EJJ Adult Sentence Imposed" />
+      <xs:enumeration value="EJJ disposition imposed" />
+      <xs:enumeration value="Felony DWI" />
+      <xs:enumeration value="Juvenile Disposition Imposed" />
+      <xs:enumeration value="Juvenile Petty Offense" />
+      <xs:enumeration value="Modification" />
+      <xs:enumeration value="Modified Outcome" />
+      <xs:enumeration value="New/Re-sentenced" />
+      <xs:enumeration value="No change in status at this time" />
+      <xs:enumeration value="No sentence pronounced" />
+      <xs:enumeration value="Original Outcome" />
+      <xs:enumeration value="Payable without appearance" />
+      <xs:enumeration value="Petition Dismissed" />
+      <xs:enumeration value="Predisposition order(s)" />
+      <xs:enumeration value="Revocation" />
+      <xs:enumeration value="Revoked Outcome" />
+      <xs:enumeration value="Sentence combined with another case" />
+      <xs:enumeration value="Sentenced" />
+      <xs:enumeration value="Staggered Sentence" />
+      <xs:enumeration value="Stay of execution" />
+      <xs:enumeration value="Stay of Imposition Pursuant to M.S. 609.135" />
+      <xs:enumeration value="Termination of jurisdiction" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SentenceEventTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Sentence Events describing action taken at a sentencing/disposition hearing.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ADULTSENT" />
+      <xs:enumeration value="CNVCERT" />
+      <xs:enumeration value="CNVEJJ" />
+      <xs:enumeration value="CNVVENUE" />
+      <xs:enumeration value="CNVCLOSED" />
+      <xs:enumeration value="CONT" />
+      <xs:enumeration value="CONTJV" />
+      <xs:enumeration value="CNVJUVSENT" />
+      <xs:enumeration value="CNVSENTENC" />
+      <xs:enumeration value="CNVSTAYIMP" />
+      <xs:enumeration value="DELINQ" />
+      <xs:enumeration value="CNVPERM" />
+      <xs:enumeration value="EJJADULT" />
+      <xs:enumeration value="EJJ" />
+      <xs:enumeration value="74FDWICOND" />
+      <xs:enumeration value="JDI" />
+      <xs:enumeration value="JPO" />
+      <xs:enumeration value="MOD" />
+      <xs:enumeration value="MODOUT" />
+      <xs:enumeration value="RESENT" />
+      <xs:enumeration value="CNVNOCHG" />
+      <xs:enumeration value="NOSENT" />
+      <xs:enumeration value="OUT" />
+      <xs:enumeration value="PAY" />
+      <xs:enumeration value="CNVDISMISS" />
+      <xs:enumeration value="CNVPREDISP" />
+      <xs:enumeration value="REV" />
+      <xs:enumeration value="REVOUT" />
+      <xs:enumeration value="COMBINE" />
+      <xs:enumeration value="SENT" />
+      <xs:enumeration value="SS" />
+      <xs:enumeration value="STAYEXEC" />
+      <xs:enumeration value="STAY" />
+      <xs:enumeration value="CNVTERMJUR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SentenceEventTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="SentenceEventType">
+        <xs:attribute name="code" type="SentenceEventTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

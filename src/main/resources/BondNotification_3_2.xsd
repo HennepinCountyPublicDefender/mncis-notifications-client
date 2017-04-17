@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Tim Buchholz (Minnesota Judicial Branch) -->
+<!--
+ Copyright © 2007, 2008, 2009 by the State of Minnesota
+	State Court Administrator’s Office
+	All Rights Reserved
+-->
+<!--
+	Modification History 
+	Date				Version	Rev			Change
+	02/02/2007	3:1			1				Initial Draft version.
+	02/08/2007	3:1			2				Removed CaseInformation.  Bond notifications that are for bonds that have a case association will be published through the CaseNotification service.
+															Added updateUserAccount attribute.
+	03/09/2007	3:1			3				Re-added CaseInformation.   This message will include bonds that are standalone and that are associated with a case.
+															Added CaseTitle to CaseInformation.
+	03/30/2007	3:1			4				Eliminated the use of restrictions of complex types.   This should not change any existing messages.
+	04/20/2007	3:1			5				Re-Added attribute updateUserAccount to the BondNotificationElement (for some reason this attribut was lost as a part of my last move).
+    12/15/2007 	3:2			1				Modified Bond to use BondOutType2 to accommodate the use of individuals as well as companies as the guarantor of a surety bond.
+															Removed Fixed value on schemaVersion attribute because it caused problems with WebServices.
+	02/01/2008	3:2			2				Added elements for Pull/Release processing.
+	01/28/2009	3:2			3			Removed Pull/Release elements since they only apply to submissions through web services and are defined in the WSDL separate from the schema.
+
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3">
+<!-- 	<xs:include schemaLocation="CourtXML_3_NoEnum.xsd"/> -->
+	<xs:include schemaLocation="CourtXML_3.xsd"/>
+	<xs:include schemaLocation="SimpleTypes/BondNotificationEventType.xsd"/>
+	<xs:attributeGroup name="BondNotificationMessageAttributes">
+		<xs:attribute name="schemaVersion" use="required">
+			<xs:annotation>
+				<xs:documentation>Specifies the version of the schema that this message should be validated against.  For this schema the value should be 3:2</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="messageProducedDateTime" type="xs:dateTime">
+			<xs:annotation>
+				<xs:documentation>Date and time when this message was produced.  This value is included on all outbound messages and not required on inbound messages.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="BondNotification">
+		<xs:annotation>
+			<xs:documentation>Bond notification for standalone bonds (no case yet)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TriggeredDateTime" type="xs:dateTime"/>
+				<xs:element name="NotificationEvent" type="BondNotificationEventType" maxOccurs="unbounded"/>
+				<xs:element name="Bond" type="BondOutType2"/>
+				<xs:element name="CaseInformation" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CourtFileNumber" type="CourtFileNumberType"/>
+							<xs:element name="CaseCountyNumber" type="CountyNumberType"/>
+							<xs:element name="CaseLocationText" type="CourtLocationCodeTextType"/>
+							<xs:element name="BaseCaseTypeText" type="BaseCaseTypeTextType"/>
+							<xs:element name="CaseCategoryText" type="CaseCategoryCodeTextType"/>
+							<xs:element name="CaseTitle" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Optional for Confidential or Restricted Cases</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="1000"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CaseTypeText" type="CaseTypeCodeTextType"/>
+							<xs:element name="CaseIsConfidential" type="xs:boolean"/>
+							<xs:element name="CaseIsSealed" type="xs:boolean"/>
+							<xs:element name="CaseIsRestricted" type="xs:boolean" minOccurs="0"/>
+							<xs:element name="OtherAgencyNumber" type="OtherAgencyNumberType" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="Citation" type="CitationReferenceType" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Included if charges for case were initiated via citation.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="caseNumberKey" use="required"/>
+						<xs:attribute name="caseKey" type="xs:positiveInteger" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="BondNotificationMessageAttributes"/>
+			<xs:attribute name="updateUserAccount" type="UserAccountType" use="required">
+				<xs:annotation>
+					<xs:documentation>The account name for the user that performed the update that triggered this notification message.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:32</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="SupplementalStatuteTypeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates types for supplemental statutes.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Both charging and penalty" />
+      <xs:enumeration value="Definition" />
+      <xs:enumeration value="Not chargeable" />
+      <xs:enumeration value="Penalty" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SupplementalStatuteTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates types for supplemental statutes.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BOTH" />
+      <xs:enumeration value="DEF" />
+      <xs:enumeration value="NOTCHG" />
+      <xs:enumeration value="NO" />
+      <xs:enumeration value="NOCHG" />
+      <xs:enumeration value="PEN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SupplementalStatuteTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="SupplementalStatuteTypeType">
+        <xs:attribute name="code" type="SupplementalStatuteTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

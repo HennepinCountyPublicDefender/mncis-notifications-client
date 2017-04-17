@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2009-05-04T03:07:04</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="VehicleColorTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of vehicle make types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Black" />
+      <xs:enumeration value="Blue" />
+      <xs:enumeration value="Bronze" />
+      <xs:enumeration value="Brown" />
+      <xs:enumeration value="Gold" />
+      <xs:enumeration value="Gray" />
+      <xs:enumeration value="Green" />
+      <xs:enumeration value="Ivory" />
+      <xs:enumeration value="Lavender (purple)" />
+      <xs:enumeration value="Maroon" />
+      <xs:enumeration value="Orange" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Pink" />
+      <xs:enumeration value="Red" />
+      <xs:enumeration value="Silver" />
+      <xs:enumeration value="Tan" />
+      <xs:enumeration value="Teal" />
+      <xs:enumeration value="Turquoise" />
+      <xs:enumeration value="White" />
+      <xs:enumeration value="Yellow" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="VehicleColorCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of vehicle make types</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BLK" />
+      <xs:enumeration value="BLU" />
+      <xs:enumeration value="BRZ" />
+      <xs:enumeration value="BRO" />
+      <xs:enumeration value="GLD" />
+      <xs:enumeration value="GRY" />
+      <xs:enumeration value="GRN" />
+      <xs:enumeration value="CRM" />
+      <xs:enumeration value="LAV" />
+      <xs:enumeration value="MAR" />
+      <xs:enumeration value="ONG" />
+      <xs:enumeration value="OTH" />
+      <xs:enumeration value="PNK" />
+      <xs:enumeration value="RED" />
+      <xs:enumeration value="SIL" />
+      <xs:enumeration value="TAN" />
+      <xs:enumeration value="TEA" />
+      <xs:enumeration value="TUR" />
+      <xs:enumeration value="WHI" />
+      <xs:enumeration value="YEL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="VehicleColorCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="VehicleColorTextType">
+        <xs:attribute name="code" type="VehicleColorCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

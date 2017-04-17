@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:35</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BaseCaseTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of base case types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="BaseCaseTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of base case types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="BaseCaseTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="BaseCaseTypeTextType">
+        <xs:attribute name="code" type="BaseCaseTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

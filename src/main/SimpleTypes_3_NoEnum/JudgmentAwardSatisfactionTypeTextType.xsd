@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:05:29</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JudgmentAwardSatisfactionTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment satisfaction types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="JudgmentAwardSatisfactionTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment satisfaction types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="JudgmentAwardSatisfactionTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="JudgmentAwardSatisfactionTypeTextType">
+        <xs:attribute name="code" type="JudgmentAwardSatisfactionTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-08-22T05:06:52</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="SecurityGroupTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of security groups.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="SecurityGroupCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of security groups.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="SecurityGroupCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="SecurityGroupTextType">
+        <xs:attribute name="code" type="SecurityGroupCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

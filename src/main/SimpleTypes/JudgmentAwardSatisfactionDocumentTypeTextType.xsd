@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:05:29</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JudgmentAwardSatisfactionDocumentTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment satisfaction document types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Affidavit of Lost Writ of Execution" />
+      <xs:enumeration value="Converted non-execution payment" />
+      <xs:enumeration value="Court administrator certificate per MS 548.17" />
+      <xs:enumeration value="Court order" />
+      <xs:enumeration value="Satisfaction" />
+      <xs:enumeration value="Writ of execution" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="JudgmentAwardSatisfactionDocumentTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment satisfaction document types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ALWE" />
+      <xs:enumeration value="CNVDOC" />
+      <xs:enumeration value="CERT" />
+      <xs:enumeration value="ORDER" />
+      <xs:enumeration value="SATIS" />
+      <xs:enumeration value="WRIT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="JudgmentAwardSatisfactionDocumentTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="JudgmentAwardSatisfactionDocumentTypeTextType">
+        <xs:attribute name="code" type="JudgmentAwardSatisfactionDocumentTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

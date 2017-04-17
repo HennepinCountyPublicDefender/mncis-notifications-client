@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2012-04-11T11:04:25</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BondStatusLocationTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of bond status location values.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bond Active File" />
+      <xs:enumeration value="Bond Discharge File" />
+      <xs:enumeration value="Bond Forfeit File" />
+      <xs:enumeration value="Clerk's desk" />
+      <xs:enumeration value="Court Administration" />
+      <xs:enumeration value="Court File" />
+      <xs:enumeration value="Criminal Clerk desk" />
+      <xs:enumeration value="En Route from Arresting County" />
+      <xs:enumeration value="Judge Chambers" />
+      <xs:enumeration value="Law Enforcement Center" />
+      <xs:enumeration value="Not Applicable" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Other See Comment" />
+      <xs:enumeration value="Precase Bond File" />
+      <xs:enumeration value="Safe" />
+      <xs:enumeration value="Storage" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BondStatusLocationCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of bond status location values.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="27CBAF" />
+      <xs:enumeration value="27CBDF" />
+      <xs:enumeration value="27CBFF" />
+      <xs:enumeration value="24CD" />
+      <xs:enumeration value="CA" />
+      <xs:enumeration value="COURTFILE" />
+      <xs:enumeration value="74CCD" />
+      <xs:enumeration value="ENROUTE" />
+      <xs:enumeration value="JC" />
+      <xs:enumeration value="LEC" />
+      <xs:enumeration value="NA" />
+      <xs:enumeration value="O" />
+      <xs:enumeration value="86OSC" />
+      <xs:enumeration value="PRECASEFIL" />
+      <xs:enumeration value="SF" />
+      <xs:enumeration value="S" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="BondStatusLocationCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="BondStatusLocationTextType">
+        <xs:attribute name="code" type="BondStatusLocationCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

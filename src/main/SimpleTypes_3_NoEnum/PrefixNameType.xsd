@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-05-17T08:37:33</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="PrefixNameType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are accepted for name prefix. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="PrefixNameTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are accepted for name prefix. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="PrefixNameTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="PrefixNameType">
+        <xs:attribute name="code" type="PrefixNameTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

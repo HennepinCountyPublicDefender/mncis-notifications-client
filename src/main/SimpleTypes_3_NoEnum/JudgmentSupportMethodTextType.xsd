@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:05:30</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JudgmentSupportMethodTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment support method types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="JudgmentSupportMethodCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of judgment support method types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="JudgmentSupportMethodCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="JudgmentSupportMethodTextType">
+        <xs:attribute name="code" type="JudgmentSupportMethodCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

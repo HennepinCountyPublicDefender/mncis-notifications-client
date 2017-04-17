@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-02-25T09:03:14</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="AttorneyRemovedReasonType">
+    <xs:annotation>
+      <xs:documentation>Enumerates attorney removal reason values available to submission messages.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Attorney Connection Added in Error" />
+      <xs:enumeration value="Deceased" />
+      <xs:enumeration value="Discharged" />
+      <xs:enumeration value="Substitution of Attorney" />
+      <xs:enumeration value="Withdrawn" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AttorneyRemovedReasonTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates attorney removal reason values available to submission messages.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ERROR" />
+      <xs:enumeration value="Deceased" />
+      <xs:enumeration value="DISCHARGED" />
+      <xs:enumeration value="Substitute" />
+      <xs:enumeration value="Withdrawn" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="AttorneyRemovedReasonTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="AttorneyRemovedReasonType">
+        <xs:attribute name="code" type="AttorneyRemovedReasonTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

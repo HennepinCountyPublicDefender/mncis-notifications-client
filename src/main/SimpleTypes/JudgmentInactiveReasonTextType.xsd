@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:05:28</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="JudgmentInactiveReasonTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of reasons for judgments being inactive.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bankruptcy" />
+      <xs:enumeration value="Dismissed" />
+      <xs:enumeration value="Renewed" />
+      <xs:enumeration value="Vacated" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="JudgmentInactiveReasonCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of reasons for judgments being inactive.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="B" />
+      <xs:enumeration value="D" />
+      <xs:enumeration value="R" />
+      <xs:enumeration value="V" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="JudgmentInactiveReasonCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="JudgmentInactiveReasonTextType">
+        <xs:attribute name="code" type="JudgmentInactiveReasonCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

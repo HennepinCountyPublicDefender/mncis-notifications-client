@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:30:31</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CaseNameTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerates name types for party names included on cases.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CaseNameTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates name types for party names included on cases.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="CaseNameTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CaseNameTypeTextType">
+        <xs:attribute name="code" type="CaseNameTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

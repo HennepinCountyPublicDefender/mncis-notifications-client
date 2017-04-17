@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-07-22T11:05:41</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="WarrantStatusType">
+    <xs:annotation>
+      <xs:documentation>Enumerates warrant status values.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bond/Bail Posted" />
+      <xs:enumeration value="Conversion Status" />
+      <xs:enumeration value="Converted Active" />
+      <xs:enumeration value="Converted Satisfied" />
+      <xs:enumeration value="Issued Active" />
+      <xs:enumeration value="Quashed" />
+      <xs:enumeration value="Recalled Inactive" />
+      <xs:enumeration value="Served" />
+      <xs:enumeration value="Unsigned" />
+      <xs:enumeration value="Walk In" />
+      <xs:enumeration value="Warrant Cleared by Arrest" />
+      <xs:enumeration value="Warrant Cleared by Wt Office" />
+      <xs:enumeration value="Warrant Requested" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="WarrantStatusTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates warrant status values.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="POSTED" />
+      <xs:enumeration value="CONV" />
+      <xs:enumeration value="CNVACTIVE" />
+      <xs:enumeration value="CNVSATISFY" />
+      <xs:enumeration value="ISSUED" />
+      <xs:enumeration value="QUASHED" />
+      <xs:enumeration value="RECALLED" />
+      <xs:enumeration value="SERVED" />
+      <xs:enumeration value="UNSIGNED" />
+      <xs:enumeration value="WALKIN" />
+      <xs:enumeration value="IBARCLR" />
+      <xs:enumeration value="IBWOCLR" />
+      <xs:enumeration value="REQUESTED" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="WarrantStatusTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="WarrantStatusType">
+        <xs:attribute name="code" type="WarrantStatusTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

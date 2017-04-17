@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-12-06T03:03:54</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BondStatusTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of bond status.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bail Applied to Fine/Refunded" />
+      <xs:enumeration value="Conversion Status" />
+      <xs:enumeration value="Converted Bond Active" />
+      <xs:enumeration value="Converted Bond Inactive" />
+      <xs:enumeration value="Discharged" />
+      <xs:enumeration value="Forfeited/Revoked" />
+      <xs:enumeration value="Ordered Refunded" />
+      <xs:enumeration value="Other Active" />
+      <xs:enumeration value="Other Inactive" />
+      <xs:enumeration value="Posted" />
+      <xs:enumeration value="Pre-Case Fines 30 Day Letter Sent" />
+      <xs:enumeration value="Pre-Case Fines Remitted to State/Turned Over" />
+      <xs:enumeration value="Pre-Case/Pre-Closure Applied to Fine" />
+      <xs:enumeration value="Refunded" />
+      <xs:enumeration value="Reinstated" />
+      <xs:enumeration value="Turned Over/Disbursed" />
+      <xs:enumeration value="Unclaimed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BondStatusTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of bond status.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="APPLIED" />
+      <xs:enumeration value="CONV" />
+      <xs:enumeration value="CNVACTIVE" />
+      <xs:enumeration value="CNVINACTIV" />
+      <xs:enumeration value="DISCHARGED" />
+      <xs:enumeration value="FORFEITED" />
+      <xs:enumeration value="ORDREFUND" />
+      <xs:enumeration value="OTHACTIVE" />
+      <xs:enumeration value="OTHINACTVE" />
+      <xs:enumeration value="POSTED" />
+      <xs:enumeration value="30DAY" />
+      <xs:enumeration value="PCREMIT" />
+      <xs:enumeration value="PREBOND" />
+      <xs:enumeration value="REFUNDED" />
+      <xs:enumeration value="REINSTATED" />
+      <xs:enumeration value="TURNDISB" />
+      <xs:enumeration value="UNCLAIMED" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="BondStatusTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="BondStatusTypeTextType">
+        <xs:attribute name="code" type="BondStatusTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

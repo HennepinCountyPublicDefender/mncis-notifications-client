@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-02-28T08:13:42</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BaseConnectionTextType">
+    <xs:annotation>
+      <xs:documentation>Distinguishes the relation of a Party to a Case</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Attorney" />
+      <xs:enumeration value="Decedent" />
+      <xs:enumeration value="Defendant" />
+      <xs:enumeration value="Family Member" />
+      <xs:enumeration value="Guardian" />
+      <xs:enumeration value="Mediator" />
+      <xs:enumeration value="Other 1" />
+      <xs:enumeration value="Other 2" />
+      <xs:enumeration value="Plaintiff" />
+      <xs:enumeration value="Recipient" />
+      <xs:enumeration value="Third Party" />
+      <xs:enumeration value="Victim" />
+      <xs:enumeration value="Ward" />
+      <xs:enumeration value="Witness" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BaseConnectionCodeType">
+    <xs:annotation>
+      <xs:documentation>Distinguishes the relation of a Party to a Case</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AT" />
+      <xs:enumeration value="DC" />
+      <xs:enumeration value="DF" />
+      <xs:enumeration value="FM" />
+      <xs:enumeration value="GD" />
+      <xs:enumeration value="MD" />
+      <xs:enumeration value="O1" />
+      <xs:enumeration value="O2" />
+      <xs:enumeration value="PL" />
+      <xs:enumeration value="RC" />
+      <xs:enumeration value="TH" />
+      <xs:enumeration value="VI" />
+      <xs:enumeration value="WA" />
+      <xs:enumeration value="WI" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="BaseConnectionCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="BaseConnectionTextType">
+        <xs:attribute name="code" type="BaseConnectionCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

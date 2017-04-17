@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-05T09:01:05</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="PlacementType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list if placement types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Foster care facility, non-relative" />
+      <xs:enumeration value="Foster care, correctional facility" />
+      <xs:enumeration value="Foster care, non-relative" />
+      <xs:enumeration value="Foster care, relative" />
+      <xs:enumeration value="Foster care, residential treatment center" />
+      <xs:enumeration value="Group/Shelter-Correctional" />
+      <xs:enumeration value="Group/Shelter-Placement" />
+      <xs:enumeration value="Group/Shelter-Treatment" />
+      <xs:enumeration value="Guardianship/legal custody to Commissioner of DHS" />
+      <xs:enumeration value="Joint legal custody - physical custody awarded to one party" />
+      <xs:enumeration value="Joint physical and legal custody" />
+      <xs:enumeration value="Legal custody" />
+      <xs:enumeration value="Long term foster care" />
+      <xs:enumeration value="Long term foster care, specific period of time" />
+      <xs:enumeration value="Non-secure-Correctional" />
+      <xs:enumeration value="Non-secure-Placement" />
+      <xs:enumeration value="Non-secure-Treatment" />
+      <xs:enumeration value="Out of Home Placement" />
+      <xs:enumeration value="Physical and legal custody awarded to one party" />
+      <xs:enumeration value="Prot Super w/Parent or Legal Cust. from whom child removed" />
+      <xs:enumeration value="Prot. Super w/Parent or Legal Custodian, child never removed" />
+      <xs:enumeration value="Protective Supervision" />
+      <xs:enumeration value="Protective supervision" />
+      <xs:enumeration value="Protective Supervision w/ Other Parent" />
+      <xs:enumeration value="Protective supervision with both parents" />
+      <xs:enumeration value="Protective supervision with father" />
+      <xs:enumeration value="Protective supervision with legal custodian" />
+      <xs:enumeration value="Protective supervision with mother" />
+      <xs:enumeration value="Secure-Correctional" />
+      <xs:enumeration value="Secure-Treatment" />
+      <xs:enumeration value="Trial Home Visit with both parents" />
+      <xs:enumeration value="Trial Home Visit with father" />
+      <xs:enumeration value="Trial Home Visit with legal custodian" />
+      <xs:enumeration value="Trial Home Visit with mother" />
+      <xs:enumeration value="TrialHomeVisit w/Parent or LeglCust from whom child removed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PlacementTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list if placement types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FOSTERFAC" />
+      <xs:enumeration value="CORRECT" />
+      <xs:enumeration value="FOSTER" />
+      <xs:enumeration value="FOSTERREL" />
+      <xs:enumeration value="TREAT" />
+      <xs:enumeration value="GCORR" />
+      <xs:enumeration value="GPLACE" />
+      <xs:enumeration value="GTREAT" />
+      <xs:enumeration value="DHS" />
+      <xs:enumeration value="SPLIT" />
+      <xs:enumeration value="JOINT" />
+      <xs:enumeration value="LEGAL" />
+      <xs:enumeration value="LTFC" />
+      <xs:enumeration value="LTFCTIME" />
+      <xs:enumeration value="NSCORR" />
+      <xs:enumeration value="NSPLACE" />
+      <xs:enumeration value="NSTREAT" />
+      <xs:enumeration value="CNVOHP" />
+      <xs:enumeration value="ONE" />
+      <xs:enumeration value="PRSUPRPLG" />
+      <xs:enumeration value="PRSUPCLDNR" />
+      <xs:enumeration value="CNVPS" />
+      <xs:enumeration value="PSUP" />
+      <xs:enumeration value="PRSUPWOP" />
+      <xs:enumeration value="PARENTS" />
+      <xs:enumeration value="PSDAD" />
+      <xs:enumeration value="CUSTOD" />
+      <xs:enumeration value="MOM" />
+      <xs:enumeration value="SCORR" />
+      <xs:enumeration value="STREAT" />
+      <xs:enumeration value="THVBP" />
+      <xs:enumeration value="THVF" />
+      <xs:enumeration value="THVLC" />
+      <xs:enumeration value="THVM" />
+      <xs:enumeration value="THVPARCUST" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PlacementTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="PlacementType">
+        <xs:attribute name="code" type="PlacementTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

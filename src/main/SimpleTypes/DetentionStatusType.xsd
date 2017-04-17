@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2011-01-19T03:02:50</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="DetentionStatusType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Detention Status Events used by other agencies.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CR to PT Agency" />
+      <xs:enumeration value="CR to PT Agency and Posted Cash/Surety Bond" />
+      <xs:enumeration value="Defendant Released on Writ to Return" />
+      <xs:enumeration value="Posted Cash or Surety Bond" />
+      <xs:enumeration value="Released" />
+      <xs:enumeration value="Released Own Recognizance" />
+      <xs:enumeration value="Summoned-Own Recognizance" />
+      <xs:enumeration value="Taken Into Custody" />
+      <xs:enumeration value="To Department of Corrections to Return" />
+      <xs:enumeration value="To Workhouse to Return" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DetentionStatusCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Detention Status Events used by other agencies.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IBCRPR" />
+      <xs:enumeration value="IBCRAB" />
+      <xs:enumeration value="IBDFDRWRTR" />
+      <xs:enumeration value="IBPCOSB" />
+      <xs:enumeration value="IBREL" />
+      <xs:enumeration value="IBROR" />
+      <xs:enumeration value="IBSMOWREC" />
+      <xs:enumeration value="IBINCUSTDY" />
+      <xs:enumeration value="IBTODPTCRR" />
+      <xs:enumeration value="IBTOWRKHSR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="DetentionStatusCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="DetentionStatusType">
+        <xs:attribute name="code" type="DetentionStatusCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

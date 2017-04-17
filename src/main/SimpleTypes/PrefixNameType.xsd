@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2009-01-26T07:05:44</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="PrefixNameType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are accepted for name prefix. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Agent" />
+      <xs:enumeration value="Deputy" />
+      <xs:enumeration value="Detective" />
+      <xs:enumeration value="Dr." />
+      <xs:enumeration value="Honorable" />
+      <xs:enumeration value="Miss" />
+      <xs:enumeration value="Mr." />
+      <xs:enumeration value="Mrs." />
+      <xs:enumeration value="Ms." />
+      <xs:enumeration value="Officer" />
+      <xs:enumeration value="Reverend" />
+      <xs:enumeration value="Trooper" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PrefixNameTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are accepted for name prefix. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Agt" />
+      <xs:enumeration value="Dep" />
+      <xs:enumeration value="Det" />
+      <xs:enumeration value="Dr" />
+      <xs:enumeration value="Hon" />
+      <xs:enumeration value="Miss" />
+      <xs:enumeration value="Mr" />
+      <xs:enumeration value="Mrs" />
+      <xs:enumeration value="Ms" />
+      <xs:enumeration value="Off" />
+      <xs:enumeration value="Rev" />
+      <xs:enumeration value="Tpr" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PrefixNameTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="PrefixNameType">
+        <xs:attribute name="code" type="PrefixNameTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:26:51</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="StatutoryChargingOffenseType">
+    <xs:annotation>
+      <xs:documentation>Enumeration of Statute ID's that are currently used to specify a specific statutory offense associated with a charge that is available for sumissions.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

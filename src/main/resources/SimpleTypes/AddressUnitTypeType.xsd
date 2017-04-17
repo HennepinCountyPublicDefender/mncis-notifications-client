@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2009-01-26T07:05:56</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="AddressUnitTypeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of address unit type values</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Apartment" />
+      <xs:enumeration value="Building" />
+      <xs:enumeration value="Department" />
+      <xs:enumeration value="Floor" />
+      <xs:enumeration value="Lot" />
+      <xs:enumeration value="Room" />
+      <xs:enumeration value="Suite" />
+      <xs:enumeration value="Trailer" />
+      <xs:enumeration value="Unit" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AddressUnitTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of address unit type values</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="APT" />
+      <xs:enumeration value="BLDG" />
+      <xs:enumeration value="DEPT" />
+      <xs:enumeration value="FL" />
+      <xs:enumeration value="LOT" />
+      <xs:enumeration value="RM" />
+      <xs:enumeration value="STE" />
+      <xs:enumeration value="TRLR" />
+      <xs:enumeration value="UNIT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="AddressUnitTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="AddressUnitTypeType">
+        <xs:attribute name="code" type="AddressUnitTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

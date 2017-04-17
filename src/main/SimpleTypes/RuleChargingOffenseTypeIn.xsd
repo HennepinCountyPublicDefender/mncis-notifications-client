@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2012-01-27T09:03:34</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="RuleChargingOffenseType">
+    <xs:annotation>
+      <xs:documentation>Enumeration of values that are used to specify a rule for an offense associated with a charge that is available for sumissions.. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="49CFR177804" />
+      <xs:enumeration value="49CFR39111b1" />
+      <xs:enumeration value="49CFR39111b5" />
+      <xs:enumeration value="49CFR39111b5X" />
+      <xs:enumeration value="49CFR39115a" />
+      <xs:enumeration value="49CFR39210a1" />
+      <xs:enumeration value="49CFR39211" />
+      <xs:enumeration value="49CFR39216" />
+      <xs:enumeration value="49CFR39222" />
+      <xs:enumeration value="49CFR3923" />
+      <xs:enumeration value="49CFR39282a1" />
+      <xs:enumeration value="49CFR39325f" />
+      <xs:enumeration value="49CFR39383" />
+      <xs:enumeration value="49CFR39388" />
+      <xs:enumeration value="49CFR39513d" />
+      <xs:enumeration value="49CFR3969c2" />
+      <xs:enumeration value="6100" />
+      <xs:enumeration value="6100P" />
+      <xs:enumeration value="6102" />
+      <xs:enumeration value="6105" />
+      <xs:enumeration value="6110" />
+      <xs:enumeration value="6115" />
+      <xs:enumeration value="6116" />
+      <xs:enumeration value="6120" />
+      <xs:enumeration value="6122" />
+      <xs:enumeration value="6125" />
+      <xs:enumeration value="6130" />
+      <xs:enumeration value="6131" />
+      <xs:enumeration value="6132" />
+      <xs:enumeration value="6134" />
+      <xs:enumeration value="6135" />
+      <xs:enumeration value="6136" />
+      <xs:enumeration value="6140" />
+      <xs:enumeration value="6200" />
+      <xs:enumeration value="6210" />
+      <xs:enumeration value="6212" />
+      <xs:enumeration value="6213" />
+      <xs:enumeration value="6216" />
+      <xs:enumeration value="6218" />
+      <xs:enumeration value="6218P" />
+      <xs:enumeration value="6230" />
+      <xs:enumeration value="6230P" />
+      <xs:enumeration value="6232" />
+      <xs:enumeration value="6234" />
+      <xs:enumeration value="6236" />
+      <xs:enumeration value="6237" />
+      <xs:enumeration value="6238" />
+      <xs:enumeration value="6240" />
+      <xs:enumeration value="6242" />
+      <xs:enumeration value="6244" />
+      <xs:enumeration value="6252" />
+      <xs:enumeration value="6254" />
+      <xs:enumeration value="6256" />
+      <xs:enumeration value="6258" />
+      <xs:enumeration value="6259" />
+      <xs:enumeration value="6260" />
+      <xs:enumeration value="6262" />
+      <xs:enumeration value="6264" />
+      <xs:enumeration value="6266" />
+      <xs:enumeration value="6270" />
+      <xs:enumeration value="6280" />
+      <xs:enumeration value="6282" />
+      <xs:enumeration value="6284" />
+      <xs:enumeration value="6287" />
+      <xs:enumeration value="6290" />
+      <xs:enumeration value="DNRRULE" />
+      <xs:enumeration value="MPCARULE" />
+      <xs:enumeration value="TRUCKREG" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

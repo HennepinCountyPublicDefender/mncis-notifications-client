@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2009-04-21T09:05:38</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="BACStatusType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are accepted for BAC Status. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BAC amount recorded" />
+      <xs:enumeration value="No BAC available" />
+      <xs:enumeration value="Refused Test" />
+      <xs:enumeration value="Test administered - no BAC amount available" />
+      <xs:enumeration value="Test Administered for controlled/hazardous substance" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BACStatusTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>This simple type enumerates values that are accepted for BAC Status. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="YES" />
+      <xs:enumeration value="NO" />
+      <xs:enumeration value="REFUSE" />
+      <xs:enumeration value="TESTNO" />
+      <xs:enumeration value="TESTDRGHAZ" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="BACStatusTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="BACStatusType">
+        <xs:attribute name="code" type="BACStatusTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

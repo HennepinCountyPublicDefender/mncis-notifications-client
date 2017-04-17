@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2008-06-25T09:05:28</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="PropertyTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of property types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Cash" />
+      <xs:enumeration value="Household Furnishings" />
+      <xs:enumeration value="Motor Vehicle" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Personal Effects" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PropertyCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of property types.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CASH" />
+      <xs:enumeration value="HOUSE" />
+      <xs:enumeration value="VEH" />
+      <xs:enumeration value="OTH" />
+      <xs:enumeration value="PERSON" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PropertyCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="PropertyTextType">
+        <xs:attribute name="code" type="PropertyCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

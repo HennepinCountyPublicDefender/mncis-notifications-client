@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2012-02-28T09:03:37</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CitationAccidentType">
+    <xs:annotation>
+      <xs:documentation>Enumerates permissible values denoting accidents contained in citations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Fatal" />
+      <xs:enumeration value="No injury or property damage" />
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Pedestrian" />
+      <xs:enumeration value="Personal injury" />
+      <xs:enumeration value="Property Damage" />
+      <xs:enumeration value="Substantial Bodily Harm" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CitationAccidentTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates permissible values denoting accidents contained in citations</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACCFATAL" />
+      <xs:enumeration value="ACCNONE" />
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="ACCPED" />
+      <xs:enumeration value="ACCPI" />
+      <xs:enumeration value="ACCPD" />
+      <xs:enumeration value="ACCSUB" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CitationAccidentTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CitationAccidentType">
+        <xs:attribute name="code" type="CitationAccidentTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

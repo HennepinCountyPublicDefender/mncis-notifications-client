@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2006-12-08T06:46:32</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="CaseNameTypeTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerates name types for party names included on cases.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AKA" />
+      <xs:enumeration value="DBA" />
+      <xs:enumeration value="FDBA" />
+      <xs:enumeration value="FKA" />
+      <xs:enumeration value="NKA" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CaseNameTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerates name types for party names included on cases.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AKA" />
+      <xs:enumeration value="DBA" />
+      <xs:enumeration value="FDBA" />
+      <xs:enumeration value="FKA" />
+      <xs:enumeration value="NKA" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CaseNameTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="CaseNameTypeTextType">
+        <xs:attribute name="code" type="CaseNameTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

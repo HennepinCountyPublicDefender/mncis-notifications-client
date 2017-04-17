@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-03-14T02:22:22</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="ConditionAllType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Conditions based on Odyssey uCode Code Table</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ConditionAllTypeCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Conditions based on Odyssey uCode Code Table</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="ConditionAllTypeCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="ConditionAllType">
+        <xs:attribute name="code" type="ConditionAllTypeCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

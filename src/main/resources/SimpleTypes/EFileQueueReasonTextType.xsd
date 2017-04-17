@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2012-03-17T09:03:31</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="EFileQueueReasonTextType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of reasons for an efile to be sent to a workflow queue.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Arrest flag exists" />
+      <xs:enumeration value="Case type undetermined" />
+      <xs:enumeration value="Citation Delete" />
+      <xs:enumeration value="Citation Update" />
+      <xs:enumeration value="Duplicate citation number" />
+      <xs:enumeration value="Fine amount needed" />
+      <xs:enumeration value="Forced by OrgChart" />
+      <xs:enumeration value="Forced By Rejection" />
+      <xs:enumeration value="Matches existing charge" />
+      <xs:enumeration value="Missing appear by date" />
+      <xs:enumeration value="Missing offense code mapping" />
+      <xs:enumeration value="Multiple offense code mappings exist" />
+      <xs:enumeration value="Possible party matches" />
+      <xs:enumeration value="Possible vehicle matches" />
+      <xs:enumeration value="Reason not available" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EFileQueueReasonCodeType">
+    <xs:annotation>
+      <xs:documentation>Enumerated list of reasons for an efile to be sent to a workflow queue.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="6" />
+      <xs:enumeration value="9" />
+      <xs:enumeration value="13" />
+      <xs:enumeration value="12" />
+      <xs:enumeration value="1" />
+      <xs:enumeration value="10" />
+      <xs:enumeration value="7" />
+      <xs:enumeration value="11" />
+      <xs:enumeration value="2" />
+      <xs:enumeration value="8" />
+      <xs:enumeration value="3" />
+      <xs:enumeration value="4" />
+      <xs:enumeration value="5" />
+      <xs:enumeration value="14" />
+      <xs:enumeration value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="EFileQueueReasonCodeTextType">
+    <xs:simpleContent>
+      <xs:extension base="EFileQueueReasonTextType">
+        <xs:attribute name="code" type="EFileQueueReasonCodeType" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.courts.state.mn.us/CourtXML/3" targetNamespace="http://www.courts.state.mn.us/CourtXML/3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Refreshed on: 2007-05-23T10:03:50</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="ProsecutorORIOutType">
+    <xs:annotation>
+      <xs:documentation>Enumerated Prosecution Agency Identifiers for outbound (published) messages.   Some agencies do not have ORI values and were assigned code values.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>
